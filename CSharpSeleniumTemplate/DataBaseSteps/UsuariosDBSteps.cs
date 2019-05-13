@@ -16,4 +16,5 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
 
             return DataBaseHelpers.RetornaDadosQuery(query)[0];
         }
+    }
 }
