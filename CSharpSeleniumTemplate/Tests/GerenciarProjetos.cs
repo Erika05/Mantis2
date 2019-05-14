@@ -32,9 +32,9 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeColuna = "Nome";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            projetoFlows.CadastroProjeto(nomeProjeto, estado, descricao);
+            projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             Assert.AreEqual(mensagemSucessoEsperada, criarProjetoPage.RetornaMensagemDeSucesso());
-            Assert.IsTrue(criarProjetoPage.ValidaCadastroProjeto(nomeProjeto, nomeColuna), "Projeto não foi cadastrado.");
+            Assert.IsTrue(criarProjetoPage.ValidarCadastroProjeto(nomeProjeto, nomeColuna), "Projeto não foi cadastrado.");
         }
 
 
@@ -50,12 +50,12 @@ namespace CSharpSeleniumTemplate.Tests
             string mensagemErroEsperada = "Um projeto com este nome já existe. Por favor, volte e entre um nome diferente.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            projetoFlows.CadastroProjeto(nomeProjeto, estado, descricao);
+            projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             Assert.AreEqual(mensagemErroEsperada, criarProjetoPage.RetornaMensagemDeErro());
         }
 
         [Test]
-        public void CampoObrigatoriosNaoPreenchidos()
+        public void CampoNomeProjetoNaoPreenchidos()
         {
             #region Parameters
             string usuario = "administrator";
@@ -64,7 +64,7 @@ namespace CSharpSeleniumTemplate.Tests
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.AcessarTelaCadastroProjeto();
-            criarProjetoPage.ClicarEmCadastrarProjeto();
+            criarProjetoPage.ClicarCadastrarProjeto();
             Assert.AreEqual(mensagemObrigatoriedadeEsperada, criarProjetoPage.RetornaMensagemObrigatoriedade());
         }
 
@@ -79,8 +79,8 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeEdicao = "nome do projeto editado";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            projetoFlows.EditaProjeto(nomeProjeto, colunaProjeto, nomeEdicao);
-            Assert.IsTrue(criarProjetoPage.ValidaCadastroProjeto(nomeEdicao, colunaProjeto), "Projeto não foi atualizado.");
+            projetoFlows.EditarProjeto(nomeProjeto, colunaProjeto, nomeEdicao);
+            Assert.IsTrue(criarProjetoPage.ValidarCadastroProjeto(nomeEdicao, colunaProjeto), "Projeto não foi atualizado.");
         }
 
         [Test]
@@ -94,7 +94,7 @@ namespace CSharpSeleniumTemplate.Tests
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.ApagarProjeto(nomeProjeto, nomeColuna);
-            Assert.IsTrue(criarProjetoPage.ValidaExclusaoProjeto(nomeProjeto, nomeColuna), "Projeto não foi excluído.");
+            Assert.IsTrue(criarProjetoPage.ValidarExclusaoProjeto(nomeProjeto, nomeColuna), "Projeto não foi excluído.");
         }
     }
 }

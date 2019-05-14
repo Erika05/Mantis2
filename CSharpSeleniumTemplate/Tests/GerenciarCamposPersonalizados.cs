@@ -44,7 +44,7 @@ namespace CSharpSeleniumTemplate.Tests
             string mensagemErroEsperada = "Um campo necessário 'name' estava vazio. Por favor, verifique novamente suas entradas.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            camposPersonalizadosFlows.AcessarMEnuCamposPersonalizados();
+            camposPersonalizadosFlows.AcessarMenuCamposPersonalizados();
             gerenciarCamposPersonalizadosPage.ClicarCriarCampo();
             Assert.AreEqual(mensagemErroEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeErro());
         }

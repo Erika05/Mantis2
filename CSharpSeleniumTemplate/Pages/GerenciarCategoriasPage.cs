@@ -27,7 +27,7 @@ namespace CSharpSeleniumTemplate.Pages
             SendKeys(categoriaTextarea, categoria);
         }
 
-        public void ClicarAdicionar()
+        public void ClicarAdicionarCategoria()
         {
             Click(adicionarButton);
         }
@@ -39,11 +39,11 @@ namespace CSharpSeleniumTemplate.Pages
         {
             return GetText(MsgErro);
         }
-        public void ClicaEditarCategoria(string nomeCategoria, string nomeColunaPesq, string nomeColunaClick)
+        public void ClicarEditarCategoria(string nomeCategoria, string nomeColunaPesq, string nomeColunaClick)
         {
             ClicarBotaoLinha(tableCategoria, nomeColunaPesq, nomeCategoria, nomeColunaClick);
         }
-        public void LimparCategoria()
+        public void LimparCampoNomeCategoria()
         {
             Clear(nomeCategoriaEditar);
         }
@@ -51,7 +51,7 @@ namespace CSharpSeleniumTemplate.Pages
         {
             SendKeys(nomeCategoriaEditar, categoria);
         }
-        public void ClicarAtualizar()
+        public void ClicarAtualizarCategoria()
         {
             Click(atualizarButton);
         }
@@ -64,7 +64,7 @@ namespace CSharpSeleniumTemplate.Pages
         {
             Click(apagarButton);
         }
-        public void ClicaConfirmarExclusaoCategoria()
+        public void ClicarConfirmarExclusaoCategoria()
         {
             Click(confirmaExclusaoButton);
         }

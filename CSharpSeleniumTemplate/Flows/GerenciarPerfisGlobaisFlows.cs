@@ -21,7 +21,7 @@ namespace CSharpSeleniumTemplate.Flows
         #endregion
         public void AcessarGerenciarPerfis()
         {
-            gerenciarPage.ClicarEmGerenciar();
+            gerenciarPage.ClicarGerenciar();
             gerenciarPerfisGlobaisPage.ClicarMenuGerenciarPerfis();
         }
         public void CadastrarPerfilGlobal(string plataforma, string so, string versaoSo)
@@ -32,13 +32,13 @@ namespace CSharpSeleniumTemplate.Flows
             gerenciarPerfisGlobaisPage.PreencherVersaoSo(versaoSo);
             gerenciarPerfisGlobaisPage.ClicarAdicionarPerfil();
         }
-        public void EdiatarPerfilGlobal(string plataforma, string novaPlataforma)
+        public void EditarPerfilGlobal(string plataforma, string novaPlataforma)
         {
             this.AcessarGerenciarPerfis();
             gerenciarPerfisGlobaisPage.SelecionarPerfil(plataforma);
-            gerenciarPerfisGlobaisPage.ClicarEmEditar();
-            gerenciarPerfisGlobaisPage.ClicarEmEviar();
-            gerenciarPerfisGlobaisPage.LimparPerfil();
+            gerenciarPerfisGlobaisPage.ClicarEditarPerfil();
+            gerenciarPerfisGlobaisPage.ClicarEnviar();
+            gerenciarPerfisGlobaisPage.LimparCampoPlataforma();
             gerenciarPerfisGlobaisPage.PreencherPlataformaEdicao(novaPlataforma);
             gerenciarPerfisGlobaisPage.AtualizarPerfil();
         }
@@ -46,8 +46,8 @@ namespace CSharpSeleniumTemplate.Flows
         {
             this.AcessarGerenciarPerfis();
             gerenciarPerfisGlobaisPage.SelecionarPerfil(plataforma);
-            gerenciarPerfisGlobaisPage.ClicarEmApagar();
-            gerenciarPerfisGlobaisPage.ClicarEmEviar();
+            gerenciarPerfisGlobaisPage.ClicarApagarPerfil();
+            gerenciarPerfisGlobaisPage.ClicarEnviar();
         }
     }
 }

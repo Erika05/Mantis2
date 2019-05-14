@@ -24,7 +24,8 @@ namespace CSharpSeleniumTemplate.Pages
         By adicionarAnotacaoButton = By.XPath("//input[@value='Adicionar Anotação']");
         By MsgErro = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/p[2]");
         #endregion
-        public void TelaVerTarefas()
+
+        public void AcessarVerTarefas()
         {
             Click(acessoVerTarefasButton);
         }
@@ -34,12 +35,12 @@ namespace CSharpSeleniumTemplate.Pages
             SendKeys(filtroTextarea, valorFiltro);
         }
 
-        public void ClicarEmPesquisar()
+        public void ClicarPesquisar()
         {
             Click(pesquisaButton);
         }
 
-        public void LimparFiltro()
+        public void LimparFiltroProjeto()
         {
             Clear(filtroTextarea);
         }
@@ -48,35 +49,35 @@ namespace CSharpSeleniumTemplate.Pages
         {
             return VerificarRetornoPesquisa(tableRetornoPesquisa, valorFiltro, nomeColuna);
         }
-        public void ClicarOpcaoSeleciona()
+        public void ClicarSelecionarTudo()
         {
             Click(opcaoSeleciona);
         }
-        public bool ValidaSelecao()
+        public bool ValidarSelecaoTodosRegistros()
         {
             return ValidarSelecaoTodos(tableRetornoPesquisa);
         }
-        public void AcessarEditarTarefa()
+        public void AcessarTelaEditarTarefa()
         {
             Click(editarTarefaButton);
         }
-        public string RetornaTituloEditarTarefa()
+        public string RetornaTituloTelaEditarTarefa()
         {
             return GetText(tituloEditarTarefa);
         }
-        public void ClicarOpcaoVoltar()
+        public void ClicarVoltarATarefa()
         {
             Click(opcaoVoltarButton);
         }
-        public string RetornaTituloDetalheTarefa()
+        public string RetornaTituloTelaDetalheTarefa()
         {
             return GetText(tituloDetalheTarefa);
         }
-        public void ClicarEmAtualizarInformacao()
+        public void ClicarAtualizarInformacao()
         {
             Click(atualizarInformacaoButton);
         }
-        public void ClicarEmAdicionarAnotacao()
+        public void ClicarAdicionarAnotacao()
         {
             Click(adicionarAnotacaoButton);
         }

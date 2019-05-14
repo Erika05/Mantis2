@@ -23,7 +23,7 @@ namespace CSharpSeleniumTemplate.Pages
         By apagarProjetoButton = By.XPath("//input[@value='Apagar Projeto']");
         #endregion
 
-        public void ClicarEmGerenciarProjeto()
+        public void ClicarGerenciarProjeto()
         {
             Click(menuGerenciarProjeto);
         }
@@ -47,12 +47,12 @@ namespace CSharpSeleniumTemplate.Pages
             return GetText(MsgSucesso);
         }
 
-        public bool ValidaCadastroProjeto(string nomeProjeto, string colunaProjeto)
+        public bool ValidarCadastroProjeto(string nomeProjeto, string colunaProjeto)
         {
             return ValidarCadastro(tableProjetos, nomeProjeto, colunaProjeto);
         }
 
-        public bool ValidaExclusaoProjeto(string nomeProjeto, string colunaProjeto)
+        public bool ValidarExclusaoProjeto(string nomeProjeto, string colunaProjeto)
         {
             return ValidarExclusao(tableProjetos, nomeProjeto, colunaProjeto);
         }
@@ -61,12 +61,12 @@ namespace CSharpSeleniumTemplate.Pages
             return GetText(MsgErro);
         }
 
-        public void ClicarEmCadastrarProjeto()
+        public void ClicarCadastrarProjeto()
         {
             Click(adicionarTarefaButton);
         }             
 
-        public void ClicarEmCriarPojeto()
+        public void ClicarCriarPojeto()
         {
             Click(criarProjetoButton);
         }
@@ -75,7 +75,7 @@ namespace CSharpSeleniumTemplate.Pages
             return GetAttribute(nomeTextarea, "validationMessage");
         }
 
-        public void TelaEditarProjeto(string nomeProjeto, string colunaNome)
+        public void AcessarTelaEditarProjeto(string nomeProjeto, string colunaNome)
         {
             ClicarSobreLinha(tableProjetos, colunaNome, nomeProjeto);
         }

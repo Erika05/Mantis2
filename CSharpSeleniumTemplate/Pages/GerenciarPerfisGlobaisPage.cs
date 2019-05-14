@@ -53,11 +53,11 @@ namespace CSharpSeleniumTemplate.Pages
         {
             Click(adicionarPerfilButton);
         }
-        public bool ValidarCadastroPerfilGolbal(string plataforma)
+        public bool ValidarCadastroPerfil(string plataforma)
         {
             return ValidarCadastroPeloCombobox(perfil, plataforma);
         }
-        public void ClicarEmEviar()
+        public void ClicarEnviar()
         {
             Click(enviarButton);
         }
@@ -65,11 +65,11 @@ namespace CSharpSeleniumTemplate.Pages
         {
             return GetText(MsgErro);
         }
-        public void ClicarEmEditar()
+        public void ClicarEditarPerfil()
         {
             Click(editarButton);
         }
-        public void ClicarEmApagar()
+        public void ClicarApagarPerfil()
         {
             Click(apagarButton);
         }
@@ -77,7 +77,7 @@ namespace CSharpSeleniumTemplate.Pages
         {
             ComboBoxSelectByVisibleText(perfil, nomePerfil);
         }
-        public void LimparPerfil()
+        public void LimparCampoPlataforma()
         {
             Clear(plataformaEdicaoTexarea);
         }

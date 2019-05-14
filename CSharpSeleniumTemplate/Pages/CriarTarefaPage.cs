@@ -71,11 +71,11 @@ namespace CSharpSeleniumTemplate.Pages
         {
             return GetText(tituloTelaCadastro);
         }
-        public void TelaCadastroTarefa()
+        public void AcessarCadastroTarefa()
         {
             Click(acessoCadastroTarefaButton);
         }
-        public void ClicarEmCandastrar()
+        public void ClicarCadastrarTarefa()
         {
             Click(criarTarefaButton);
         }

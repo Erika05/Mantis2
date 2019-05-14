@@ -44,16 +44,16 @@ namespace CSharpSeleniumTemplate.Tests
             string colunaResumo = "Resumo";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            criarTarefaPage.TelaCadastroTarefa();
+            criarTarefaPage.AcessarCadastroTarefa();
             tarefasFlows.PreencherCamposObrigatorios(categoria,resumo, descricao);
-            criarTarefaPage.ClicarEmCandastrar();
+            criarTarefaPage.ClicarCadastrarTarefa();
             Assert.AreEqual(mensagemSucessoEsperada, criarTarefaPage.RetornaMensagemDeSucesso());
-            tarefasFlows.RealizaPesquisa(resumo);
+            tarefasFlows.RealizarPesquisa(resumo);
             Assert.IsTrue(criarTarefaPage.RetornoPesquisa(resumo, colunaResumo), "Tarefa não foi cadastrada.");
         }
 
         [Test, TestCaseSource("CriarTarefaSucesso")]
-        public void CadastrarTarefaCamposOpcionais(ArrayList testData)
+        public void CadastrarTarefaTodosCampos(ArrayList testData)
         {
             #region Parameters
             string usuario = "administrator";
@@ -69,12 +69,12 @@ namespace CSharpSeleniumTemplate.Tests
             #endregion
 
             loginFlows.EfetuarLogin(usuario, senha);
-            criarTarefaPage.TelaCadastroTarefa();
+            criarTarefaPage.AcessarCadastroTarefa();
             tarefasFlows.PreencherCamposObrigatorios(categoria, resumo, descricao);
             tarefasFlows.PreencherCamposOpicionais(frequencia, gravidade, prioridade);
-            criarTarefaPage.ClicarEmCandastrar();
+            criarTarefaPage.ClicarCadastrarTarefa();
             Assert.AreEqual(mensagemSucessoEsperada, criarTarefaPage.RetornaMensagemDeSucesso());
-            tarefasFlows.RealizaPesquisa(resumo);
+            tarefasFlows.RealizarPesquisa(resumo);
             Assert.IsTrue(criarTarefaPage.RetornoPesquisa(resumo, colunaResumo), "Tarefa não foi cadastrada.");
         }
 
@@ -90,9 +90,9 @@ namespace CSharpSeleniumTemplate.Tests
             #endregion
 
             loginFlows.EfetuarLogin(usuario, senha);
-            criarTarefaPage.TelaCadastroTarefa();
+            criarTarefaPage.AcessarCadastroTarefa();
             criarTarefaPage.ContinuaCadastrandoTarefas(resumo, descricao);
-            criarTarefaPage.ClicarEmCandastrar();
+            criarTarefaPage.ClicarCadastrarTarefa();
             Assert.AreEqual(mensagemEsperada, criarTarefaPage.RetornaTituloTelaCadastro());
         }
 
@@ -103,11 +103,15 @@ namespace CSharpSeleniumTemplate.Tests
             string usuario = "administrator";
             string senha = "administrator";
             string mensagemEsperada = "Preencha este campo.";
+            string categoria = "categoria";
+            string descricao = "teste automatizado descrição";
             #endregion
 
             loginFlows.EfetuarLogin(usuario, senha);
-            criarTarefaPage.TelaCadastroTarefa();
-            criarTarefaPage.ClicarEmCandastrar();
+            criarTarefaPage.AcessarCadastroTarefa();
+            criarTarefaPage.PreencherCategoriaTarefa(categoria);
+            criarTarefaPage.PreencherDescricaoTarefa(descricao);
+            criarTarefaPage.ClicarCadastrarTarefa();
             Assert.AreEqual(mensagemEsperada, criarTarefaPage.RetornaMensagemObrigatoriedadeResumo());
         }
         [Test]
@@ -117,11 +121,15 @@ namespace CSharpSeleniumTemplate.Tests
             string usuario = "administrator";
             string senha = "administrator";
             string mensagemEsperada = "Preencha este campo.";
+            string categoria = "categoria";
+            string resumo = "teste automatizado resumo";
             #endregion
 
             loginFlows.EfetuarLogin(usuario, senha);
-            criarTarefaPage.TelaCadastroTarefa();
-            criarTarefaPage.ClicarEmCandastrar();
+            criarTarefaPage.AcessarCadastroTarefa();
+            criarTarefaPage.PreencherCategoriaTarefa(categoria);
+            criarTarefaPage.PreencherResumoTarefa(resumo);
+            criarTarefaPage.ClicarCadastrarTarefa();
             Assert.AreEqual(mensagemEsperada, criarTarefaPage.RetornaMensagemObrigatoriedadeDescricao());
         }        
     }

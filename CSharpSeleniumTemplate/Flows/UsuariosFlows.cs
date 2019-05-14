@@ -21,7 +21,7 @@ namespace CSharpSeleniumTemplate.Flows
 
         public void AcessarTelaGestaoUsuarios()
         {
-            gerenciarPage.ClicarEmGerenciar();
+            gerenciarPage.ClicarGerenciar();
             gerenciarUsuariosPage.AcessarTelaGerenciarUsuarios();
         }
         public void AcessarTelaCadastroUsuarios()
@@ -39,23 +39,23 @@ namespace CSharpSeleniumTemplate.Flows
             gerenciarUsuariosPage.PreencherNomeVerdadeiro(nomeVerdadeiro);
             gerenciarUsuariosPage.PreencherEmail(email);
         }
-        public void CadastrarUsuarioCamposObrigatorios(string nomeUsuario, string nomeNivel)
+        public void CadastrarUsuarioApenasCamposObrigatorios(string nomeUsuario, string nomeNivel)
         {
             this.AcessarTelaCadastroUsuarios();
             this.PreencherCamposObrigatorios(nomeUsuario, nomeNivel);
             gerenciarUsuariosPage.ClicarCadastraUsuario();
         }
-        public void CadastrarUsuarioTodosCampo(string nomeUsuario, string nomeVerdadeito, string email,string nomeNivel)
+        public void CadastrarUsuarioTodosCampos(string nomeUsuario, string nomeVerdadeito, string email,string nomeNivel)
         {
             this.AcessarTelaCadastroUsuarios();
             this.PreencherCamposObrigatorios(nomeUsuario, nomeNivel);
             this.PreencherCamposOpcionais(nomeVerdadeito, email);
             gerenciarUsuariosPage.ClicarCadastraUsuario();
         }
-        public void EdiatrUsuario(string nomeUsuario, string nomeUsuarioEdicao, string nomeColuna)
+        public void EdiatarUsuario(string nomeUsuario, string nomeUsuarioEdicao, string nomeColuna)
         {
             this.AcessarTelaGestaoUsuarios();
-            gerenciarUsuariosPage.TelaEditarUsuario(nomeUsuario, nomeColuna);
+            gerenciarUsuariosPage.AcessarTelaEditarUsuario(nomeUsuario, nomeColuna);
             gerenciarUsuariosPage.LimparNomeUsuario();
             gerenciarUsuariosPage.PreencherCampoEdicao(nomeUsuarioEdicao);
             gerenciarUsuariosPage.ClicarAtualizarUsuario();
@@ -69,15 +69,15 @@ namespace CSharpSeleniumTemplate.Flows
         public void ApagarUsuario(string nomeUsuario, string nomeColuna)
         {
             this.AcessarTelaGestaoUsuarios();
-            gerenciarUsuariosPage.TelaEditarUsuario(nomeUsuario, nomeColuna);
-            gerenciarUsuariosPage.ClicaApagarUsuario();
-            gerenciarUsuariosPage.ClicaConfirmarExclusaorUsuario();
+            gerenciarUsuariosPage.AcessarTelaEditarUsuario(nomeUsuario, nomeColuna);
+            gerenciarUsuariosPage.ClicarApagarUsuario();
+            gerenciarUsuariosPage.ClicarConfirmarExclusaorUsuario();
         }
         public void RedefinirSenhaUsuario(string nomeUsuario, string nomeColuna)
         {
             this.AcessarTelaGestaoUsuarios();
-            gerenciarUsuariosPage.TelaEditarUsuario(nomeUsuario, nomeColuna);
-            gerenciarUsuariosPage.ClicaRedefinirSenha();
+            gerenciarUsuariosPage.AcessarTelaEditarUsuario(nomeUsuario, nomeColuna);
+            gerenciarUsuariosPage.ClicarRedefinirSenha();
         }
         public void EmailInvalido(string nomeUsuario, string email)
         {

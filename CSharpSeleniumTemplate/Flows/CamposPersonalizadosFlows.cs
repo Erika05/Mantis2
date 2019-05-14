@@ -18,29 +18,29 @@ namespace CSharpSeleniumTemplate.Flows
             gerenciarPage = new GerenciarPage();
         }
         #endregion
-        public void AcessarMEnuCamposPersonalizados()
+        public void AcessarMenuCamposPersonalizados()
         {
-            gerenciarPage.ClicarEmGerenciar();
+            gerenciarPage.ClicarGerenciar();
             gerenciarCamposPersonalizadosPage.ClicarGerenciarCampo();
         }
         public void CadastrarCampo(string nome)
         {
-            this.AcessarMEnuCamposPersonalizados();
+            this.AcessarMenuCamposPersonalizados();
             gerenciarCamposPersonalizadosPage.PreencherCampo(nome);
             gerenciarCamposPersonalizadosPage.ClicarCriarCampo();
         }
         public void EditarCampo(string nome, string nomeEdicao, string nomeColuna)
         {
-            this.AcessarMEnuCamposPersonalizados();
-            gerenciarCamposPersonalizadosPage.AcessarTelaEdicao(nome, nomeColuna);
+            this.AcessarMenuCamposPersonalizados();
+            gerenciarCamposPersonalizadosPage.AcessarTelaEdicaoCampo(nome, nomeColuna);
             gerenciarCamposPersonalizadosPage.LimparCampo();
             gerenciarCamposPersonalizadosPage.PreencherCampoEdicao(nomeEdicao);
             gerenciarCamposPersonalizadosPage.ClicarAtualizarCampo();
         }
         public void ApagarCampo(string nome, string nomeColuna)
         {
-            this.AcessarMEnuCamposPersonalizados();
-            gerenciarCamposPersonalizadosPage.AcessarTelaEdicao(nome, nomeColuna);
+            this.AcessarMenuCamposPersonalizados();
+            gerenciarCamposPersonalizadosPage.AcessarTelaEdicaoCampo(nome, nomeColuna);
             gerenciarCamposPersonalizadosPage.ClicarApagarCampo();
             gerenciarCamposPersonalizadosPage.CorfirmarApagarCampo();
         }

@@ -62,11 +62,11 @@ namespace CSharpSeleniumTemplate.Pages
         {
             return GetText(MsgSucesso);
         }
-        public string ValidaCadastroUsuario(string nomeUsuario)
+        public string ValidarCadastroUsuario(string nomeUsuario)
         {
             return GetValue(nomeSalvo);
         }
-        public void TelaEditarUsuario(string nomeUsuario, string colunaUsuario)
+        public void AcessarTelaEditarUsuario(string nomeUsuario, string colunaUsuario)
         {
             ClicarSobreLinha(tableUsuarios, colunaUsuario, nomeUsuario);
         }
@@ -98,19 +98,19 @@ namespace CSharpSeleniumTemplate.Pages
         {
             return VerificarRetornoPesquisa(tableUsuarios, valorFiltro, nomeColuna);
         }
-        public void ClicaApagarUsuario()
+        public void ClicarApagarUsuario()
         {
             Click(apagarUsuarioButtor);
         }
-        public void ClicaConfirmarExclusaorUsuario()
+        public void ClicarConfirmarExclusaorUsuario()
         {
             Click(confirmarExclusaoUsuarioButton);
         }
-        public bool ValidaExclusaoUsuario(string nomeUsuario, string colunaUsuario)
+        public bool ValidarExclusaoUsuario(string nomeUsuario, string colunaUsuario)
         {
             return ValidarExclusao(tableUsuarios, nomeUsuario, colunaUsuario);
         }
-        public void ClicaRedefinirSenha()
+        public void ClicarRedefinirSenha()
         {
             Click(redefinirSenhaButton);
         }

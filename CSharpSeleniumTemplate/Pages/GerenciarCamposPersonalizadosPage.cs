@@ -16,7 +16,7 @@ namespace CSharpSeleniumTemplate.Pages
         By criarCampoButton = By.XPath("//input[@value='Novo Campo Personalizado']");
         By MsgSucesso = By.XPath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");
         By MsgErro = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/p[2]");
-        By campoSalvo = By.Id("custom-field-name");
+        By campoSalvoTextarea = By.Id("custom-field-name");
         By tableCampos = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/table");
         By atualizarCampoButton = By.XPath("//input[@value='Atualizar Campo Personalizado']");
         By apagarCampoButton = By.XPath("//input[@value='Apagar Campo Personalizado']");
@@ -44,19 +44,19 @@ namespace CSharpSeleniumTemplate.Pages
         }
         public string VerificarValorSalvo()
         {
-            return GetValue(campoSalvo);
+            return GetValue(campoSalvoTextarea);
         }
-        public void AcessarTelaEdicao(string nome, string colunaNome)
+        public void AcessarTelaEdicaoCampo(string nome, string colunaNome)
         {
             ClicarSobreLinha(tableCampos, colunaNome, nome);
         }
         public void LimparCampo()
         {
-            Clear(campoSalvo);
+            Clear(campoSalvoTextarea);
         }
         public void PreencherCampoEdicao(string nomeEdicao)
         {
-            SendKeys(campoSalvo, nomeEdicao);
+            SendKeys(campoSalvoTextarea, nomeEdicao);
         }
         public void ClicarAtualizarCampo()
         {

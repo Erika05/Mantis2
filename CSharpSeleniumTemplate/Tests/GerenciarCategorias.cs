@@ -59,7 +59,7 @@ namespace CSharpSeleniumTemplate.Tests
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.AcessarTelaGestaoProjeto();
-            gerenciarCategoriasPage.ClicarAdicionar();
+            gerenciarCategoriasPage.ClicarAdicionarCategoria();
             Assert.AreEqual(mensagemErroEsperada, gerenciarCategoriasPage.RetornaMensagemDeErro());
         }
         [Test]

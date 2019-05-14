@@ -22,7 +22,7 @@ namespace CSharpSeleniumTemplate.Pages
         By voltarMarcadoButton = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/form/div/div[2]/div/div[1]/a");
         #endregion
 
-        public void ClicarMenuMarcadores()
+        public void ClicarMenuMarcador()
         {
             Click(menuMarcadores);
         }
@@ -31,11 +31,11 @@ namespace CSharpSeleniumTemplate.Pages
         {
             SendKeys(nomeTextarea, nome);
         }
-        public void ClicarEmCriar()
+        public void ClicarCriarMarcador()
         {
             Click(criarButton);
         }
-        public bool ValidaCadastroMarcado(string nomeMarcador, string colunaMarcador)
+        public bool ValidarCadastroMarcado(string nomeMarcador, string colunaMarcador)
         {
             return ValidarCadastro(tableMarcadores, nomeMarcador, colunaMarcador);
         }
@@ -44,11 +44,11 @@ namespace CSharpSeleniumTemplate.Pages
             return GetAttribute(nomeTextarea, "validationMessage");
         }
 
-        public void TelaEditarMarcador(string nomeMarcador, string colunaMarcador)
+        public void AcessarTelaEditarMarcador(string nomeMarcador, string colunaMarcador)
         {
             ClicarSobreLinha(tableMarcadores, colunaMarcador, nomeMarcador);
         }
-        public void ClicarEmAtualizarMarcador()
+        public void ClicarAtualizarMarcador()
         {
             Click(atualizarMarcadorButton);
         }
@@ -65,15 +65,15 @@ namespace CSharpSeleniumTemplate.Pages
         {
             Click(apagarMarcadoButton);
         }
-        public bool ValidaExclusaoMarcado(string nomeMarcador, string colunaMarcador)
+        public bool ValidarExclusaoMarcado(string nomeMarcador, string colunaMarcador)
         {
             return ValidarExclusao(tableMarcadores, nomeMarcador, colunaMarcador);
         }
-        public void ClicarVoltarMarcador()
+        public void ClicarVoltarAoMarcador()
         {
             Click(voltarMarcadoButton);
         }
-        public string RetornaTituloTelaMarcadores()
+        public string RetornaTituloTelaDetalheMarcador()
         {
             return GetText(telaDetalheMarcadores);
         }

@@ -13,7 +13,7 @@ namespace CSharpSeleniumTemplate.Pages
         #region Mapping
         By menuGerenciarButton = By.XPath("//*[@id='sidebar']/ul/li[7]/a/span");
         #endregion
-        public void ClicarEmGerenciar()
+        public void ClicarGerenciar()
         {
             Click(menuGerenciarButton);
         }

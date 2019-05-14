@@ -18,21 +18,21 @@ namespace CSharpSeleniumTemplate.Flows
         #endregion
         public void ApagarCategoria(string nomeCategoria, string nomeColunaPesq, string nomeColunaAcao)
         {
-            gerenciarCategoriaPage.ClicaEditarCategoria(nomeCategoria, nomeColunaPesq, nomeColunaAcao);
+            gerenciarCategoriaPage.ClicarEditarCategoria(nomeCategoria, nomeColunaPesq, nomeColunaAcao);
             gerenciarCategoriaPage.ClicaApagarCategoria();
-            gerenciarCategoriaPage.ClicaConfirmarExclusaoCategoria();
+            gerenciarCategoriaPage.ClicarConfirmarExclusaoCategoria();
         }
         public void CadastrarCategoria(string nomeCategoria)
         {
             gerenciarCategoriaPage.PreencherCategoria(nomeCategoria);
-            gerenciarCategoriaPage.ClicarAdicionar();
+            gerenciarCategoriaPage.ClicarAdicionarCategoria();
         }
         public void EditarCategoria(string nomeCategoria, string nomeCategoriaAlteracao, string nomeColunaPesq, string nomeColunaAcao)
         {
-            gerenciarCategoriaPage.ClicaEditarCategoria(nomeCategoria, nomeColunaPesq, nomeColunaAcao);
-            gerenciarCategoriaPage.LimparCategoria();
+            gerenciarCategoriaPage.ClicarEditarCategoria(nomeCategoria, nomeColunaPesq, nomeColunaAcao);
+            gerenciarCategoriaPage.LimparCampoNomeCategoria();
             gerenciarCategoriaPage.PreencherCategoriaEditar(nomeCategoriaAlteracao);
-            gerenciarCategoriaPage.ClicarAtualizar();
+            gerenciarCategoriaPage.ClicarAtualizarCategoria();
         }
 
     }

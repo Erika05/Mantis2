@@ -21,37 +21,37 @@ namespace CSharpSeleniumTemplate.Flows
 
         public void AcessarTelaGestaoProjeto()
         {
-            gerenciarPage.ClicarEmGerenciar();
-            criarProjetoPage.ClicarEmGerenciarProjeto();
+            gerenciarPage.ClicarGerenciar();
+            criarProjetoPage.ClicarGerenciarProjeto();
         }
         public void AcessarTelaCadastroProjeto()
         {
-            gerenciarPage.ClicarEmGerenciar();
-            criarProjetoPage.ClicarEmGerenciarProjeto();
-            criarProjetoPage.ClicarEmCriarPojeto();
+            gerenciarPage.ClicarGerenciar();
+            criarProjetoPage.ClicarGerenciarProjeto();
+            criarProjetoPage.ClicarCriarPojeto();
         }
 
-        public void CadastroProjeto(string nome, string estado, string descricao)
+        public void CadastrarProjeto(string nome, string estado, string descricao)
         {
             this.AcessarTelaCadastroProjeto();
             criarProjetoPage.PreencherNomeProjeto(nome);
             criarProjetoPage.PreencherEstadoProjeto(estado);
             criarProjetoPage.PreencherDescricaoProjeto(descricao);
-            criarProjetoPage.ClicarEmCadastrarProjeto();
+            criarProjetoPage.ClicarCadastrarProjeto();
         }
 
-        public void EditaProjeto(string nome, string nomeProjeto, string colunaProjeto)
+        public void EditarProjeto(string nome, string nomeProjeto, string colunaProjeto)
         {
             this.AcessarTelaGestaoProjeto();
-            criarProjetoPage.TelaEditarProjeto(nomeProjeto, colunaProjeto);
+            criarProjetoPage.AcessarTelaEditarProjeto(nomeProjeto, colunaProjeto);
             criarProjetoPage.LimparNomeProjeto();
             criarProjetoPage.PreencherNomeProjeto(nome);
-            criarProjetoPage.ClicarEmCadastrarProjeto();
+            criarProjetoPage.ClicarCadastrarProjeto();
         }
         public void ApagarProjeto(string nomeProjeto, string nomeColuna)
         {
             this.AcessarTelaGestaoProjeto();
-            criarProjetoPage.TelaEditarProjeto(nomeProjeto, nomeColuna);
+            criarProjetoPage.AcessarTelaEditarProjeto(nomeProjeto, nomeColuna);
             criarProjetoPage.ClicarEmApagarProjeto();
             criarProjetoPage.ClicarEmApagarProjeto();
         }

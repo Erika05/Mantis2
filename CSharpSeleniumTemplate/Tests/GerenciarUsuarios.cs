@@ -32,7 +32,7 @@ namespace CSharpSeleniumTemplate.Tests
         #endregion
 
         [Test]
-        public void CadastrarUsuarioCamposObrigatorios()
+        public void CadastrarUsuarioApenasCamposObrigatorios()
         {
             #region Parameters
             string usuario = "administrator";
@@ -42,9 +42,9 @@ namespace CSharpSeleniumTemplate.Tests
             string mensagemSucessoEsperada = "Usuário " + nomeUsuario + " criado com um nível de acesso de " + nivel;
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            usuariosFlows.CadastrarUsuarioCamposObrigatorios(nomeUsuario, nivel);
+            usuariosFlows.CadastrarUsuarioApenasCamposObrigatorios(nomeUsuario, nivel);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
-            Assert.AreEqual(nomeUsuario, gerenciarUsuariosPage.ValidaCadastroUsuario(nomeUsuario));
+            Assert.AreEqual(nomeUsuario, gerenciarUsuariosPage.ValidarCadastroUsuario(nomeUsuario));
         }
         [Test]
         public void CadastrarUsuarioTodosCampos()
@@ -59,21 +59,23 @@ namespace CSharpSeleniumTemplate.Tests
             string mensagemSucessoEsperada = "Usuário " + nomeUsuario + " criado com um nível de acesso de " + nivel;
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            usuariosFlows.CadastrarUsuarioTodosCampo(nomeUsuario, nomeVerdadeiro, email, nivel);
+            usuariosFlows.CadastrarUsuarioTodosCampos(nomeUsuario, nomeVerdadeiro, email, nivel);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
-            Assert.AreEqual(nomeUsuario, gerenciarUsuariosPage.ValidaCadastroUsuario(nomeUsuario));
+            Assert.AreEqual(nomeUsuario, gerenciarUsuariosPage.ValidarCadastroUsuario(nomeUsuario));
         }
 
         [Test]
-        public void CamposObrigatoriosNaoPreenchidos()
+        public void CampoNomeNaoPreenchido()
         {
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
+            string nivel = "relator";
             string mensagemErroEsperada = "O nome de usuário não é inválido. Nomes de usuário podem conter apenas letras, números, espaços, hífens, pontos, sinais de mais e sublinhados.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.AcessarTelaCadastroUsuarios();
+            gerenciarUsuariosPage.PreencherNivel(nivel);
             gerenciarUsuariosPage.ClicarCadastraUsuario();
             Assert.AreEqual(mensagemErroEsperada, gerenciarUsuariosPage.RetornaMensagemDeErro());
         }
@@ -88,7 +90,7 @@ namespace CSharpSeleniumTemplate.Tests
             string mensagemErroEsperada = "Este nome de usuário já está sendo usado. Por favor, volte e selecione um outro.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            usuariosFlows.CadastrarUsuarioCamposObrigatorios(nomeUsuario, nivel);            
+            usuariosFlows.CadastrarUsuarioApenasCamposObrigatorios(nomeUsuario, nivel);            
             Assert.AreEqual(mensagemErroEsperada, gerenciarUsuariosPage.RetornaMensagemDeErro());
         }
         [Test]
@@ -104,7 +106,7 @@ namespace CSharpSeleniumTemplate.Tests
             string mensagemErroEsperada = "Este e-mail já está sendo usado. Por favor, volte e selecione outro.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);            
-            usuariosFlows.CadastrarUsuarioTodosCampo(nomeUsuario, nomeVerdadeiro, email, nivel);
+            usuariosFlows.CadastrarUsuarioTodosCampos(nomeUsuario, nomeVerdadeiro, email, nivel);
             Assert.AreEqual(mensagemErroEsperada, gerenciarUsuariosPage.RetornaMensagemDeErro());
         }
 
@@ -120,9 +122,9 @@ namespace CSharpSeleniumTemplate.Tests
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            usuariosFlows.EdiatrUsuario(nomeUsuario, nomeUsuarioEdicao, nomeColuna);
+            usuariosFlows.EdiatarUsuario(nomeUsuario, nomeUsuarioEdicao, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
-            Assert.AreEqual(nomeUsuarioEdicao, gerenciarUsuariosPage.ValidaCadastroUsuario(nomeUsuario));
+            Assert.AreEqual(nomeUsuarioEdicao, gerenciarUsuariosPage.ValidarCadastroUsuario(nomeUsuario));
         }
         [Test]
         public void ApagarUsuario()
@@ -137,7 +139,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.ApagarUsuario(nomeUsuario, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
-            Assert.IsTrue(gerenciarUsuariosPage.ValidaExclusaoUsuario(nomeUsuario, nomeColuna), "Usuário não foi excluído.");
+            Assert.IsTrue(gerenciarUsuariosPage.ValidarExclusaoUsuario(nomeUsuario, nomeColuna), "Usuário não foi excluído.");
         }
         [Test]
         public void RedefinirSenhaSemPreencherEmail()

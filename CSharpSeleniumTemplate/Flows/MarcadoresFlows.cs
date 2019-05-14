@@ -19,42 +19,42 @@ namespace CSharpSeleniumTemplate.Flows
             gerenciarMarcadoresPage = new GerenciarMarcadoresPage();
         }
 
-        public void AcessarTelaMarcadores()
+        public void AcessarTelaGerenciarMarcadores()
         {
-            gerenciarPage.ClicarEmGerenciar();
-            gerenciarMarcadoresPage.ClicarMenuMarcadores();
+            gerenciarPage.ClicarGerenciar();
+            gerenciarMarcadoresPage.ClicarMenuMarcador();
         }
 
-        public void CadastroMarcador(string nome)
+        public void CadastrarMarcador(string nome)
         {
-            this.AcessarTelaMarcadores();
+            this.AcessarTelaGerenciarMarcadores();
             gerenciarMarcadoresPage.PreencherNomeMarcador(nome);
-            gerenciarMarcadoresPage.ClicarEmCriar();
+            gerenciarMarcadoresPage.ClicarCriarMarcador();
         }
 
-        public void EditaMarcador(string nomeAtual, string coluna, string nomeNovo)
+        public void EditarMarcador(string nomeAtual, string coluna, string nomeNovo)
         {
-            this.AcessarTelaMarcadores();
-            gerenciarMarcadoresPage.TelaEditarMarcador(nomeAtual, coluna);
-            gerenciarMarcadoresPage.ClicarEmAtualizarMarcador();
+            this.AcessarTelaGerenciarMarcadores();
+            gerenciarMarcadoresPage.AcessarTelaEditarMarcador(nomeAtual, coluna);
+            gerenciarMarcadoresPage.ClicarAtualizarMarcador();
             gerenciarMarcadoresPage.LimparNomeMarcador();
             gerenciarMarcadoresPage.PreencherNomeMarcador(nomeNovo);
-            gerenciarMarcadoresPage.ClicarEmAtualizarMarcador();
+            gerenciarMarcadoresPage.ClicarAtualizarMarcador();
         }
 
         public void ApagarMarcador(string nome, string coluna)
         {
-            this.AcessarTelaMarcadores();
-            gerenciarMarcadoresPage.TelaEditarMarcador(nome, coluna);
+            this.AcessarTelaGerenciarMarcadores();
+            gerenciarMarcadoresPage.AcessarTelaEditarMarcador(nome, coluna);
             gerenciarMarcadoresPage.ClicarApagarMarcador();
             gerenciarMarcadoresPage.ClicarApagarMarcador();
         }
         public void VoltarDetalheMarcador(string nome, string coluna)
         {
-            this.AcessarTelaMarcadores();
-            gerenciarMarcadoresPage.TelaEditarMarcador(nome, coluna);
-            gerenciarMarcadoresPage.ClicarEmAtualizarMarcador();
-            gerenciarMarcadoresPage.ClicarVoltarMarcador();
+            this.AcessarTelaGerenciarMarcadores();
+            gerenciarMarcadoresPage.AcessarTelaEditarMarcador(nome, coluna);
+            gerenciarMarcadoresPage.ClicarAtualizarMarcador();
+            gerenciarMarcadoresPage.ClicarVoltarAoMarcador();
         }
     }
 }

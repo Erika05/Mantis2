@@ -35,8 +35,8 @@ namespace CSharpSeleniumTemplate.Tests
             #endregion
 
             loginFlows.EfetuarLogin(usuario, senha);
-            gerenciarTarefasPage.TelaVerTarefas();
-            tarefasFlows.RealizaPesquisa(filtro);
+            gerenciarTarefasPage.AcessarVerTarefas();
+            tarefasFlows.RealizarPesquisa(filtro);
             Assert.IsTrue(gerenciarTarefasPage.RetornoPesquisa(filtro, colunaFiltra), "Resultado retornado é diferente do filtro informado.");
         }
 
@@ -49,13 +49,13 @@ namespace CSharpSeleniumTemplate.Tests
             #endregion
 
             loginFlows.EfetuarLogin(usuario, senha);
-            gerenciarTarefasPage.TelaVerTarefas();
-            tarefasFlows.LimpaFiltroPesquisa();
-            gerenciarTarefasPage.ClicarOpcaoSeleciona();
-            Assert.IsTrue(gerenciarTarefasPage.ValidaSelecao(), "Um ou mais itens não foram selecionados.");
+            gerenciarTarefasPage.AcessarVerTarefas();
+            tarefasFlows.LimparPesquisa();
+            gerenciarTarefasPage.ClicarSelecionarTudo();
+            Assert.IsTrue(gerenciarTarefasPage.ValidarSelecaoTodosRegistros(), "Um ou mais itens não foram selecionados.");
         }
         [Test]
-        public void AcessoTelaEditar()
+        public void AcessarEditarTarefa()
         {
             #region Parameters
             string usuario = "administrator";
@@ -65,10 +65,10 @@ namespace CSharpSeleniumTemplate.Tests
 
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.AcessarEditarTarefa();
-            Assert.AreEqual(tituloEsperado, gerenciarTarefasPage.RetornaTituloEditarTarefa());
+            Assert.AreEqual(tituloEsperado, gerenciarTarefasPage.RetornaTituloTelaEditarTarefa());
         }
         [Test]
-        public void OpcaoVoltarTarefa()
+        public void VoltarDetalheTarefa()
         {
             #region Parameters
             string usuario = "administrator";
@@ -78,10 +78,10 @@ namespace CSharpSeleniumTemplate.Tests
 
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.VoltarDetalheTarefa();
-            Assert.AreEqual(tituloEsperado, gerenciarTarefasPage.RetornaTituloDetalheTarefa());
+            Assert.AreEqual(tituloEsperado, gerenciarTarefasPage.RetornaTituloTelaDetalheTarefa());
         }
         [Test]
-        public void AdicionarInformacaoSemCampoObrigatorio()
+        public void AdicionarAnotacaoSemCampoObrigatorio()
         {
             #region Parameters
             string usuario = "administrator";
@@ -91,8 +91,8 @@ namespace CSharpSeleniumTemplate.Tests
 
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.AcessarEditarTarefa();
-            gerenciarTarefasPage.ClicarEmAtualizarInformacao();
-            gerenciarTarefasPage.ClicarEmAdicionarAnotacao();
+            gerenciarTarefasPage.ClicarAtualizarInformacao();
+            gerenciarTarefasPage.ClicarAdicionarAnotacao();
             Assert.AreEqual(MensagemErroEsperado, gerenciarTarefasPage.RetornaMensagemDeErro());
         }
     }

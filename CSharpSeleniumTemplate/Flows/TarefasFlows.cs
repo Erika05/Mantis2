@@ -31,28 +31,28 @@ namespace CSharpSeleniumTemplate.Flows
             criarTarefaPage.PreencherGravidadeTarefa(gravidade);
             criarTarefaPage.PreencherPrioridadeTarefa(prioridade);
         }
-        public void RealizaPesquisa(string valorFiltro)
+        public void RealizarPesquisa(string valorFiltro)
         {
-            gerenciarTarefasPage.LimparFiltro();
+            gerenciarTarefasPage.LimparFiltroProjeto();
             gerenciarTarefasPage.PreencherFiltro(valorFiltro);
-            gerenciarTarefasPage.ClicarEmPesquisar();
+            gerenciarTarefasPage.ClicarPesquisar();
         }
 
-        public void LimpaFiltroPesquisa()
+        public void LimparPesquisa()
         {
-            gerenciarTarefasPage.LimparFiltro();
-            gerenciarTarefasPage.ClicarEmPesquisar();
+            gerenciarTarefasPage.LimparFiltroProjeto();
+            gerenciarTarefasPage.ClicarPesquisar();
         }
         public void AcessarEditarTarefa()
         {
-            gerenciarTarefasPage.TelaVerTarefas();
-            gerenciarTarefasPage.AcessarEditarTarefa();
+            gerenciarTarefasPage.AcessarVerTarefas();
+            gerenciarTarefasPage.AcessarTelaEditarTarefa();
         }
         public void VoltarDetalheTarefa()
         {
-            gerenciarTarefasPage.TelaVerTarefas();
-            gerenciarTarefasPage.AcessarEditarTarefa();
-            gerenciarTarefasPage.ClicarOpcaoVoltar();
+            gerenciarTarefasPage.AcessarVerTarefas();
+            gerenciarTarefasPage.AcessarTelaEditarTarefa();
+            gerenciarTarefasPage.ClicarVoltarATarefa();
         }
     }
 }
