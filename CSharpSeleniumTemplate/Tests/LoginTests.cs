@@ -35,7 +35,6 @@ namespace CSharpSeleniumTemplate.Tests
             string usuario = "administrator";
             string senha = "administrator";
             #endregion
-
             loginPage.PreenhcerUsuario(usuario);
             loginPage.PreencherSenha(senha);
             loginPage.ClicarEmEntrar();

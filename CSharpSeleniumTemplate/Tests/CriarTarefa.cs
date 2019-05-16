@@ -30,6 +30,12 @@ namespace CSharpSeleniumTemplate.Tests
             return GeneralHelpers.ReturnCSVData(GeneralHelpers.ReturnProjectPath() + "Resources/TestData/Tarefas/CriarTarefasData.csv");
         }
         #endregion
+        #region mensagens
+        string mensagemEsperadaCampoObrigatorioChromeFirefoxLocal = "Preencha este campo.";
+        string mensagemEsperadaCampoObrigatorioIELocal = "Este é um campo obrigatório";
+        string mensagemEsperadaCampoObrigatorioChromeRemota = "Please fill out this field.";
+        string mensagemEsperadaCadastroRealizadoComSucesso = "Operação realizada com sucesso.";
+        #endregion
 
         [Test]
         public void CadastrarTarefaApenasCamposObrigatorios()
@@ -40,14 +46,13 @@ namespace CSharpSeleniumTemplate.Tests
             string categoria = "categoria";
             string resumo = "teste automatizado resumo";
             string descricao = "teste automatizado descrição";
-            string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             string colunaResumo = "Resumo";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             criarTarefaPage.AcessarCadastroTarefa();
-            tarefasFlows.PreencherCamposObrigatorios(categoria,resumo, descricao);
+            tarefasFlows.PreencherCamposObrigatorios(categoria, resumo, descricao);
             criarTarefaPage.ClicarCadastrarTarefa();
-            Assert.AreEqual(mensagemSucessoEsperada, criarTarefaPage.RetornaMensagemDeSucesso());
+            Assert.AreEqual(mensagemEsperadaCadastroRealizadoComSucesso, criarTarefaPage.RetornaMensagemDeSucesso());
             tarefasFlows.RealizarPesquisa(resumo);
             Assert.IsTrue(criarTarefaPage.RetornoPesquisa(resumo, colunaResumo), "Tarefa não foi cadastrada.");
         }
@@ -59,12 +64,11 @@ namespace CSharpSeleniumTemplate.Tests
             string usuario = "administrator";
             string senha = "administrator";
             string categoria = testData[0].ToString();
-            string resumo = testData[1].ToString(); 
-            string descricao = testData[2].ToString();            
+            string resumo = testData[1].ToString();
+            string descricao = testData[2].ToString();
             string frequencia = testData[3].ToString();
             string gravidade = testData[4].ToString();
             string prioridade = testData[5].ToString();
-            string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             string colunaResumo = "Resumo";
             #endregion
 
@@ -73,7 +77,7 @@ namespace CSharpSeleniumTemplate.Tests
             tarefasFlows.PreencherCamposObrigatorios(categoria, resumo, descricao);
             tarefasFlows.PreencherCamposOpicionais(frequencia, gravidade, prioridade);
             criarTarefaPage.ClicarCadastrarTarefa();
-            Assert.AreEqual(mensagemSucessoEsperada, criarTarefaPage.RetornaMensagemDeSucesso());
+            Assert.AreEqual(mensagemEsperadaCadastroRealizadoComSucesso, criarTarefaPage.RetornaMensagemDeSucesso());
             tarefasFlows.RealizarPesquisa(resumo);
             Assert.IsTrue(criarTarefaPage.RetornoPesquisa(resumo, colunaResumo), "Tarefa não foi cadastrada.");
         }
@@ -102,17 +106,16 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string mensagemEsperada = "Preencha este campo.";
             string categoria = "categoria";
             string descricao = "teste automatizado descrição";
             #endregion
 
             loginFlows.EfetuarLogin(usuario, senha);
             criarTarefaPage.AcessarCadastroTarefa();
-            criarTarefaPage.PreencherCategoriaTarefa(categoria);
+            criarTarefaPage.PreencherCategoriaTarefa("[Todos os Projetos] " + categoria);
             criarTarefaPage.PreencherDescricaoTarefa(descricao);
             criarTarefaPage.ClicarCadastrarTarefa();
-            Assert.AreEqual(mensagemEsperada, criarTarefaPage.RetornaMensagemObrigatoriedadeResumo());
+            CollectionAssert.Contains(new[] { mensagemEsperadaCampoObrigatorioChromeFirefoxLocal, mensagemEsperadaCampoObrigatorioIELocal, mensagemEsperadaCampoObrigatorioChromeRemota }, criarTarefaPage.RetornaMensagemObrigatoriedadeResumo());
         }
         [Test]
         public void CampoDescricaoNaoPreenchido()
@@ -120,17 +123,16 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string mensagemEsperada = "Preencha este campo.";
             string categoria = "categoria";
             string resumo = "teste automatizado resumo";
             #endregion
 
             loginFlows.EfetuarLogin(usuario, senha);
             criarTarefaPage.AcessarCadastroTarefa();
-            criarTarefaPage.PreencherCategoriaTarefa(categoria);
+            criarTarefaPage.PreencherCategoriaTarefa("[Todos os Projetos] " + categoria);
             criarTarefaPage.PreencherResumoTarefa(resumo);
             criarTarefaPage.ClicarCadastrarTarefa();
-            Assert.AreEqual(mensagemEsperada, criarTarefaPage.RetornaMensagemObrigatoriedadeDescricao());
-        }        
+            CollectionAssert.Contains(new[] { mensagemEsperadaCampoObrigatorioChromeFirefoxLocal, mensagemEsperadaCampoObrigatorioIELocal, mensagemEsperadaCampoObrigatorioChromeRemota }, criarTarefaPage.RetornaMensagemObrigatoriedadeDescricao());
+        }
     }
 }

@@ -49,7 +49,6 @@ namespace CSharpSeleniumTemplate.Helpers
                             chrome.AddArgument("headless");
                             chrome.AddArgument("--lang=pt-BR");
                             chrome.AddArgument("--window-size=1920,1080");
-
                             INSTANCE = new RemoteWebDriver(new Uri(seleniumHub), chrome.ToCapabilities());
                         }
 
