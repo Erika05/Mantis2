@@ -351,3 +351,5 @@ C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.CoreCompileInputs.cache
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.CopyComplete
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.Queries.ProjetosQueries.resources
+C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.Queries.CategoriasQueries.resources
+C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.Queries.CamposPersonalizadosQueries.resources

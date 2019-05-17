@@ -1,4 +1,5 @@
 ﻿using CSharpSeleniumTemplate.Bases;
+using CSharpSeleniumTemplate.DataBaseSteps;
 using CSharpSeleniumTemplate.Flows;
 using CSharpSeleniumTemplate.Helpers;
 using CSharpSeleniumTemplate.Pages;
@@ -27,9 +28,10 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string campo = "campoy";
+            string campo = "campo";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
+            CamposPersonalizadosDBSteps.DeletaCampo(campo);
             loginFlows.EfetuarLogin(usuario, senha);
             camposPersonalizadosFlows.CadastrarCampo(campo);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeSucesso());
@@ -57,6 +59,7 @@ namespace CSharpSeleniumTemplate.Tests
             string campo = "campo";
             string mensagemErroEsperada = "Este é um nome duplicado.";
             #endregion
+            CamposPersonalizadosDBSteps.InseriCampo(campo);
             loginFlows.EfetuarLogin(usuario, senha);
             camposPersonalizadosFlows.CadastrarCampo(campo);
             Assert.AreEqual(mensagemErroEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeErro());
@@ -67,11 +70,12 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string campo = "campoy";
+            string campo = "campo";
             string campoEdicao = "campo edicao";
             string nomeColuna = "Nome";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
+            CamposPersonalizadosDBSteps.InseriCampo(campo);
             loginFlows.EfetuarLogin(usuario, senha);
             camposPersonalizadosFlows.EditarCampo(campo, campoEdicao, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeSucesso());
@@ -87,6 +91,7 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeColuna = "Nome";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
+            CamposPersonalizadosDBSteps.InseriCampo(campo);
             loginFlows.EfetuarLogin(usuario, senha);
             camposPersonalizadosFlows.ApagarCampo(campo, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeSucesso());

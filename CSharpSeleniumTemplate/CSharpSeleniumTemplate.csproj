@@ -290,6 +290,8 @@
   <ItemGroup>
     <Compile Include="Bases\PageBase.cs" />
     <Compile Include="Bases\TestBase.cs" />
+    <Compile Include="DataBaseSteps\CamposPersonalizadosDBSteps.cs" />
+    <Compile Include="DataBaseSteps\CategoriasDBSteps.cs" />
     <Compile Include="DataBaseSteps\ProjetosDBSteps.cs" />
     <Compile Include="DataBaseSteps\UsuariosDBSteps.cs" />
     <Compile Include="Flows\CamposPersonalizadosFlows.cs" />
@@ -322,6 +324,16 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\CamposPersonalizadosQueries.Designer.cs">
+      <DependentUpon>CamposPersonalizadosQueries.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Queries\CategoriasQueries.Designer.cs">
+      <DependentUpon>CategoriasQueries.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Queries\ProjetosQueries.Designer.cs">
       <DependentUpon>ProjetosQueries.resx</DependentUpon>
@@ -368,6 +380,14 @@
     <Content Include="Resources\Files\anexo_ocorrencia.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Queries\CamposPersonalizadosQueries.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CamposPersonalizadosQueries.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\CategoriasQueries.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CategoriasQueries.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Queries\ProjetosQueries.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ProjetosQueries.Designer.cs</LastGenOutput>

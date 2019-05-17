@@ -1,4 +1,5 @@
 ﻿using CSharpSeleniumTemplate.Bases;
+using CSharpSeleniumTemplate.DataBaseSteps;
 using CSharpSeleniumTemplate.Flows;
 using CSharpSeleniumTemplate.Helpers;
 using CSharpSeleniumTemplate.Pages;
@@ -29,6 +30,7 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeCategoria = "categoria";
             string nomeColuna = "Categoria";
             #endregion
+            CategoriasDBSteps.DeletaCategoria(nomeCategoria);
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.AcessarTelaGestaoProjeto();
             categoriaFlows.CadastrarCategoria(nomeCategoria);
@@ -40,9 +42,10 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeCategoria = "categoriaeri";
+            string nomeCategoria = "categoria";
             string mensagemErroEsperada = "Uma categoria com este nome já existe.";
             #endregion
+            CategoriasDBSteps.InseriCategoria(nomeCategoria);
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.AcessarTelaGestaoProjeto();
             categoriaFlows.CadastrarCategoria(nomeCategoria);
@@ -74,6 +77,7 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeCategoriaAlteracao = "categoria auteracao";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
+            CategoriasDBSteps.InseriCategoria(nomeCategoria);
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.AcessarTelaGestaoProjeto();
             categoriaFlows.EditarCategoria(nomeCategoria, nomeCategoriaAlteracao, nomeColunaPesq, nomeColunaAcao);
@@ -91,6 +95,7 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeColunaPesq = "Categoria";
             string nomeColunaAcao = "Ações";
             #endregion
+            CategoriasDBSteps.InseriCategoria(nomeCategoria);
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.AcessarTelaGestaoProjeto();            
             categoriaFlows.ApagarCategoria(nomeCategoria, nomeColunaPesq, nomeColunaAcao);

@@ -78,5 +78,16 @@ namespace CSharpSeleniumTemplate.Pages
         {
             return ValidarExclusao(tableCampos, nome, nomeColuna);
         }
+        /*colcoar mensagem de sucesso e erro em apenas um lugar já que todas as telas usam a mesma mensagem. ****
+--acabar os scripts do gerenciarcampospersonalziados
+1-Script de banco com validações.
+2-Verificar se remota funciona npo firefox.
+3-Verificar necessidade de apagar os dados da tabela mantis_email_table.
+4-Rever questões de deletes em cadas teste de cadastro, uma vez que antes de todo teste é realziado um delete nas tabelas.
+5-Verificar massa de testes para: 
+    -Criar/Geremciar tarefas.
+    -Gerenciar marcadores 
+     -Gerenciar perfis globais
+6-Para todos os testes, verificar validação cadastro/edição/delete pela consulta no banco*/
     }
 }

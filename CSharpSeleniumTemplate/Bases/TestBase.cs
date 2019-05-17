@@ -35,6 +35,8 @@ namespace CSharpSeleniumTemplate.Bases
             ProjetosDBSteps.DeletaTodosProjetos();
             ProjetosDBSteps.InseriProjeto("projeto geral");
             UsuariosDBSteps.DeletaTososUsuarios();
+            CategoriasDBSteps.DeletaTosasCategorias();
+            CamposPersonalizadosDBSteps.DeletaTodosCampos();
         }
 
         [TearDown]
