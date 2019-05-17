@@ -350,3 +350,4 @@ C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csprojAssemblyReference.cache
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.CoreCompileInputs.cache
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.CopyComplete
+C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.Queries.ProjetosQueries.resources

@@ -39,8 +39,10 @@ namespace CSharpSeleniumTemplate.Tests
             string senha = "administrator";
             string nomeUsuario = "user";
             string nivel = "relator";
+            string email = "teste@teste.com.br";
             string mensagemSucessoEsperada = "Usuário " + nomeUsuario + " criado com um nível de acesso de " + nivel;
             #endregion
+            UsuariosDBSteps.DeletaUsuario(nomeUsuario, email);
             loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.CadastrarUsuarioApenasCamposObrigatorios(nomeUsuario, nivel);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
@@ -58,6 +60,7 @@ namespace CSharpSeleniumTemplate.Tests
             string nivel = "relator";
             string mensagemSucessoEsperada = "Usuário " + nomeUsuario + " criado com um nível de acesso de " + nivel;
             #endregion
+            UsuariosDBSteps.DeletaUsuario(nomeUsuario, email);
             loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.CadastrarUsuarioTodosCampos(nomeUsuario, nomeVerdadeiro, email, nivel);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
@@ -72,7 +75,7 @@ namespace CSharpSeleniumTemplate.Tests
             string senha = "administrator";
             string nivel = "relator";
             string mensagemErroEsperada = "O nome de usuário não é inválido. Nomes de usuário podem conter apenas letras, números, espaços, hífens, pontos, sinais de mais e sublinhados.";
-            #endregion
+            #endregion            
             loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.AcessarTelaCadastroUsuarios();
             gerenciarUsuariosPage.PreencherNivel(nivel);
@@ -89,8 +92,9 @@ namespace CSharpSeleniumTemplate.Tests
             string nivel = "relator";
             string mensagemErroEsperada = "Este nome de usuário já está sendo usado. Por favor, volte e selecione um outro.";
             #endregion
+            UsuariosDBSteps.InseriUsuarioCamposObrigatorios(nomeUsuario);
             loginFlows.EfetuarLogin(usuario, senha);
-            usuariosFlows.CadastrarUsuarioApenasCamposObrigatorios(nomeUsuario, nivel);            
+            usuariosFlows.CadastrarUsuarioApenasCamposObrigatorios(nomeUsuario, nivel);
             Assert.AreEqual(mensagemErroEsperada, gerenciarUsuariosPage.RetornaMensagemDeErro());
         }
         [Test]
@@ -105,7 +109,8 @@ namespace CSharpSeleniumTemplate.Tests
             string nivel = "relator";
             string mensagemErroEsperada = "Este e-mail já está sendo usado. Por favor, volte e selecione outro.";
             #endregion
-            loginFlows.EfetuarLogin(usuario, senha);            
+            UsuariosDBSteps.InseriUsuarioTodosCampos(nomeUsuario + "_1", nomeVerdadeiro, email);
+            loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.CadastrarUsuarioTodosCampos(nomeUsuario, nomeVerdadeiro, email, nivel);
             Assert.AreEqual(mensagemErroEsperada, gerenciarUsuariosPage.RetornaMensagemDeErro());
         }
@@ -121,6 +126,7 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeColuna = "Nome de usuário";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
+            UsuariosDBSteps.InseriUsuarioCamposObrigatorios(nomeUsuario);
             loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.EdiatarUsuario(nomeUsuario, nomeUsuarioEdicao, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
@@ -136,6 +142,7 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeColuna = "Nome de usuário";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
+            UsuariosDBSteps.InseriUsuarioCamposObrigatorios(nomeUsuario);
             loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.ApagarUsuario(nomeUsuario, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
@@ -150,7 +157,8 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeUsuario = "user";
             string nomeColuna = "Nome de usuário";
             string mensagemErroEsperada = "Você deve fornecer um endereço de e-mail para poder reajustar a senha.";
-            #endregion
+            #endregion            
+            UsuariosDBSteps.InseriUsuarioCamposObrigatorios(nomeUsuario);
             loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.RedefinirSenhaUsuario(nomeUsuario, nomeColuna);
             Assert.AreEqual(mensagemErroEsperada, gerenciarUsuariosPage.RetornaMensagemDeErro());
@@ -170,19 +178,21 @@ namespace CSharpSeleniumTemplate.Tests
             Assert.AreEqual(mensagemErroEsperada, gerenciarUsuariosPage.RetornaMensagemDeErro());
         }
 
-        [Test, TestCaseSource("PesquisarUsuariosSucesso")]
-        public void PesquisarUsuarios(ArrayList testData)
+        [Test]
+        public void PesquisarUsuarios()
         {
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string valorFiltro = testData[1].ToString();
-            string nomeColuna = testData[0].ToString();
+            string nomeUsuario = "user";
+            string colunaUsuario = "Nome de usuário";
+            string nomeVerdadeiro = "verdadeiro";
+            string email = "teste@teste.com.br";
             #endregion
-
+            UsuariosDBSteps.InseriUsuarioTodosCampos(nomeUsuario, nomeVerdadeiro, email);
             loginFlows.EfetuarLogin(usuario, senha);
-            usuariosFlows.RealizarPesquisa(valorFiltro);
-            Assert.IsTrue(gerenciarUsuariosPage.ValidarRetornoPesquisa(valorFiltro, nomeColuna), "Dados retornados na pesquisa são diferentes do filtro informado.");
+            usuariosFlows.RealizarPesquisa(nomeUsuario);
+            Assert.IsTrue(gerenciarUsuariosPage.ValidarRetornoPesquisa(nomeUsuario, colunaUsuario), "Dados retornados na pesquisa são diferentes do filtro informado.");
         }
     }
 }

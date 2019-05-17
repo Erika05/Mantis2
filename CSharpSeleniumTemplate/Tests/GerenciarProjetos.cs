@@ -1,7 +1,9 @@
 ﻿using CSharpSeleniumTemplate.Bases;
+using CSharpSeleniumTemplate.DataBaseSteps;
 using CSharpSeleniumTemplate.Flows;
 using CSharpSeleniumTemplate.Helpers;
 using CSharpSeleniumTemplate.Pages;
+using CSharpSeleniumTemplate.Queries;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -19,6 +21,10 @@ namespace CSharpSeleniumTemplate.Tests
         [AutoInstance] LoginFlows loginFlows;
         [AutoInstance] ProjetosFlows projetoFlows;
 
+        string mensagemObrigatoriedadeChormeFirefoxLocal = "Preencha este campo.";
+        string mensagemObrigatoriedadeChromeRemota = "Please fill out this field.";
+        string mensagemObrigatoriedadeIE = "Este é um campo obrigatório";
+
         [Test]
         public void CadastrarProjeto()
         {
@@ -31,6 +37,7 @@ namespace CSharpSeleniumTemplate.Tests
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             string nomeColuna = "Nome";
             #endregion
+            ProjetosDBSteps.DeletaProjeto(nomeProjeto);
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             Assert.AreEqual(mensagemSucessoEsperada, criarProjetoPage.RetornaMensagemDeSucesso());
@@ -39,7 +46,7 @@ namespace CSharpSeleniumTemplate.Tests
 
 
         [Test]
-        public void CadastradoJaRealizado()
+        public void CadastroJaRealizado()
         {
             #region Parameters
             string usuario = "administrator";
@@ -49,6 +56,7 @@ namespace CSharpSeleniumTemplate.Tests
             string descricao = "descrição";
             string mensagemErroEsperada = "Um projeto com este nome já existe. Por favor, volte e entre um nome diferente.";
             #endregion
+            ProjetosDBSteps.InseriProjeto(nomeProjeto);
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             Assert.AreEqual(mensagemErroEsperada, criarProjetoPage.RetornaMensagemDeErro());
@@ -60,12 +68,11 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string mensagemObrigatoriedadeEsperada = "Preencha este campo.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.AcessarTelaCadastroProjeto();
             criarProjetoPage.ClicarCadastrarProjeto();
-            Assert.AreEqual(mensagemObrigatoriedadeEsperada, criarProjetoPage.RetornaMensagemObrigatoriedade());
+            CollectionAssert.Contains(new[] { mensagemObrigatoriedadeIE, mensagemObrigatoriedadeChormeFirefoxLocal, mensagemObrigatoriedadeChromeRemota }, criarProjetoPage.RetornaMensagemObrigatoriedade());
         }
 
         [Test]
@@ -78,8 +85,9 @@ namespace CSharpSeleniumTemplate.Tests
             string colunaProjeto = "Nome";
             string nomeEdicao = "nome do projeto editado";
             #endregion
+            ProjetosDBSteps.InseriProjeto(nomeProjeto);
             loginFlows.EfetuarLogin(usuario, senha);
-            projetoFlows.EditarProjeto(nomeProjeto, colunaProjeto, nomeEdicao);
+            projetoFlows.EditarProjeto(nomeProjeto, nomeEdicao, colunaProjeto);
             Assert.IsTrue(criarProjetoPage.ValidarCadastroProjeto(nomeEdicao, colunaProjeto), "Projeto não foi atualizado.");
         }
 
@@ -92,6 +100,7 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeProjeto = "nome do projeto";
             string nomeColuna = "Nome";
             #endregion
+            ProjetosDBSteps.InseriProjeto(nomeProjeto);
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.ApagarProjeto(nomeProjeto, nomeColuna);
             Assert.IsTrue(criarProjetoPage.ValidarExclusaoProjeto(nomeProjeto, nomeColuna), "Projeto não foi excluído.");

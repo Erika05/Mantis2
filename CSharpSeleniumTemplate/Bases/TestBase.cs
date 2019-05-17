@@ -7,6 +7,7 @@ using Castle.DynamicProxy;
 using NUnit.Framework;
 using System.Reflection;
 using CSharpSeleniumTemplate.Helpers;
+using CSharpSeleniumTemplate.DataBaseSteps;
 
 namespace CSharpSeleniumTemplate.Bases
 {
@@ -31,6 +32,9 @@ namespace CSharpSeleniumTemplate.Bases
             this.ProxyGenerator = new ProxyGenerator();
             InjectPageObjects(CollectPageObjects(), null);
             #endregion
+            ProjetosDBSteps.DeletaTodosProjetos();
+            ProjetosDBSteps.InseriProjeto("projeto geral");
+            UsuariosDBSteps.DeletaTososUsuarios();
         }
 
         [TearDown]
@@ -49,6 +53,8 @@ namespace CSharpSeleniumTemplate.Bases
         #region Methodes needed to auto intance pages and flows [AutoInstance]
         //Esses métodos necessariamente precisam estar nesta classe, não funciona se estiverem em outro arquivo.
         private ProxyGenerator ProxyGenerator;
+
+        public object GetDBConnection { get; private set; }
 
         private void InjectPageObjects(List<FieldInfo> fields, IInterceptor proxy)
         {

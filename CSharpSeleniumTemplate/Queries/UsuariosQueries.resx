@@ -126,4 +126,19 @@ WHERE NAME='nome do projeto' and STATUS=10 AND description='descricao'</value>
 from usuarios user 
 where user.username = '$username';</value>
   </data>
+  <data name="DelataUsuario" xml:space="preserve">
+    <value>DELETE FROM mantis_user_table WHERE username='$username' OR email='$email';</value>
+  </data>
+  <data name="DetalaTodosUsuariosExcetoAdministrator" xml:space="preserve">
+    <value>DELETE  FROM mantis_user_table
+WHERE username&lt;&gt;'administrator'</value>
+  </data>
+  <data name="InseriUsuarioCamposObrigatorios" xml:space="preserve">
+    <value>INSERT INTO mantis_user_table(username,password,enabled,protected,access_level,cookie_string)
+VALUES('$username', '9aeec5789ac15cdc330fc6d8cdaf53ec', 1,0,25,'xxx')</value>
+  </data>
+  <data name="InseriUsuarioTodosCampos" xml:space="preserve">
+    <value>INSERT INTO mantis_user_table(username, email,password,enabled,protected,access_level,cookie_string)
+VALUES('$username', '$email','9aeec5789ac15cdc330fc6d8cdaf53ec', 1,0,25,'xxx')</value>
+  </data>
 </root>

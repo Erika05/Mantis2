@@ -61,13 +61,11 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a select user.senha 
-        ///from usuarios user 
-        ///where user.username = &apos;$username&apos;;.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a .
         /// </summary>
-        internal static string Cadas {
+        internal static string DeletaTodasTarefas {
             get {
-                return ResourceManager.GetString("RetornaSenhaUsuario", resourceCulture);
+                return ResourceManager.GetString("DeletaTodasTarefas", resourceCulture);
             }
         }
     }

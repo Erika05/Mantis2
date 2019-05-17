@@ -117,7 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DeletaTodasTarefas" xml:space="preserve">
-    <value />
+  <data name="ApagarDadosTableProjetos" xml:space="preserve">
+    <value>TRUNCATE TABLE mantis_project_table;</value>
+  </data>
+  <data name="DeletaProjeto" xml:space="preserve">
+    <value>DELETE FROM mantis_project_table WHERE NAME='$nomeProjeto';</value>
+  </data>
+  <data name="InsereProjeto" xml:space="preserve">
+    <value>INSERT INTO mantis_project_table (name,status,enabled,view_state,access_min,description,category_id,inherit_global)
+ VALUES ('$nomeProjeto',10,1,10,10,'projeto geral',1,1);</value>
+  </data>
+  <data name="RetornaProjeto" xml:space="preserve">
+    <value>SELECT * FROM mantis_project_table WHERE NAME='$nomeProjeto';</value>
   </data>
 </root>

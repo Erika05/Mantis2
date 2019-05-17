@@ -40,12 +40,12 @@ namespace CSharpSeleniumTemplate.Flows
             criarProjetoPage.ClicarCadastrarProjeto();
         }
 
-        public void EditarProjeto(string nome, string nomeProjeto, string colunaProjeto)
+        public void EditarProjeto(string nomeAtual, string nomeProjetoEdicao, string colunaProjeto)
         {
             this.AcessarTelaGestaoProjeto();
-            criarProjetoPage.AcessarTelaEditarProjeto(nomeProjeto, colunaProjeto);
+            criarProjetoPage.AcessarTelaEditarProjeto(nomeAtual, colunaProjeto);
             criarProjetoPage.LimparNomeProjeto();
-            criarProjetoPage.PreencherNomeProjeto(nome);
+            criarProjetoPage.PreencherNomeProjeto(nomeProjetoEdicao);
             criarProjetoPage.ClicarCadastrarProjeto();
         }
         public void ApagarProjeto(string nomeProjeto, string nomeColuna)

@@ -290,6 +290,7 @@
   <ItemGroup>
     <Compile Include="Bases\PageBase.cs" />
     <Compile Include="Bases\TestBase.cs" />
+    <Compile Include="DataBaseSteps\ProjetosDBSteps.cs" />
     <Compile Include="DataBaseSteps\UsuariosDBSteps.cs" />
     <Compile Include="Flows\CamposPersonalizadosFlows.cs" />
     <Compile Include="Flows\CategoriasFlows.cs" />
@@ -321,6 +322,11 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\ProjetosQueries.Designer.cs">
+      <DependentUpon>ProjetosQueries.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Queries\TarefasQueries.Designer.cs">
       <DependentUpon>TarefasQueries.resx</DependentUpon>
@@ -356,13 +362,16 @@
     </None>
     <None Include="Resources\TestData\Login\EfetuarLoginInformandoUsuarioInvalidoData.csv" />
     <None Include="Resources\TestData\Tarefas\CriarTarefasData.csv" />
-    <None Include="Resources\TestData\Usuarios\PesquisarUsuariosData.csv" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="extent-config.xml" />
     <Content Include="Resources\Files\anexo_ocorrencia.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Queries\ProjetosQueries.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProjetosQueries.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Queries\TarefasQueries.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TarefasQueries.Designer.cs</LastGenOutput>
