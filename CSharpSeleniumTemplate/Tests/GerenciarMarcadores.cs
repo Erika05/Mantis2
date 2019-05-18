@@ -1,4 +1,5 @@
 ﻿using CSharpSeleniumTemplate.Bases;
+using CSharpSeleniumTemplate.DataBaseSteps;
 using CSharpSeleniumTemplate.Flows;
 using CSharpSeleniumTemplate.Helpers;
 using CSharpSeleniumTemplate.Pages;
@@ -20,6 +21,10 @@ namespace CSharpSeleniumTemplate.Tests
         [AutoInstance] MarcadoresFlows marcadoresFlows;
         [AutoInstance] GerenciarMarcadoresPage gerenciarMarcadoresPage;
         #endregion
+
+        string mensagemObrigatoriedadeChormeFirefoxLocal = "Preencha este campo.";
+        string mensagemObrigatoriedadeChromeRemota = "Please fill out this field.";
+        string mensagemObrigatoriedadeIE = "Este é um campo obrigatório";
 
         [Test]
         public void CadastrarMarcador()
@@ -46,7 +51,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             marcadoresFlows.AcessarTelaGerenciarMarcadores();
             gerenciarMarcadoresPage.ClicarCriarMarcador();
-            Assert.AreEqual(mensagemSucessoEsperada, gerenciarMarcadoresPage.RetornaMensagemObrigatoriedade());
+            CollectionAssert.Contains(new[] { mensagemObrigatoriedadeIE, mensagemObrigatoriedadeChormeFirefoxLocal, mensagemObrigatoriedadeChromeRemota }, gerenciarMarcadoresPage.RetornaMensagemObrigatoriedade());
         }
 
         [Test]
@@ -59,6 +64,7 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeColuna = "Nome";
             string nomeMarcadorAtualizar = "marcador atualizado";
             #endregion
+            MarcadoresDBSteps.InseriMarcador(nomeMarcador);
             loginFlows.EfetuarLogin(usuario, senha);
             marcadoresFlows.EditarMarcador(nomeMarcador, nomeColuna, nomeMarcadorAtualizar);
             Assert.AreEqual(nomeMarcadorAtualizar, gerenciarMarcadoresPage.ValidarAlteracaoMarcador());
@@ -72,9 +78,10 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeMarcador = "marcador";
             string nomeColuna = "Nome";
             #endregion
+            MarcadoresDBSteps.InseriMarcador(nomeMarcador);
             loginFlows.EfetuarLogin(usuario, senha);
             marcadoresFlows.ApagarMarcador(nomeMarcador, nomeColuna);
-            Assert.IsTrue(gerenciarMarcadoresPage.ValidarExclusaoMarcado(nomeMarcador, nomeColuna));
+            Assert.IsFalse(gerenciarMarcadoresPage.ValidarExclusaoMarcado(nomeMarcador, nomeColuna));
         }
         [Test]
         public void VoltarAoDetalheMarcador()
@@ -86,6 +93,7 @@ namespace CSharpSeleniumTemplate.Tests
             string nomeColuna = "Nome";
             string tituloEsperado = "Detalhes do marcador: " + nomeMarcador;
             #endregion
+            MarcadoresDBSteps.InseriMarcador(nomeMarcador);
             loginFlows.EfetuarLogin(usuario, senha);
             marcadoresFlows.VoltarDetalheMarcador(nomeMarcador, nomeColuna);
             Assert.AreEqual(tituloEsperado, gerenciarMarcadoresPage.RetornaTituloTelaDetalheMarcador());

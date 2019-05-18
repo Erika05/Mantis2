@@ -37,6 +37,7 @@ namespace CSharpSeleniumTemplate.Bases
             UsuariosDBSteps.DeletaTososUsuarios();
             CategoriasDBSteps.DeletaTosasCategorias();
             CamposPersonalizadosDBSteps.DeletaTodosCampos();
+            MarcadoresDBSteps.DeletaTosdosMarcores();
         }
 
         [TearDown]

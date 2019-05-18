@@ -17,18 +17,18 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
         }
         public static void DeletaCampo(string nomeCampo)
         {
-            string query = ProjetosQueries.DeletaProjeto.Replace("$nomecampo", nomeCampo);
+            string query = CamposPersonalizadosQueries.DeletaCampoPersonalizado.Replace("$nomecampo", nomeCampo);
             DataBaseHelpers.ExecuteQuery(query);
         }
         public static string RetornaCampo(string nomeCampo)
         {
-            string query = ProjetosQueries.RetornaProjeto.Replace("$nomecampo", nomeCampo);
+            string query = CamposPersonalizadosQueries.RetornaCampoPersonalizado.Replace("$nomecampo", nomeCampo);
 
             return DataBaseHelpers.RetornaDadosQuery(query)[0];
         }
         public static void DeletaTodosCampos()
         {
-            string query = ProjetosQueries.ApagarDadosTableProjetos;
+            string query = CamposPersonalizadosQueries.ApagaTodosCamposPersonalizados;
             DataBaseHelpers.ExecuteQuery(query);
         }
     }

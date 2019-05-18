@@ -292,6 +292,7 @@
     <Compile Include="Bases\TestBase.cs" />
     <Compile Include="DataBaseSteps\CamposPersonalizadosDBSteps.cs" />
     <Compile Include="DataBaseSteps\CategoriasDBSteps.cs" />
+    <Compile Include="DataBaseSteps\MarcadoresDBSteps.cs" />
     <Compile Include="DataBaseSteps\ProjetosDBSteps.cs" />
     <Compile Include="DataBaseSteps\UsuariosDBSteps.cs" />
     <Compile Include="Flows\CamposPersonalizadosFlows.cs" />
@@ -327,6 +328,11 @@
     </Compile>
     <Compile Include="Queries\CamposPersonalizadosQueries.Designer.cs">
       <DependentUpon>CamposPersonalizadosQueries.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Queries\MarcadoresQueries.Designer.cs">
+      <DependentUpon>MarcadoresQueries.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -383,6 +389,10 @@
     <EmbeddedResource Include="Queries\CamposPersonalizadosQueries.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CamposPersonalizadosQueries.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\MarcadoresQueries.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MarcadoresQueries.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Queries\CategoriasQueries.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -87,7 +87,7 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string campo = "campoy";
+            string campo = "campo";
             string nomeColuna = "Nome";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
@@ -95,7 +95,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             camposPersonalizadosFlows.ApagarCampo(campo, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeSucesso());
-            Assert.IsTrue(gerenciarCamposPersonalizadosPage.ValidarExclusaoCampo(campo, nomeColuna), "Edição não foi realziada.");
+            Assert.IsFalse(gerenciarCamposPersonalizadosPage.ValidarExclusaoCampo(campo, nomeColuna), "Campo não foi pagado.");
         }
 
     }
