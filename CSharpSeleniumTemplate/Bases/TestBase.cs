@@ -38,6 +38,8 @@ namespace CSharpSeleniumTemplate.Bases
             CategoriasDBSteps.DeletaTosasCategorias();
             CamposPersonalizadosDBSteps.DeletaTodosCampos();
             MarcadoresDBSteps.DeletaTosdosMarcores();
+            PerfisGlobalDBSteps.DeletaTosdosPerfisGlobal();
+            PerfisGlobalDBSteps.InserirPerfilGlobal("plataforma geral", "so geral", "versao geral so");
         }
 
         [TearDown]

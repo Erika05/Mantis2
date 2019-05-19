@@ -48,6 +48,6 @@ namespace CSharpSeleniumTemplate.Flows
             gerenciarPerfisGlobaisPage.SelecionarPerfil(plataforma);
             gerenciarPerfisGlobaisPage.ClicarApagarPerfil();
             gerenciarPerfisGlobaisPage.ClicarEnviar();
-        }
+       }
     }
 }
