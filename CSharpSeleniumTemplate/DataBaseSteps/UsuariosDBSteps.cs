@@ -31,7 +31,7 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
             string query = UsuariosQueries.DelataUsuario.Replace("$username", username).Replace("$useremail", useremail);
             DataBaseHelpers.ExecuteQuery(query);
         }
-        public static void DeletaTososUsuarios()
+        public static void DeletaTodosUsuarios()
         {
             string query = UsuariosQueries.DetalaTodosUsuariosExcetoAdministrator;
             DataBaseHelpers.ExecuteQuery(query);

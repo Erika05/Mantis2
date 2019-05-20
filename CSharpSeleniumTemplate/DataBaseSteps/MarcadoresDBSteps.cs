@@ -20,7 +20,7 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
             string query = MarcadoresQueries.DeletaMarcador.Replace("$nomemarcador", nomemarcador);
             DataBaseHelpers.ExecuteQuery(query);
         }
-        public static void DeletaTosdosMarcores()
+        public static void DeletaTosdosMarcadores()
         {
             string query = MarcadoresQueries.ApagaTodosMacadores;
             DataBaseHelpers.ExecuteQuery(query);

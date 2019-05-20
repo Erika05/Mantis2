@@ -118,6 +118,78 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="DeletaTodasTarefas" xml:space="preserve">
-    <value />
+    <value>TRUNCATE mantis_bug_table;
+TRUNCATE mantis_bug_text_table;
+TRUNCATE mantis_bug_history_table;
+TRUNCATE mantis_bugnote_table;
+TRUNCATE mantis_bugnote_text_table;
+TRUNCATE mantis_bug_file_table;
+TRUNCATE mantis_bug_monitor_table;
+TRUNCATE mantis_bug_relationship_table;
+TRUNCATE mantis_bug_revision_table;
+TRUNCATE mantis_bug_tag_table;</value>
+  </data>
+  <data name="InserirTarefa" xml:space="preserve">
+    <value>INSERT INTO mantis_bug_text_table(id, description,steps_to_reproduce,additional_information)
+VALUES(99,'$descricaoTarefa','passos para reproduzir erro','informacao adicional');
+
+INSERT INTO mantis_bug_table(project_id, reporter_id,priority,severity,reproducibility,STATUS,resolution,projection,eta,bug_text_id,view_state,summary,category_id,due_date)
+VALUES(1,1,30,50,70,10,10,10,10,99,10,'$resumoTarefa',1,1);
+
+INSERT INTO mantis_bug_history_table(user_id, bug_id,field_name,old_value,new_value,type)
+VALUES (1,99,'name campo',2,2,1);</value>
+  </data>
+  <data name="InseriVariasTarefas" xml:space="preserve">
+    <value>INSERT INTO mantis_bug_text_table(id, description,steps_to_reproduce,additional_information)
+VALUES(99,'$descricaoTarefa','passos para reproduzir erro','informacao adicional');
+
+INSERT INTO mantis_bug_table(project_id, reporter_id,priority,severity,reproducibility,STATUS,resolution,projection,eta,bug_text_id,view_state,summary,category_id,due_date)
+VALUES(1,1,30,50,70,10,10,10,10,99,10,'$resumoTarefa',1,1);
+
+INSERT INTO mantis_bug_history_table(user_id, bug_id,field_name,old_value,new_value,type)
+VALUES (1,99,'name campo',2,2,1);
+
+INSERT INTO mantis_bug_text_table(id, description,steps_to_reproduce,additional_information)
+VALUES(100,'descricao tarefa','passos para reproduzir erro','informacao adicional');
+
+INSERT INTO mantis_bug_table(project_id, reporter_id,priority,severity,reproducibility,STATUS,resolution,projection,eta,bug_text_id,view_state,summary,category_id,due_date)
+VALUES(1,1,30,50,70,10,10,10,10,100,10,'resumo tarefa',1,1);
+
+INSERT INTO mantis_bug_history_table(user_id, bug_id,field_name,old_value,new_value,type)
+VALUES (1,100,'name campo',2,2,1);
+
+
+INSERT INTO mantis_bug_text_table(id, description,steps_to_reproduce,additional_information)
+VALUES(101,'descricao tarefa','passos para reproduzir erro','informacao adicional');
+
+INSERT INTO mantis_bug_table(project_id, reporter_id,priority,severity,reproducibility,STATUS,resolution,projection,eta,bug_text_id,view_state,summary,category_id,due_date)
+VALUES(1,1,30,50,70,10,10,10,10,101,10,'resumo tarefa',1,1);
+
+INSERT INTO mantis_bug_history_table(user_id, bug_id,field_name,old_value,new_value,type)
+VALUES (1,101,'name campo',2,2,1);
+
+INSERT INTO mantis_bug_text_table(id, description,steps_to_reproduce,additional_information)
+VALUES(102,'descricao tarefa','passos para reproduzir erro','informacao adicional');
+
+INSERT INTO mantis_bug_table(project_id, reporter_id,priority,severity,reproducibility,STATUS,resolution,projection,eta,bug_text_id,view_state,summary,category_id,due_date)
+VALUES(1,1,30,50,70,10,10,10,10,102,10,'resumo tarefa',1,1);
+
+INSERT INTO mantis_bug_history_table(user_id, bug_id,field_name,old_value,new_value,type)
+VALUES (1,102,'name campo',2,2,1);
+
+INSERT INTO mantis_bug_text_table(id, description,steps_to_reproduce,additional_information)
+VALUES(103,'descricao tarefa','passos para reproduzir erro','informacao adicional');
+
+INSERT INTO mantis_bug_table(project_id, reporter_id,priority,severity,reproducibility,STATUS,resolution,projection,eta,bug_text_id,view_state,summary,category_id,due_date)
+VALUES(1,1,30,50,70,10,10,10,10,103,10,'resumo tarefa',1,1);
+
+INSERT INTO mantis_bug_history_table(user_id, bug_id,field_name,old_value,new_value,type)
+VALUES (1,103,'name campo',2,2,1);</value>
+  </data>
+  <data name="RetornaTarefa" xml:space="preserve">
+    <value>select * FROM mantis_bug_table mbt
+INNER JOIN mantis_bug_text_table mbtt
+ON mbt.bug_text_id=mbtt.id
+WHERE mbt.summary='resumo tarefa' AND mbtt.description='descricao tarefa';</value>
   </data>
 </root>

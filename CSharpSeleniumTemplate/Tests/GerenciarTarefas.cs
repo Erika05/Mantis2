@@ -30,14 +30,16 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string filtro = "teste automatizado resumo";
             string colunaFiltra = "Resumo";
+            string categoria = "categoria";
+            string resumo = "teste automatizado resumo";
+            string descricao = "teste automatizado descrição";
             #endregion
-
+            TarefasDBSteps.InseriVariasTarefa(categoria, descricao, resumo);
             loginFlows.EfetuarLogin(usuario, senha);
             gerenciarTarefasPage.AcessarVerTarefas();
-            tarefasFlows.RealizarPesquisa(filtro);
-            Assert.IsTrue(gerenciarTarefasPage.RetornoPesquisa(filtro, colunaFiltra), "Resultado retornado é diferente do filtro informado.");
+            tarefasFlows.RealizarPesquisa(resumo);
+            Assert.IsTrue(gerenciarTarefasPage.RetornoPesquisa(resumo, colunaFiltra), "Resultado retornado é diferente do filtro informado.");
         }
 
         [Test]
@@ -46,8 +48,11 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
+            string categoria = "categoria";
+            string resumo = "teste automatizado resumo";
+            string descricao = "teste automatizado descrição";
             #endregion
-
+            TarefasDBSteps.InseriVariasTarefa(categoria, descricao, resumo);
             loginFlows.EfetuarLogin(usuario, senha);
             gerenciarTarefasPage.AcessarVerTarefas();
             tarefasFlows.LimparPesquisa();
@@ -60,9 +65,12 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
+            string categoria = "categoria";
+            string resumo = "teste automatizado resumo";
+            string descricao = "teste automatizado descrição";
             string tituloEsperado = "Atualizar Informações da Tarefa";
             #endregion
-
+            TarefasDBSteps.InseriTarefa(categoria, descricao, resumo);
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.AcessarEditarTarefa();
             Assert.AreEqual(tituloEsperado, gerenciarTarefasPage.RetornaTituloTelaEditarTarefa());
@@ -73,9 +81,12 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
+            string categoria = "categoria";
+            string resumo = "teste automatizado resumo";
+            string descricao = "teste automatizado descrição";
             string tituloEsperado = "Ver Detalhes da Tarefa";
             #endregion
-
+            TarefasDBSteps.InseriTarefa(categoria, descricao, resumo);
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.VoltarDetalheTarefa();
             Assert.AreEqual(tituloEsperado, gerenciarTarefasPage.RetornaTituloTelaDetalheTarefa());
@@ -86,9 +97,12 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
+            string categoria = "categoria";
+            string resumo = "teste automatizado resumo";
+            string descricao = "teste automatizado descrição";
             string MensagemErroEsperado = "Um campo necessário 'Anotação' estava vazio. Por favor, verifique novamente suas entradas.";
             #endregion
-
+            TarefasDBSteps.InseriTarefa(categoria, descricao, resumo);
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.AcessarEditarTarefa();
             gerenciarTarefasPage.ClicarAtualizarInformacao();

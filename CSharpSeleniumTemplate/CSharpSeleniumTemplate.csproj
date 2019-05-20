@@ -295,6 +295,7 @@
     <Compile Include="DataBaseSteps\MarcadoresDBSteps.cs" />
     <Compile Include="DataBaseSteps\PerfisGlobalDBSteps.cs" />
     <Compile Include="DataBaseSteps\ProjetosDBSteps.cs" />
+    <Compile Include="DataBaseSteps\TarefasDBSteps.cs" />
     <Compile Include="DataBaseSteps\UsuariosDBSteps.cs" />
     <Compile Include="Flows\CamposPersonalizadosFlows.cs" />
     <Compile Include="Flows\CategoriasFlows.cs" />

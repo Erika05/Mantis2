@@ -34,12 +34,13 @@ namespace CSharpSeleniumTemplate.Bases
             #endregion
             ProjetosDBSteps.DeletaTodosProjetos();
             ProjetosDBSteps.InseriProjeto("projeto geral");
-            UsuariosDBSteps.DeletaTososUsuarios();
-            CategoriasDBSteps.DeletaTosasCategorias();
+            UsuariosDBSteps.DeletaTodosUsuarios();
+            CategoriasDBSteps.DeletaTodasCategorias();
             CamposPersonalizadosDBSteps.DeletaTodosCampos();
-            MarcadoresDBSteps.DeletaTosdosMarcores();
+            MarcadoresDBSteps.DeletaTosdosMarcadores();
             PerfisGlobalDBSteps.DeletaTosdosPerfisGlobal();
             PerfisGlobalDBSteps.InserirPerfilGlobal("plataforma geral", "so geral", "versao geral so");
+            TarefasDBSteps.DeletaTosdasTarefas();
         }
 
         [TearDown]

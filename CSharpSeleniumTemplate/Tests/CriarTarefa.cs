@@ -48,6 +48,7 @@ namespace CSharpSeleniumTemplate.Tests
             string descricao = "teste automatizado descrição";
             string colunaResumo = "Resumo";
             #endregion
+            CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
             criarTarefaPage.AcessarCadastroTarefa();
             tarefasFlows.PreencherCamposObrigatorios(categoria, resumo, descricao);
@@ -71,7 +72,7 @@ namespace CSharpSeleniumTemplate.Tests
             string prioridade = testData[5].ToString();
             string colunaResumo = "Resumo";
             #endregion
-
+            CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
             criarTarefaPage.AcessarCadastroTarefa();
             tarefasFlows.PreencherCamposObrigatorios(categoria, resumo, descricao);
@@ -109,7 +110,7 @@ namespace CSharpSeleniumTemplate.Tests
             string categoria = "categoria";
             string descricao = "teste automatizado descrição";
             #endregion
-
+            CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
             criarTarefaPage.AcessarCadastroTarefa();
             criarTarefaPage.PreencherCategoriaTarefa("[Todos os Projetos] " + categoria);
@@ -126,7 +127,7 @@ namespace CSharpSeleniumTemplate.Tests
             string categoria = "categoria";
             string resumo = "teste automatizado resumo";
             #endregion
-
+            CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
             criarTarefaPage.AcessarCadastroTarefa();
             criarTarefaPage.PreencherCategoriaTarefa("[Todos os Projetos] " + categoria);

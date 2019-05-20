@@ -61,11 +61,64 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a .
+        ///   Consulta uma cadeia de caracteres localizada semelhante a TRUNCATE mantis_bug_table;
+        ///TRUNCATE mantis_bug_text_table;
+        ///TRUNCATE mantis_bug_history_table;
+        ///TRUNCATE mantis_bugnote_table;
+        ///TRUNCATE mantis_bugnote_text_table;
+        ///TRUNCATE mantis_bug_file_table;
+        ///TRUNCATE mantis_bug_monitor_table;
+        ///TRUNCATE mantis_bug_relationship_table;
+        ///TRUNCATE mantis_bug_revision_table;
+        ///TRUNCATE mantis_bug_tag_table;.
         /// </summary>
         internal static string DeletaTodasTarefas {
             get {
                 return ResourceManager.GetString("DeletaTodasTarefas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a INSERT INTO mantis_bug_text_table(id, description,steps_to_reproduce,additional_information)
+        ///VALUES(99,&apos;$descricaoTarefa&apos;,&apos;passos para reproduzir erro&apos;,&apos;informacao adicional&apos;);
+        ///
+        ///INSERT INTO mantis_bug_table(project_id, reporter_id,priority,severity,reproducibility,STATUS,resolution,projection,eta,bug_text_id,view_state,summary,category_id,due_date)
+        ///VALUES(1,1,30,50,70,10,10,10,10,99,10,&apos;$resumoTarefa&apos;,1,1);
+        ///
+        ///INSERT INTO mantis_bug_history_table(user_id, bug_id,field_name,old_value,new_value,type)
+        ///VAL [o restante da cadeia de caracteres foi truncado]&quot;;.
+        /// </summary>
+        internal static string InserirTarefa {
+            get {
+                return ResourceManager.GetString("InserirTarefa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a INSERT INTO mantis_bug_text_table(id, description,steps_to_reproduce,additional_information)
+        ///VALUES(99,&apos;$descricaoTarefa&apos;,&apos;passos para reproduzir erro&apos;,&apos;informacao adicional&apos;);
+        ///
+        ///INSERT INTO mantis_bug_table(project_id, reporter_id,priority,severity,reproducibility,STATUS,resolution,projection,eta,bug_text_id,view_state,summary,category_id,due_date)
+        ///VALUES(1,1,30,50,70,10,10,10,10,99,10,&apos;$resumoTarefa&apos;,1,1);
+        ///
+        ///INSERT INTO mantis_bug_history_table(user_id, bug_id,field_name,old_value,new_value,type)
+        ///VAL [o restante da cadeia de caracteres foi truncado]&quot;;.
+        /// </summary>
+        internal static string InseriVariasTarefas {
+            get {
+                return ResourceManager.GetString("InseriVariasTarefas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a select * FROM mantis_bug_table mbt
+        ///INNER JOIN mantis_bug_text_table mbtt
+        ///ON mbt.bug_text_id=mbtt.id
+        ///WHERE mbt.summary=&apos;resumo tarefa&apos; AND mbtt.description=&apos;descricao tarefa&apos;;.
+        /// </summary>
+        internal static string RetornaTarefa {
+            get {
+                return ResourceManager.GetString("RetornaTarefa", resourceCulture);
             }
         }
     }

@@ -61,7 +61,7 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a TRUNCATE TABLE mantis_project_table;.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a TRUNCATE mantis_project_table;.
         /// </summary>
         internal static string ApagarDadosTableProjetos {
             get {
