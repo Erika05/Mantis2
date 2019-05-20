@@ -34,14 +34,15 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string plataforma = "nome perfil";
-            string so = "mac";
-            string versaoSo = "1.3";
+            string plataforma = "nome perfil-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string so = "mac-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string versaoSo = "1.3-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
            Assert.IsTrue(gerenciarPerfisGlobaisPage.ValidarCadastroPerfil(plataforma), "Perfil não cadastrado.");
-           //// Assert.That(mensagemEsperada.Contains(gerenciarPerfisGlobaisPage.RetornaMensagemDeErro()));
+            //// Assert.That(mensagemEsperada.Contains(gerenciarPerfisGlobaisPage.RetornaMensagemDeErro()));
+            PerfisGlobalDBSteps.DeletaPerfilGlobal(plataforma, so,versaoSo);
         }
         [Test]
         public void PlataformaNaoPreenchida()
@@ -81,12 +82,16 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
+            string plataforma = "nome perfil-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string so = "mac-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string versaoSo = "1.3-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string mensagemEsperada = "Um parâmetro necessário para esta página (action) não foi encontrado.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            gerenciarPerfisGlobaisFlows.AcessarGerenciarPerfis();
+            gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
             gerenciarPerfisGlobaisPage.ClicarEnviar();
-            Assert.AreEqual(mensagemEsperada, gerenciarPerfisGlobaisPage.RetornaMensagemDeErro());            
+            Assert.AreEqual(mensagemEsperada, gerenciarPerfisGlobaisPage.RetornaMensagemDeErro());
+            PerfisGlobalDBSteps.DeletaPerfilGlobal(plataforma, so, versaoSo);
         }
         [Test]
         public void EditarSemSelecionarUmPerfil()
@@ -94,13 +99,17 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";;
+            string plataforma = "nome perfil-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string so = "mac-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string versaoSo = "1.3-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string mensagemEsperada = "Um campo necessário 'Selecionar Perfil' estava vazio. Por favor, verifique novamente suas entradas.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            gerenciarPerfisGlobaisFlows.AcessarGerenciarPerfis();
+            gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
             gerenciarPerfisGlobaisPage.ClicarEditarPerfil();
             gerenciarPerfisGlobaisPage.ClicarEnviar();
             Assert.AreEqual(mensagemEsperada, gerenciarPerfisGlobaisPage.RetornaMensagemDeErro());
+            PerfisGlobalDBSteps.DeletaPerfilGlobal(plataforma, so, versaoSo);
         }
         [Test]
         public void EditarPerfilSucesso()
@@ -108,15 +117,16 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string plataforma = "nome perfil";
-            string so = "mac";
-            string versaoSo = "1.3";
-            string plataformaEdicao = "mac";
+            string plataforma = "nome perfil-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string so = "mac-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string versaoSo = "1.3-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string plataformaEdicao = "mac edicao-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             #endregion
-            PerfisGlobalDBSteps.InserirPerfilGlobal(plataforma, so, versaoSo);
             loginFlows.EfetuarLogin(usuario, senha);
+            gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
             gerenciarPerfisGlobaisFlows.EditarPerfilGlobal(plataforma+" "+so+" "+versaoSo, plataformaEdicao);
             Assert.IsTrue(gerenciarPerfisGlobaisPage.ValidarCadastroPerfil(plataformaEdicao), "Perfil não foi editado.");
+            PerfisGlobalDBSteps.DeletaPerfilGlobal(plataformaEdicao, so, versaoSo);
         }
         [Test]
         public void ApagarSemSelecionarUmPerfil()
@@ -124,13 +134,17 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
+            string plataforma = "nome perfil-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string so = "mac-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string versaoSo = "1.3-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string mensagemEsperada = "Um campo necessário 'Selecionar Perfil' estava vazio. Por favor, verifique novamente suas entradas.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
-            gerenciarPerfisGlobaisFlows.AcessarGerenciarPerfis();
+            gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
             gerenciarPerfisGlobaisPage.ClicarApagarPerfil();
             gerenciarPerfisGlobaisPage.ClicarEnviar();
             Assert.AreEqual(mensagemEsperada, gerenciarPerfisGlobaisPage.RetornaMensagemDeErro());
+            PerfisGlobalDBSteps.DeletaPerfilGlobal(plataforma, so, versaoSo);
         }
         [Test]
         public void ApagarPerfilScucesso()
@@ -138,12 +152,12 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string plataforma = "nome perfil";
-            string so = "mac";
-            string versaoSo = "1.3";
+            string plataforma = "nome perfil-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string so = "mac-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string versaoSo = "1.3-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             #endregion
-            PerfisGlobalDBSteps.InserirPerfilGlobal(plataforma, so, versaoSo);
             loginFlows.EfetuarLogin(usuario, senha);
+            gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
             gerenciarPerfisGlobaisFlows.ApagarPerfilGlobal(plataforma + " " + so + " " + versaoSo);
             Assert.IsFalse(gerenciarPerfisGlobaisPage.ValidarCadastroPerfil(plataforma + " " + so + " " + versaoSo), "Perfil não foi apagado.");
         }

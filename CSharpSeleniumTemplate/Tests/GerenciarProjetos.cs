@@ -31,17 +31,17 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeProjeto = "nome do projeto";
+            string nomeProjeto = "nome do projeto-"+GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string estado = "desenvolvimento";
-            string descricao = "descrição";
+            string descricao = "descrição-"+GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             string nomeColuna = "Nome";
             #endregion
-            ProjetosDBSteps.DeletaProjeto(nomeProjeto);
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             Assert.AreEqual(mensagemSucessoEsperada, criarProjetoPage.RetornaMensagemDeSucesso());
             Assert.IsTrue(criarProjetoPage.ValidarCadastroProjeto(nomeProjeto, nomeColuna), "Projeto não foi cadastrado.");
+            ProjetosDBSteps.DeletaProjeto(nomeProjeto);
         }
 
 
@@ -51,15 +51,16 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeProjeto = "nome do projeto";
+            string nomeProjeto = "nome do projeto-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string estado = "desenvolvimento";
-            string descricao = "descrição";
+            string descricao = "descrição-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string mensagemErroEsperada = "Um projeto com este nome já existe. Por favor, volte e entre um nome diferente.";
             #endregion
-            ProjetosDBSteps.InseriProjeto(nomeProjeto);
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
+            projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             Assert.AreEqual(mensagemErroEsperada, criarProjetoPage.RetornaMensagemDeErro());
+            ProjetosDBSteps.DeletaProjeto(nomeProjeto);
         }
 
         [Test]
@@ -81,14 +82,17 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeProjeto = "nome do projeto";
-            string colunaProjeto = "Nome";
-            string nomeEdicao = "nome do projeto editado";
+            string nomeProjeto = "nome do projeto-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string estado = "desenvolvimento";
+            string nomeProjetoEdicao = "nome do projeto editado-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string descricao = "descrição-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string colunaProjeto = "Nome";            
             #endregion
-            ProjetosDBSteps.InseriProjeto(nomeProjeto);
             loginFlows.EfetuarLogin(usuario, senha);
-            projetoFlows.EditarProjeto(nomeProjeto, nomeEdicao, colunaProjeto);
-            Assert.IsTrue(criarProjetoPage.ValidarCadastroProjeto(nomeEdicao, colunaProjeto), "Projeto não foi atualizado.");
+            projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
+            projetoFlows.EditarProjeto(nomeProjeto, nomeProjetoEdicao, colunaProjeto);
+            Assert.IsTrue(criarProjetoPage.ValidarCadastroProjeto(nomeProjetoEdicao, colunaProjeto), "Projeto não foi atualizado.");
+            ProjetosDBSteps.DeletaProjeto(nomeProjetoEdicao);
         }
 
         [Test]
@@ -97,11 +101,13 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
+            string estado = "desenvolvimento";
             string nomeProjeto = "nome do projeto";
+            string descricao = "descrição-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string nomeColuna = "Nome";
             #endregion
-            ProjetosDBSteps.InseriProjeto(nomeProjeto);
             loginFlows.EfetuarLogin(usuario, senha);
+            projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             projetoFlows.ApagarProjeto(nomeProjeto, nomeColuna);
             Assert.IsTrue(criarProjetoPage.ValidarExclusaoProjeto(nomeProjeto, nomeColuna), "Projeto não foi excluído.");
         }

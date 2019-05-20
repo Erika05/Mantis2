@@ -61,7 +61,7 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a DELETE FROM mantis_user_table WHERE username=&apos;$username&apos; OR email=&apos;$email&apos;;.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a DELETE FROM mantis_user_table WHERE username=&apos;$username&apos;;.
         /// </summary>
         internal static string DelataUsuario {
             get {
@@ -76,36 +76,6 @@ namespace CSharpSeleniumTemplate.Queries {
         internal static string DetalaTodosUsuariosExcetoAdministrator {
             get {
                 return ResourceManager.GetString("DetalaTodosUsuariosExcetoAdministrator", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a INSERT INTO mantis_user_table(username,password,enabled,protected,access_level,cookie_string)
-        ///VALUES(&apos;$username&apos;, &apos;9aeec5789ac15cdc330fc6d8cdaf53ec&apos;, 1,0,25,&apos;xxx&apos;).
-        /// </summary>
-        internal static string InseriUsuarioCamposObrigatorios {
-            get {
-                return ResourceManager.GetString("InseriUsuarioCamposObrigatorios", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a INSERT INTO mantis_user_table(username, email,password,enabled,protected,access_level,cookie_string)
-        ///VALUES(&apos;$username&apos;, &apos;$email&apos;,&apos;9aeec5789ac15cdc330fc6d8cdaf53ec&apos;, 1,0,25,&apos;xxx&apos;).
-        /// </summary>
-        internal static string InseriUsuarioTodosCampos {
-            get {
-                return ResourceManager.GetString("InseriUsuarioTodosCampos", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT * FROM mantis_project_table
-        ///WHERE NAME=&apos;nome do projeto&apos; and STATUS=10 AND description=&apos;descricao&apos;.
-        /// </summary>
-        internal static string RetornarProjetosCadastrados {
-            get {
-                return ResourceManager.GetString("RetornarProjetosCadastrados", resourceCulture);
             }
         }
         

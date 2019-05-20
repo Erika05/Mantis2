@@ -11,9 +11,11 @@ namespace CSharpSeleniumTemplate.Flows
     {
         #region Page Object and Constructor
         GerenciarCategoriaPage gerenciarCategoriaPage;
+        ProjetosFlows projetoFlows;
         public CategoriasFlows()
         {
             gerenciarCategoriaPage = new GerenciarCategoriaPage();
+            projetoFlows = new ProjetosFlows();
         }
         #endregion
         public void ApagarCategoria(string nomeCategoria, string nomeColunaPesq, string nomeColunaAcao)
@@ -24,6 +26,7 @@ namespace CSharpSeleniumTemplate.Flows
         }
         public void CadastrarCategoria(string nomeCategoria)
         {
+            projetoFlows.AcessarTelaGestaoProjeto();
             gerenciarCategoriaPage.PreencherCategoria(nomeCategoria);
             gerenciarCategoriaPage.ClicarAdicionarCategoria();
         }

@@ -117,28 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="RetornarProjetosCadastrados" xml:space="preserve">
-    <value>SELECT * FROM mantis_project_table
-WHERE NAME='nome do projeto' and STATUS=10 AND description='descricao'</value>
-  </data>
   <data name="RetornaSenhaUsuario" xml:space="preserve">
     <value>select user.senha 
 from usuarios user 
 where user.username = '$username';</value>
   </data>
   <data name="DelataUsuario" xml:space="preserve">
-    <value>DELETE FROM mantis_user_table WHERE username='$username' OR email='$email';</value>
+    <value>DELETE FROM mantis_user_table WHERE username='$username';</value>
   </data>
   <data name="DetalaTodosUsuariosExcetoAdministrator" xml:space="preserve">
     <value>DELETE  FROM mantis_user_table
 WHERE username&lt;&gt;'administrator'</value>
-  </data>
-  <data name="InseriUsuarioCamposObrigatorios" xml:space="preserve">
-    <value>INSERT INTO mantis_user_table(username,password,enabled,protected,access_level,cookie_string)
-VALUES('$username', '9aeec5789ac15cdc330fc6d8cdaf53ec', 1,0,25,'xxx')</value>
-  </data>
-  <data name="InseriUsuarioTodosCampos" xml:space="preserve">
-    <value>INSERT INTO mantis_user_table(username, email,password,enabled,protected,access_level,cookie_string)
-VALUES('$username', '$email','9aeec5789ac15cdc330fc6d8cdaf53ec', 1,0,25,'xxx')</value>
   </data>
 </root>

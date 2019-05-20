@@ -16,24 +16,9 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
 
             return DataBaseHelpers.RetornaDadosQuery(query)[0];
         }
-        public static void InseriUsuarioCamposObrigatorios(string username)
+        public static void DeletaUsuario(string username)
         {
-            string query = UsuariosQueries.InseriUsuarioCamposObrigatorios.Replace("$username", username);
-            DataBaseHelpers.ExecuteQuery(query);
-        }
-        public static void InseriUsuarioTodosCampos(string username, string realname, string email)
-        {
-            string query = UsuariosQueries.InseriUsuarioTodosCampos.Replace("$username", username).Replace("$realname", realname).Replace("$email", email);
-            DataBaseHelpers.ExecuteQuery(query);
-        }
-        public static void DeletaUsuario(string username, string useremail)
-        {
-            string query = UsuariosQueries.DelataUsuario.Replace("$username", username).Replace("$useremail", useremail);
-            DataBaseHelpers.ExecuteQuery(query);
-        }
-        public static void DeletaTodosUsuarios()
-        {
-            string query = UsuariosQueries.DetalaTodosUsuariosExcetoAdministrator;
+            string query = UsuariosQueries.DelataUsuario.Replace("$username", username);
             DataBaseHelpers.ExecuteQuery(query);
         }
     }

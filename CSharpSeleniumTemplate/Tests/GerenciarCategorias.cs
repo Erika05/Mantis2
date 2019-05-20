@@ -16,10 +16,10 @@ namespace CSharpSeleniumTemplate.Tests
     class GerenciarCategorias : TestBase
     {
         [AutoInstance] MainPage mainPage;
-        [AutoInstance] LoginFlows loginFlows;
-        [AutoInstance] ProjetosFlows projetoFlows;
+        [AutoInstance] LoginFlows loginFlows;        
         [AutoInstance] GerenciarCategoriaPage gerenciarCategoriasPage;
         [AutoInstance] CategoriasFlows categoriaFlows;
+        [AutoInstance] ProjetosFlows projetoFlows;
 
         [Test]
         public void CadastrarCategoria()
@@ -27,14 +27,13 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeCategoria = "categoria";
+            string nomeCategoria = "categoria-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string nomeColuna = "Categoria";
             #endregion
-            CategoriasDBSteps.DeletaCategoria(nomeCategoria);
             loginFlows.EfetuarLogin(usuario, senha);
-            projetoFlows.AcessarTelaGestaoProjeto();
             categoriaFlows.CadastrarCategoria(nomeCategoria);
             Assert.IsTrue(gerenciarCategoriasPage.ValidarCadastroCategoria(nomeCategoria, nomeColuna), "Categoria não cadastrada");
+            CategoriasDBSteps.DeletaCategoria(nomeCategoria);
         }
         [Test]
         public void CategoriaJaCadastrada()
@@ -42,14 +41,14 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeCategoria = "categoria";
+            string nomeCategoria = "categoria-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string mensagemErroEsperada = "Uma categoria com este nome já existe.";
             #endregion
-            CategoriasDBSteps.InseriCategoria(nomeCategoria);
             loginFlows.EfetuarLogin(usuario, senha);
-            projetoFlows.AcessarTelaGestaoProjeto();
+            categoriaFlows.CadastrarCategoria(nomeCategoria);
             categoriaFlows.CadastrarCategoria(nomeCategoria);
             Assert.AreEqual(mensagemErroEsperada, gerenciarCategoriasPage.RetornaMensagemDeErro());
+            CategoriasDBSteps.DeletaCategoria(nomeCategoria);
         }
 
         [Test]
@@ -71,18 +70,18 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeCategoria = "categoria";
+            string nomeCategoria = "categoria-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string nomeColunaPesq = "Categoria";
             string nomeColunaAcao = "Ações";
-            string nomeCategoriaAlteracao = "categoria auteracao";
+            string nomeCategoriaEdicao = "categoria auteracao-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
-            CategoriasDBSteps.InseriCategoria(nomeCategoria);
             loginFlows.EfetuarLogin(usuario, senha);
-            projetoFlows.AcessarTelaGestaoProjeto();
-            categoriaFlows.EditarCategoria(nomeCategoria, nomeCategoriaAlteracao, nomeColunaPesq, nomeColunaAcao);
+            categoriaFlows.CadastrarCategoria(nomeCategoria);
+            categoriaFlows.EditarCategoria(nomeCategoria, nomeCategoriaEdicao, nomeColunaPesq, nomeColunaAcao);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCategoriasPage.RetornaMensagemDeSucesso());
-            Assert.IsTrue(gerenciarCategoriasPage.ValidarCadastroCategoria(nomeCategoriaAlteracao, nomeColunaPesq), "Categoria não atualziada.");
+            Assert.IsTrue(gerenciarCategoriasPage.ValidarCadastroCategoria(nomeCategoriaEdicao, nomeColunaPesq), "Categoria não atualziada.");
+            CategoriasDBSteps.DeletaCategoria(nomeCategoriaEdicao);
         }
 
         [Test]
@@ -91,13 +90,12 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeCategoria = "categoria";
+            string nomeCategoria = "categoria-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string nomeColunaPesq = "Categoria";
             string nomeColunaAcao = "Ações";
             #endregion
-            CategoriasDBSteps.InseriCategoria(nomeCategoria);
             loginFlows.EfetuarLogin(usuario, senha);
-            projetoFlows.AcessarTelaGestaoProjeto();            
+            categoriaFlows.CadastrarCategoria(nomeCategoria);
             categoriaFlows.ApagarCategoria(nomeCategoria, nomeColunaPesq, nomeColunaAcao);
             Assert.IsTrue(gerenciarCategoriasPage.ValidaExclusaoCategoria(nomeCategoria, nomeColunaPesq), "Categoria não excluído.");
         }

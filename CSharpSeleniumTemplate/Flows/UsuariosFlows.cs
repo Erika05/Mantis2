@@ -52,7 +52,7 @@ namespace CSharpSeleniumTemplate.Flows
             this.PreencherCamposOpcionais(nomeVerdadeito, email);
             gerenciarUsuariosPage.ClicarCadastraUsuario();
         }
-        public void EdiatarUsuario(string nomeUsuario, string nomeUsuarioEdicao, string nomeColuna)
+        public void EditarUsuario(string nomeUsuario, string nomeUsuarioEdicao, string nomeColuna)
         {
             this.AcessarTelaGestaoUsuarios();
             gerenciarUsuariosPage.AcessarTelaEditarUsuario(nomeUsuario, nomeColuna);

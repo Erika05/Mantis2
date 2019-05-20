@@ -28,14 +28,14 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string campo = "campo";
+            string campo = "campo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8); ;
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
-            #endregion
-            CamposPersonalizadosDBSteps.DeletaCampo(campo);
+            #endregion            
             loginFlows.EfetuarLogin(usuario, senha);
             camposPersonalizadosFlows.CadastrarCampo(campo);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeSucesso());
             Assert.AreEqual(campo, gerenciarCamposPersonalizadosPage.VerificarValorSalvo());
+            CamposPersonalizadosDBSteps.DeletaCampo(campo);
         }
         [Test]
         public void CampoObrigatorioNaoInformado()
@@ -56,13 +56,14 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string campo = "campo";
+            string campo = "campo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8); ;
             string mensagemErroEsperada = "Este é um nome duplicado.";
             #endregion
-            CamposPersonalizadosDBSteps.InseriCampo(campo);
             loginFlows.EfetuarLogin(usuario, senha);
             camposPersonalizadosFlows.CadastrarCampo(campo);
+            camposPersonalizadosFlows.CadastrarCampo(campo);
             Assert.AreEqual(mensagemErroEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeErro());
+            CamposPersonalizadosDBSteps.DeletaCampo(campo);
         }
         [Test]
         public void EditarCampoPersonalizado()
@@ -70,16 +71,18 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string campo = "campo";
-            string campoEdicao = "campo edicao";
+            string campo = "campo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8); ;
+            string campoEdicao = "campo edicao-" + GeneralHelpers.ReturnStringWithRandomNumbers(8); ;
             string nomeColuna = "Nome";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
             CamposPersonalizadosDBSteps.InseriCampo(campo);
             loginFlows.EfetuarLogin(usuario, senha);
+            camposPersonalizadosFlows.CadastrarCampo(campo);
             camposPersonalizadosFlows.EditarCampo(campo, campoEdicao, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeSucesso());
             Assert.IsTrue(gerenciarCamposPersonalizadosPage.ValidarEdicaoCampo(campoEdicao, nomeColuna), "Edição não foi realziada.");
+            CamposPersonalizadosDBSteps.DeletaCampo(campoEdicao);
         }
         [Test]
         public void ApagarCampoPersonalizado()
@@ -87,12 +90,12 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string campo = "campo";
+            string campo = "campo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8); ;
             string nomeColuna = "Nome";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
-            CamposPersonalizadosDBSteps.InseriCampo(campo);
             loginFlows.EfetuarLogin(usuario, senha);
+            camposPersonalizadosFlows.CadastrarCampo(campo);
             camposPersonalizadosFlows.ApagarCampo(campo, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeSucesso());
             Assert.IsFalse(gerenciarCamposPersonalizadosPage.ValidarExclusaoCampo(campo, nomeColuna), "Campo não foi pagado.");

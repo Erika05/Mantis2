@@ -20,10 +20,5 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
             string query = CategoriasQueries.DeletaCategoria.Replace("$nomecategoria", nomecategoria);
             DataBaseHelpers.ExecuteQuery(query);
         }
-        public static void DeletaTodasCategorias()
-        {
-            string query = CategoriasQueries.ApagaTodasCategorias;
-            DataBaseHelpers.ExecuteQuery(query);
-        }
     }
 }

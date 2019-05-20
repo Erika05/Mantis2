@@ -32,12 +32,13 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeMarcador = "marcador";
+            string nomeMarcador = "marcador-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string nomeColuna = "Nome";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);            
             marcadoresFlows.CadastrarMarcador(nomeMarcador);
             Assert.IsTrue(gerenciarMarcadoresPage.ValidarCadastroMarcado(nomeMarcador, nomeColuna), "Marcador não cadastrada");
+            MarcadoresDBSteps.DeletaMarcador(nomeMarcador);
         }
 
         [Test]
@@ -46,7 +47,6 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string mensagemSucessoEsperada = "Preencha este campo.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             marcadoresFlows.AcessarTelaGerenciarMarcadores();
@@ -60,14 +60,16 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeMarcador = "marcador";
+            string nomeMarcador = "marcador-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string nomeColuna = "Nome";
-            string nomeMarcadorAtualizar = "marcador atualizado";
+            string nomeMarcadorEdicao = "marcador atualizado-" + GeneralHelpers.ReturnStringWithRandomNumbers(8); 
             #endregion
-            MarcadoresDBSteps.InseriMarcador(nomeMarcador);
             loginFlows.EfetuarLogin(usuario, senha);
-            marcadoresFlows.EditarMarcador(nomeMarcador, nomeColuna, nomeMarcadorAtualizar);
-            Assert.AreEqual(nomeMarcadorAtualizar, gerenciarMarcadoresPage.ValidarAlteracaoMarcador());
+            marcadoresFlows.CadastrarMarcador(nomeMarcador);
+            marcadoresFlows.EditarMarcador(nomeMarcador, nomeColuna, nomeMarcadorEdicao);
+            Assert.AreEqual(nomeMarcadorEdicao, gerenciarMarcadoresPage.ValidarAlteracaoMarcador());
+            MarcadoresDBSteps.DeletaMarcador(nomeMarcadorEdicao);
+
         }
         [Test]
         public void ApagarMarcador()
@@ -75,11 +77,11 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeMarcador = "marcador";
+            string nomeMarcador = "marcador-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string nomeColuna = "Nome";
             #endregion
-            MarcadoresDBSteps.InseriMarcador(nomeMarcador);
             loginFlows.EfetuarLogin(usuario, senha);
+            marcadoresFlows.CadastrarMarcador(nomeMarcador);
             marcadoresFlows.ApagarMarcador(nomeMarcador, nomeColuna);
             Assert.IsFalse(gerenciarMarcadoresPage.ValidarExclusaoMarcado(nomeMarcador, nomeColuna));
         }
@@ -89,14 +91,15 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string nomeMarcador = "marcador";
+            string nomeMarcador = "marcador-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string nomeColuna = "Nome";
             string tituloEsperado = "Detalhes do marcador: " + nomeMarcador;
             #endregion
-            MarcadoresDBSteps.InseriMarcador(nomeMarcador);
             loginFlows.EfetuarLogin(usuario, senha);
+            marcadoresFlows.CadastrarMarcador(nomeMarcador);
             marcadoresFlows.VoltarDetalheMarcador(nomeMarcador, nomeColuna);
             Assert.AreEqual(tituloEsperado, gerenciarMarcadoresPage.RetornaTituloTelaDetalheMarcador());
+            MarcadoresDBSteps.DeletaMarcador(nomeMarcador);
         }
     }
 }

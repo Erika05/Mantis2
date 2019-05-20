@@ -31,6 +31,26 @@ namespace CSharpSeleniumTemplate.Flows
             criarTarefaPage.PreencherGravidadeTarefa(gravidade);
             criarTarefaPage.PreencherPrioridadeTarefa(prioridade);
         }
+        public void CriarTarefaTodosCampos(string categoria, string resumo, string descricao, string frequencia, string gravidade, string prioridade)
+        {
+            criarTarefaPage.AcessarCadastroTarefa();
+            this.PreencherCamposObrigatorios(categoria, resumo, descricao);
+            this.PreencherCamposOpicionais(frequencia, gravidade, prioridade);
+            criarTarefaPage.ClicarCadastrarTarefa();
+        }
+        public void CriarTarefaApenasCamposObrigatorios(string categoria, string resumo, string descricao)
+        {
+            criarTarefaPage.AcessarCadastroTarefa();
+            this.PreencherCamposObrigatorios(categoria, resumo, descricao);
+            criarTarefaPage.ClicarCadastrarTarefa();
+        }
+        public void ContinuarCriandoTarefas(string categoria, string resumo, string descricao)
+        {
+            criarTarefaPage.AcessarCadastroTarefa();
+            this.PreencherCamposObrigatorios(categoria, resumo, descricao);
+            criarTarefaPage.ContinuaCadastrandoTarefas(resumo, descricao);
+            criarTarefaPage.ClicarCadastrarTarefa();
+        }
         public void RealizarPesquisa(string valorFiltro)
         {
             gerenciarTarefasPage.LimparFiltroProjeto();

@@ -1,5 +1,5 @@
-﻿categoria;criar;decricao a;sempre;pequeno;normal;
-categoria;automatizado;decricao p;aleatório;texto;baixa;
-categoria;linha d;decricao p;incapaz de reproduzir;trivial;alta;
-categoria;coluna e;decricao p;não se tentou;grande;urgente;
-categoria;passou;decricao p;N/D;travamento;imediato;
+﻿categoria;resumo;decricao;sempre;pequeno;normal;
+categoria;resumo;decricao;aleatório;texto;baixa;
+categoria;resumo;decricao;incapaz de reproduzir;trivial;alta;
+categoria;resumo;decricao;não se tentou;grande;urgente;
+categoria;resumo;decricao;N/D;travamento;imediato;
