@@ -127,6 +127,6 @@
     <value>INSERT INTO mantis_user_profile_table (platform,os,os_build,description) VALUES('$nomeplatafornma','$nomeso','$nomeversaoso','perfil de usuário');</value>
   </data>
   <data name="RetornaPerfilGlobal" xml:space="preserve">
-    <value>SELECT * FROM mantis_user_profile_table WHERE platform = '$nomeplatafornma' AND os='$nomeso' AND os_build='$nomeversaoso';</value>
+    <value>SELECT platform FROM mantis_user_profile_table;</value>
   </data>
 </root>

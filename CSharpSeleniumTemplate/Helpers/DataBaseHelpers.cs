@@ -13,12 +13,12 @@ namespace CSharpSeleniumTemplate.Helpers
     {
         private static MySqlConnection GetDBConnection()
         {
-             string connectionString = "Data Source=" + Properties.Settings.Default.DB_URL + ";"+///"," + Properties.Settings.Default.DB_PORT + ";" +
-                                        "Initial Catalog=" + Properties.Settings.Default.DB_NAME + ";" +
-                                        "User ID=" + Properties.Settings.Default.DB_USER + "; " +
-                                        "Password=" + Properties.Settings.Default.DB_PASSWORD + ";";
+            string connectionString = "Data Source=" + Properties.Settings.Default.DB_URL + "," + Properties.Settings.Default.DB_PORT + ";" +
+                                    "Initial Catalog=" + Properties.Settings.Default.DB_NAME + ";" +
+                                    "User ID=" + Properties.Settings.Default.DB_USER + "; " +
+                                    "Password=" + Properties.Settings.Default.DB_PASSWORD;
 
-            MySqlConnection connection = new MySqlConnection(connectionString);///"Data Source=192.168.99.100,3306" + ";"+"Initial Catalog=bugtracker"+";"+"User ID=root"+";"+"Password=root");
+            MySqlConnection connection = new MySqlConnection(connectionString);
 
             return connection;
         }

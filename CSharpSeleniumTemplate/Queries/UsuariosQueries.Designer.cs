@@ -61,7 +61,8 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a DELETE FROM mantis_user_table WHERE username=&apos;$username&apos;;.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a DELETE FROM mantis_user_table WHERE username=&apos;$username&apos;;DELETE  FROM mantis_email_table
+        ///WHERE email=&apos;$email&apos;;.
         /// </summary>
         internal static string DelataUsuario {
             get {
@@ -80,9 +81,9 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a select user.senha 
-        ///from usuarios user 
-        ///where user.username = &apos;$username&apos;;.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT mantis_user_table.password 
+        ///from mantis_user_table 
+        ///WHERE mantis_user_table.username = &apos;$username&apos;;.
         /// </summary>
         internal static string RetornaSenhaUsuario {
             get {

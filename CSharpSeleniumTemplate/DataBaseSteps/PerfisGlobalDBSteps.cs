@@ -25,5 +25,10 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
             string query = PerfisGlobalQueries.ApagaTodosPerfisGlobal;
             DataBaseHelpers.ExecuteQuery(query);
         }
+        public static string  RetornaPerfilGlobal(string nomeplatafornma, string nomeso, string nomeversaoso)
+        {
+            string query = PerfisGlobalQueries.RetornaPerfilGlobal.Replace("$nomeplatafornma", nomeplatafornma).Replace("$nomeso", nomeso).Replace("$nomeversaoso", nomeversaoso);
+            return  DataBaseHelpers.RetornaDadosQuery(query)[0];
+        }
     }
 }

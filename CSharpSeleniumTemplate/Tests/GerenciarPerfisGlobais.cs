@@ -26,6 +26,8 @@ namespace CSharpSeleniumTemplate.Tests
         string mensagemEsperadaCampoObrigatorioChromeFirefoxLocal = "Preencha este campo.";
         string mensagemEsperadaCampoObrigatorioIELocal = "Este é um campo obrigatório";
         string mensagemEsperadaCampoObrigatorioChromeRemota = "Please fill out this field.";
+        string mensagemEsperadaPerfilObrigatorioIERemota = "Um parâmetro necessário para esta página (action) não foi encontrado.";
+        string mensagemEsperadaPerfilObrigatorio = "Um campo necessário 'Selecionar Perfil' estava vazio. Por favor, verifique novamente suas entradas.";
         #endregion
 
         [Test]
@@ -40,9 +42,10 @@ namespace CSharpSeleniumTemplate.Tests
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
-           Assert.IsTrue(gerenciarPerfisGlobaisPage.ValidarCadastroPerfil(plataforma), "Perfil não cadastrado.");
+            Assert.IsTrue(gerenciarPerfisGlobaisPage.ValidarCadastroPerfil(plataforma), "Perfil não cadastrado.");
             //// Assert.That(mensagemEsperada.Contains(gerenciarPerfisGlobaisPage.RetornaMensagemDeErro()));
-            PerfisGlobalDBSteps.DeletaPerfilGlobal(plataforma, so,versaoSo);
+            PerfisGlobalDBSteps.RetornaPerfilGlobal(plataforma, so, versaoSo);
+            PerfisGlobalDBSteps.DeletaPerfilGlobal(plataforma, so, versaoSo);
         }
         [Test]
         public void PlataformaNaoPreenchida()
@@ -98,17 +101,16 @@ namespace CSharpSeleniumTemplate.Tests
         {
             #region Parameters
             string usuario = "administrator";
-            string senha = "administrator";;
+            string senha = "administrator"; ;
             string plataforma = "nome perfil-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string so = "mac-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string versaoSo = "1.3-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string mensagemEsperada = "Um campo necessário 'Selecionar Perfil' estava vazio. Por favor, verifique novamente suas entradas.";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
             gerenciarPerfisGlobaisPage.ClicarEditarPerfil();
             gerenciarPerfisGlobaisPage.ClicarEnviar();
-            Assert.AreEqual(mensagemEsperada, gerenciarPerfisGlobaisPage.RetornaMensagemDeErro());
+            CollectionAssert.Contains(new[] { mensagemEsperadaPerfilObrigatorio, mensagemEsperadaPerfilObrigatorioIERemota }, gerenciarPerfisGlobaisPage.RetornaMensagemDeErro());
             PerfisGlobalDBSteps.DeletaPerfilGlobal(plataforma, so, versaoSo);
         }
         [Test]
@@ -124,7 +126,7 @@ namespace CSharpSeleniumTemplate.Tests
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
-            gerenciarPerfisGlobaisFlows.EditarPerfilGlobal(plataforma+" "+so+" "+versaoSo, plataformaEdicao);
+            gerenciarPerfisGlobaisFlows.EditarPerfilGlobal(plataforma + " " + so + " " + versaoSo, plataformaEdicao);
             Assert.IsTrue(gerenciarPerfisGlobaisPage.ValidarCadastroPerfil(plataformaEdicao), "Perfil não foi editado.");
             PerfisGlobalDBSteps.DeletaPerfilGlobal(plataformaEdicao, so, versaoSo);
         }
@@ -136,14 +138,13 @@ namespace CSharpSeleniumTemplate.Tests
             string senha = "administrator";
             string plataforma = "nome perfil-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string so = "mac-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string versaoSo = "1.3-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string mensagemEsperada = "Um campo necessário 'Selecionar Perfil' estava vazio. Por favor, verifique novamente suas entradas.";
+            string versaoSo = "1.3-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);            
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
             gerenciarPerfisGlobaisPage.ClicarApagarPerfil();
             gerenciarPerfisGlobaisPage.ClicarEnviar();
-            Assert.AreEqual(mensagemEsperada, gerenciarPerfisGlobaisPage.RetornaMensagemDeErro());
+            CollectionAssert.Contains(new[] { mensagemEsperadaPerfilObrigatorio, mensagemEsperadaPerfilObrigatorioIERemota }, gerenciarPerfisGlobaisPage.RetornaMensagemDeErro());
             PerfisGlobalDBSteps.DeletaPerfilGlobal(plataforma, so, versaoSo);
         }
         [Test]

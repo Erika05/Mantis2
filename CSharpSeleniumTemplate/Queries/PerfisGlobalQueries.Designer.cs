@@ -88,7 +88,7 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT * FROM mantis_user_profile_table WHERE platform = &apos;$nomeplatafornma&apos; AND os=&apos;$nomeso&apos; AND os_build=&apos;$nomeversaoso&apos;;.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT platform FROM mantis_user_profile_table;.
         /// </summary>
         internal static string RetornaPerfilGlobal {
             get {

@@ -97,7 +97,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             categoriaFlows.CadastrarCategoria(nomeCategoria);
             categoriaFlows.ApagarCategoria(nomeCategoria, nomeColunaPesq, nomeColunaAcao);
-            Assert.IsTrue(gerenciarCategoriasPage.ValidaExclusaoCategoria(nomeCategoria, nomeColunaPesq), "Categoria não excluído.");
+            Assert.IsFalse(gerenciarCategoriasPage.ValidaExclusaoCategoria(nomeCategoria, nomeColunaPesq), "Categoria não excluído.");
         }
     }
 }

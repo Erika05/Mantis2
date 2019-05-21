@@ -151,7 +151,7 @@ namespace CSharpSeleniumTemplate.Tests
             usuariosFlows.CadastrarUsuarioApenasCamposObrigatorios(nomeUsuario, nivel);
             usuariosFlows.ApagarUsuario(nomeUsuario, nomeColuna); 
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
-            Assert.IsTrue(gerenciarUsuariosPage.ValidarExclusaoUsuario(nomeUsuario, nomeColuna), "Usuário não foi excluído.");
+            Assert.IsFalse(gerenciarUsuariosPage.ValidarExclusaoUsuario(nomeUsuario, nomeColuna), "Usuário não foi excluído.");
         }
         [Test]
         public void RedefinirSenhaSemPreencherEmail()

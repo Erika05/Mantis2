@@ -118,12 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="RetornaSenhaUsuario" xml:space="preserve">
-    <value>select user.senha 
-from usuarios user 
-where user.username = '$username';</value>
+    <value>SELECT mantis_user_table.password 
+from mantis_user_table 
+WHERE mantis_user_table.username = '$username';</value>
   </data>
   <data name="DelataUsuario" xml:space="preserve">
-    <value>DELETE FROM mantis_user_table WHERE username='$username';</value>
+    <value>DELETE FROM mantis_user_table WHERE username='$username';DELETE  FROM mantis_email_table
+WHERE email='$email';</value>
   </data>
   <data name="DetalaTodosUsuariosExcetoAdministrator" xml:space="preserve">
     <value>DELETE  FROM mantis_user_table

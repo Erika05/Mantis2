@@ -109,7 +109,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             projetoFlows.ApagarProjeto(nomeProjeto, nomeColuna);
-            Assert.IsTrue(criarProjetoPage.ValidarExclusaoProjeto(nomeProjeto, nomeColuna), "Projeto não foi excluído.");
+            Assert.IsFalse(criarProjetoPage.ValidarExclusaoProjeto(nomeProjeto, nomeColuna), "Projeto não foi excluído.");
         }
     }
 }

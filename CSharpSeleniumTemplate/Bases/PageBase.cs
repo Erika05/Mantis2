@@ -165,7 +165,7 @@ namespace CSharpSeleniumTemplate.Bases
         {
             wait.Until(ExpectedConditions.ElementExists(locator));
             IWebElement element = driver.FindElement(locator);
-            javaScript.ExecuteScript("arguments[0].value='" + value + "';", element);
+            javaScript.ExecuteScript("arguments[0].value='" + value + "';",element);
             ExtentReportHelpers.AddTestInfo(3, "PARAMETER: " + value);
         }
 
@@ -238,12 +238,6 @@ namespace CSharpSeleniumTemplate.Bases
 
             return url;
         }
-        /// <summary>
-        /// Encontrar determinado dado na tabela/ Obter tabela
-        /// </summary>
-        /// <param name="locator"></pa
-        /// ram>
-        /// 
         public int ValidarExistenciaLinhas(By locator)
         {
             IWebElement table = WaitForElement(locator);
@@ -369,10 +363,10 @@ namespace CSharpSeleniumTemplate.Bases
                 {
                     if (tarefas[i].Text.Equals(nomeElemento))
                     {
-                        return false;
+                        return true;
                     }
                 }
-                return true;
+                return false;
             }
         }
         public bool ValidarSelecaoTodos(By locator)
