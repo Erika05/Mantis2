@@ -121,8 +121,8 @@
     <value>SELECT COUNT(*)  FROM mantis_bug_table mbt
 iNNER JOIN mantis_bug_text_table mbtt
 ON mbt.bug_text_id=mbtt.id
-WHERE mbt.summary='teste automatizado resumo-79649669' AND 
-mbtt.description='teste automatizado descrição-38314562';</value>
+WHERE mbt.summary='$resumoTarefa' AND 
+mbtt.description='$descricaoTarefa';</value>
   </data>
   <data name="DeletaTarefa" xml:space="preserve">
     <value>DELETE FROM mantis_bug_history_table WHERE EXISTS (SELECT * FROM  mantis_bug_text_table WHERE mantis_bug_history_table.bug_id=mantis_bug_text_table.id AND  mantis_bug_text_table.description='$descricaoTarefa'); DELETE  FROM  mantis_bug_table WHERE EXISTS (SELECT * FROM  mantis_bug_text_table WHERE mantis_bug_table.bug_text_id=mantis_bug_text_table.id AND  mantis_bug_text_table.description='$descricaoTarefa' AND summary='$resumoTarefa');DELETE  FROM  mantis_bug_text_table WHERE description='$descricaoTarefa' ;</value>

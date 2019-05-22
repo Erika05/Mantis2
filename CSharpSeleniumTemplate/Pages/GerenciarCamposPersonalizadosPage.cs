@@ -11,7 +11,7 @@ namespace CSharpSeleniumTemplate.Pages
     public class GerenciarCamposPersonalizadosPage : PageBase
     {
         #region Mapping
-        By menuGerenciarCampos = By.LinkText("Campos Personalizados");
+        By menuGerenciarCampos = By.LinkText("Gerenciar Campos Personalizados");
         By campoTextarea = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/form/fieldset/input[2]");
         By criarCampoButton = By.XPath("//input[@value='Novo Campo Personalizado']");
         By MsgSucesso = By.XPath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");

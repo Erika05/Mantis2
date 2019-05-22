@@ -51,7 +51,6 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.CriarTarefaApenasCamposObrigatorios(categoria, resumo, descricao);
             Assert.AreEqual(mensagemEsperadaCadastroRealizadoComSucesso, criarTarefaPage.RetornaMensagemDeSucesso());
-            tarefasFlows.RealizarPesquisa(resumo);
             Assert.AreEqual(1,TarefasDBSteps.RetornaTarefas(descricao, resumo), "Tarefa não foi gravada no banco.");
             TarefasDBSteps.DeletaTarefa(descricao, resumo);
             CategoriasDBSteps.DeletaCategoria(categoria);                        
@@ -74,7 +73,6 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.CriarTarefaTodosCampos(categoria, resumo, descricao, frequencia, gravidade, prioridade);
             Assert.AreEqual(mensagemEsperadaCadastroRealizadoComSucesso, criarTarefaPage.RetornaMensagemDeSucesso());
-            tarefasFlows.RealizarPesquisa(resumo);
             Assert.AreEqual(1, TarefasDBSteps.RetornaTarefas(descricao, resumo), "Tarefa não foi gravada no banco.");
             TarefasDBSteps.DeletaTarefa(descricao, resumo);
             CategoriasDBSteps.DeletaCategoria(categoria);

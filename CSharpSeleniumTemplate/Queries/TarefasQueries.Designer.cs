@@ -73,8 +73,8 @@ namespace CSharpSeleniumTemplate.Queries {
         ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT COUNT(*)  FROM mantis_bug_table mbt
         ///iNNER JOIN mantis_bug_text_table mbtt
         ///ON mbt.bug_text_id=mbtt.id
-        ///WHERE mbt.summary=&apos;teste automatizado resumo-79649669&apos; AND 
-        ///mbtt.description=&apos;teste automatizado descrição-38314562&apos;;.
+        ///WHERE mbt.summary=&apos;$resumoTarefa&apos; AND 
+        ///mbtt.description=&apos;$descricaoTarefa&apos;;.
         /// </summary>
         internal static string RetornaTarefa {
             get {
