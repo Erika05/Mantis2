@@ -28,11 +28,10 @@ namespace CSharpSeleniumTemplate.Tests
             string usuario = "administrator";
             string senha = "administrator";
             string nomeCategoria = "categoria-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string nomeColuna = "Categoria";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             categoriaFlows.CadastrarCategoria(nomeCategoria);
-            Assert.IsTrue(gerenciarCategoriasPage.ValidarCadastroCategoria(nomeCategoria, nomeColuna), "Categoria não cadastrada");
+            Assert.AreEqual(1, CategoriasDBSteps.RetornaCategoria(nomeCategoria), "Categoria não foi gravada no banco.");
             CategoriasDBSteps.DeletaCategoria(nomeCategoria);
         }
         [Test]
@@ -80,7 +79,8 @@ namespace CSharpSeleniumTemplate.Tests
             categoriaFlows.CadastrarCategoria(nomeCategoria);
             categoriaFlows.EditarCategoria(nomeCategoria, nomeCategoriaEdicao, nomeColunaPesq, nomeColunaAcao);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCategoriasPage.RetornaMensagemDeSucesso());
-            Assert.IsTrue(gerenciarCategoriasPage.ValidarCadastroCategoria(nomeCategoriaEdicao, nomeColunaPesq), "Categoria não atualziada.");
+            Assert.AreEqual(1, CategoriasDBSteps.RetornaCategoria(nomeCategoriaEdicao), "Categoria não foi alterada no banco.");
+            Assert.AreEqual(0, CategoriasDBSteps.RetornaCategoria(nomeCategoria), "Categoria não foi alterada no banco.");
             CategoriasDBSteps.DeletaCategoria(nomeCategoriaEdicao);
         }
 
@@ -97,7 +97,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             categoriaFlows.CadastrarCategoria(nomeCategoria);
             categoriaFlows.ApagarCategoria(nomeCategoria, nomeColunaPesq, nomeColunaAcao);
-            Assert.IsFalse(gerenciarCategoriasPage.ValidaExclusaoCategoria(nomeCategoria, nomeColunaPesq), "Categoria não excluído.");
+            Assert.AreEqual(0, CategoriasDBSteps.RetornaCategoria(nomeCategoria), "Categoria não foi alterada no banco.");
         }
     }
 }

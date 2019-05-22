@@ -44,7 +44,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.CadastrarUsuarioApenasCamposObrigatorios(nomeUsuario, nivel);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
-            Assert.AreEqual(nomeUsuario, gerenciarUsuariosPage.ValidarCadastroUsuario(nomeUsuario));
+            Assert.AreEqual(1, UsuariosDBSteps.RetornaUsuarios(nomeUsuario), "Usuário não foi gravado no banco de dados");
             UsuariosDBSteps.DeletaUsuario(nomeUsuario);
         }
         [Test]
@@ -62,7 +62,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             usuariosFlows.CadastrarUsuarioTodosCampos(nomeUsuario, nomeVerdadeiro, email, nivel);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
-            Assert.AreEqual(nomeUsuario, gerenciarUsuariosPage.ValidarCadastroUsuario(nomeUsuario));
+            Assert.AreEqual(1, UsuariosDBSteps.RetornaUsuarios(nomeUsuario), "Usuário não foi salvo no banco de dados");
             UsuariosDBSteps.DeletaUsuario(nomeUsuario);
         }
 
@@ -133,7 +133,8 @@ namespace CSharpSeleniumTemplate.Tests
             usuariosFlows.CadastrarUsuarioApenasCamposObrigatorios(nomeUsuario,nivel);
             usuariosFlows.EditarUsuario(nomeUsuario, nomeUsuarioEdicao, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
-            Assert.AreEqual(nomeUsuarioEdicao, gerenciarUsuariosPage.ValidarCadastroUsuario(nomeUsuario));
+            Assert.AreEqual(1, UsuariosDBSteps.RetornaUsuarios(nomeUsuarioEdicao), "Usuário não foi atualizado no banco de dados");
+            Assert.AreEqual(0, UsuariosDBSteps.RetornaUsuarios(nomeUsuario), "Usuário não foi atualizado  no banco de dados");
             UsuariosDBSteps.DeletaUsuario(nomeUsuarioEdicao);
         }
         [Test]
@@ -151,7 +152,7 @@ namespace CSharpSeleniumTemplate.Tests
             usuariosFlows.CadastrarUsuarioApenasCamposObrigatorios(nomeUsuario, nivel);
             usuariosFlows.ApagarUsuario(nomeUsuario, nomeColuna); 
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
-            Assert.IsFalse(gerenciarUsuariosPage.ValidarExclusaoUsuario(nomeUsuario, nomeColuna), "Usuário não foi excluído.");
+            Assert.AreEqual(0, UsuariosDBSteps.RetornaUsuarios(nomeUsuario), "Usuário não foi apagado do banco de dados");
         }
         [Test]
         public void RedefinirSenhaSemPreencherEmail()
@@ -200,6 +201,6 @@ namespace CSharpSeleniumTemplate.Tests
             usuariosFlows.CadastrarUsuarioApenasCamposObrigatorios(nomeUsuario, nivel);
             usuariosFlows.RealizarPesquisa(nomeUsuario);
             Assert.IsTrue(gerenciarUsuariosPage.ValidarRetornoPesquisa(nomeUsuario, colunaUsuario), "Dados retornados na pesquisa são diferentes do filtro informado.");
-        }
+            UsuariosDBSteps.DeletaUsuario(nomeUsuario);        }
     }
 }

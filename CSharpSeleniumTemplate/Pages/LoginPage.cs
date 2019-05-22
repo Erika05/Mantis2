@@ -20,18 +20,18 @@ namespace CSharpSeleniumTemplate.Pages
         #region Actions
         public void PreenhcerUsuario(string usuario)
         {
-            SendKeys(usernameField, usuario);
-            Click(loginButton);
+            SendKeysJavaScript(usernameField, usuario);
+            ClickJavaScript(loginButton);
         }
 
         public void PreencherSenha(string senha)
         {
-            SendKeys(passwordField, senha);
+            SendKeysJavaScript(passwordField, senha);
         }
 
         public void ClicarEmEntrar()
         {
-            Click(loginButton);
+            ClickJavaScript(loginButton);
         }
 
         public string RetornaMensagemDeErro()

@@ -11,7 +11,7 @@ namespace CSharpSeleniumTemplate.Pages
     public class GerenciarProjetoPage : PageBase
     {
         #region Mapping
-        By menuGerenciarProjeto = By.LinkText("Gerenciar Projetos");
+        By menuGerenciarProjeto = By.XPath("//a[contains(text(),'Gerenciar Projetos')]");
         By criarProjetoButton = By.XPath("//button[@type='submit']");
         By nomeTextarea = By.Id("project-name");
         By estadoSelect = By.Id("project-status");

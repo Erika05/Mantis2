@@ -88,7 +88,7 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT * FROM mantis_custom_field_table WHERE NAME = &apos;$nomecampo&apos;;.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT COUNT(*) FROM mantis_custom_field_table WHERE NAME = &apos;$nomecampo&apos;;.
         /// </summary>
         internal static string RetornaCampoPersonalizado {
             get {

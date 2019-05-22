@@ -121,12 +121,13 @@
     <value>TRUNCATE mantis_user_profile_table;</value>
   </data>
   <data name="DeletaPerfilGlobal" xml:space="preserve">
-    <value>DELETE  FROM mantis_user_profile_table WHERE platform = '$nomeplatafornma'AND os='$nomeso' AND os_build='$nomeversaoso';</value>
+    <value>DELETE  FROM mantis_user_profile_table WHERE platform = '$nomeplataforma'AND os='$nomeso' AND os_build='$nomeversaoso';</value>
   </data>
   <data name="InserePerfilGlobal" xml:space="preserve">
-    <value>INSERT INTO mantis_user_profile_table (platform,os,os_build,description) VALUES('$nomeplatafornma','$nomeso','$nomeversaoso','perfil de usuário');</value>
+    <value>INSERT INTO mantis_user_profile_table (platform,os,os_build,description) VALUES('$nomeplataforma','$nomeso','$nomeversaoso','perfil de usuário');</value>
   </data>
   <data name="RetornaPerfilGlobal" xml:space="preserve">
-    <value>SELECT platform FROM mantis_user_profile_table;</value>
+    <value>SELECT  COUNT(*) FROM  mantis_user_profile_table WHERE platform='$nomeplataforma'
+AND os='$nomeso' AND os_build='$nomeversaoso';</value>
   </data>
 </root>

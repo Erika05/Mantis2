@@ -127,6 +127,6 @@
     <value>INSERT INTO mantis_category_table (NAME) VALUES ('$nomecategoria');</value>
   </data>
   <data name="RetornaCategoria" xml:space="preserve">
-    <value>SELECT * FROM mantis_category_table WHERE NAME = '$nomecategoria';</value>
+    <value>SELECT count(*) FROM mantis_category_table WHERE NAME = '$nomecategoria';</value>
   </data>
 </root>

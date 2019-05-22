@@ -42,9 +42,7 @@ namespace CSharpSeleniumTemplate.Tests
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
-            Assert.IsTrue(gerenciarPerfisGlobaisPage.ValidarCadastroPerfil(plataforma), "Perfil não cadastrado.");
-            //// Assert.That(mensagemEsperada.Contains(gerenciarPerfisGlobaisPage.RetornaMensagemDeErro()));
-            PerfisGlobalDBSteps.RetornaPerfilGlobal(plataforma, so, versaoSo);
+            Assert.AreEqual(1, PerfisGlobalDBSteps.RetornaPerfilGlobal(plataforma, so, versaoSo), "Perfil não foi gravado no banco de dados.");
             PerfisGlobalDBSteps.DeletaPerfilGlobal(plataforma, so, versaoSo);
         }
         [Test]
@@ -127,7 +125,8 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
             gerenciarPerfisGlobaisFlows.EditarPerfilGlobal(plataforma + " " + so + " " + versaoSo, plataformaEdicao);
-            Assert.IsTrue(gerenciarPerfisGlobaisPage.ValidarCadastroPerfil(plataformaEdicao), "Perfil não foi editado.");
+            Assert.AreEqual(1, PerfisGlobalDBSteps.RetornaPerfilGlobal(plataformaEdicao, so, versaoSo), "Perfil não foi alterado no banco de dados.");
+            Assert.AreEqual(0, PerfisGlobalDBSteps.RetornaPerfilGlobal(plataforma, so, versaoSo), "Perfil não foi alterado do banco de dados.");
             PerfisGlobalDBSteps.DeletaPerfilGlobal(plataformaEdicao, so, versaoSo);
         }
         [Test]
@@ -160,7 +159,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             gerenciarPerfisGlobaisFlows.CadastrarPerfilGlobal(plataforma, so, versaoSo);
             gerenciarPerfisGlobaisFlows.ApagarPerfilGlobal(plataforma + " " + so + " " + versaoSo);
-            Assert.IsFalse(gerenciarPerfisGlobaisPage.ValidarCadastroPerfil(plataforma + " " + so + " " + versaoSo), "Perfil não foi apagado.");
+            Assert.AreEqual(0, PerfisGlobalDBSteps.RetornaPerfilGlobal(plataforma, so, versaoSo), "Perfil não foi apagado do banco de dados.");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace CSharpSeleniumTemplate.Pages
     public class GerenciarMarcadoresPage : PageBase
     {
         #region Mapping
-        By menuMarcadores = By.LinkText("Gerenciar Marcadores");
+        By menuMarcadores = By.XPath("//a[contains(text(),'Gerenciar Marcadores')]");      
         By nomeTextarea = By.Id("tag-name");
         By criarButton = By.XPath("//*[@id='manage-tags-create-form']/div/div[2]/div[2]/input");
         By tableMarcadores = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table");
@@ -35,10 +35,6 @@ namespace CSharpSeleniumTemplate.Pages
         {
             Click(criarButton);
         }
-        public bool ValidarCadastroMarcado(string nomeMarcador, string colunaMarcador)
-        {
-            return ValidarCadastro(tableMarcadores, nomeMarcador, colunaMarcador);
-        }
         public string RetornaMensagemObrigatoriedade()
         {
             return GetAttribute(nomeTextarea, "validationMessage");
@@ -56,18 +52,9 @@ namespace CSharpSeleniumTemplate.Pages
         {
             Clear(nomeTextarea);
         }
-
-        public string ValidarAlteracaoMarcador()
-        {
-            return GetText(textValidarAlteracao);
-        }
         public void ClicarApagarMarcador()
         {
             Click(apagarMarcadoButton);
-        }
-        public bool ValidarExclusaoMarcado(string nomeMarcador, string colunaMarcador)
-        {
-            return ValidarExclusao(tableMarcadores, nomeMarcador, colunaMarcador);
         }
         public void ClicarVoltarAoMarcador()
         {

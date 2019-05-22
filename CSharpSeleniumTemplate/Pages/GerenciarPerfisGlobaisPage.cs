@@ -39,23 +39,19 @@ namespace CSharpSeleniumTemplate.Pages
         }
         public void PreencherPlataforma(string plataforma)
         {
-            SendKeysJavaScript(plataformaTextarea, plataforma);
+            SendKeys(plataformaTextarea, plataforma);
         }
         public void PreencherSO(string so)
         {
-            SendKeysJavaScript(soTextarea, so);
+            SendKeys(soTextarea, so);
         }
         public void PreencherVersaoSo(string versaoSo)
         {
-            SendKeysJavaScript(versaoSoTextArea, versaoSo);
+            SendKeys(versaoSoTextArea, versaoSo);
         }
         public void ClicarAdicionarPerfil()
         {
-            ClickJavaScript(adicionarPerfilButton);
-        }
-        public bool ValidarCadastroPerfil(string plataforma)
-        {
-            return ValidarCadastroPeloCombobox(perfil, plataforma);
+            Click(adicionarPerfilButton);
         }
         public void ClicarEnviar()
         {

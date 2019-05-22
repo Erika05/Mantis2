@@ -34,7 +34,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             camposPersonalizadosFlows.CadastrarCampo(campo);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeSucesso());
-            Assert.AreEqual(campo, gerenciarCamposPersonalizadosPage.VerificarValorSalvo());
+            Assert.AreEqual(1, CamposPersonalizadosDBSteps.RetornaCampo(campo), "Campo personalizado não foi gravada no banco.");
             CamposPersonalizadosDBSteps.DeletaCampo(campo);
         }
         [Test]
@@ -72,7 +72,7 @@ namespace CSharpSeleniumTemplate.Tests
             string usuario = "administrator";
             string senha = "administrator";
             string campo = "campo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8); ;
-            string campoEdicao = "campo edicao-" + GeneralHelpers.ReturnStringWithRandomNumbers(8); ;
+            string campoEdicao = "campo edicao-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string nomeColuna = "Nome";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
@@ -81,7 +81,8 @@ namespace CSharpSeleniumTemplate.Tests
             camposPersonalizadosFlows.CadastrarCampo(campo);
             camposPersonalizadosFlows.EditarCampo(campo, campoEdicao, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeSucesso());
-            Assert.IsTrue(gerenciarCamposPersonalizadosPage.ValidarEdicaoCampo(campoEdicao, nomeColuna), "Edição não foi realziada.");
+            Assert.AreEqual(1, CamposPersonalizadosDBSteps.RetornaCampo(campoEdicao), "Campo personalizado não foi alterado.");
+            Assert.AreEqual(0, CamposPersonalizadosDBSteps.RetornaCampo(campo), "Campo personalizado não foi alterado.");
             CamposPersonalizadosDBSteps.DeletaCampo(campoEdicao);
         }
         [Test]
@@ -98,7 +99,7 @@ namespace CSharpSeleniumTemplate.Tests
             camposPersonalizadosFlows.CadastrarCampo(campo);
             camposPersonalizadosFlows.ApagarCampo(campo, nomeColuna);
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarCamposPersonalizadosPage.RetornaMensagemDeSucesso());
-            Assert.IsFalse(gerenciarCamposPersonalizadosPage.ValidarExclusaoCampo(campo, nomeColuna), "Campo não foi pagado.");
+            Assert.AreEqual(0, CamposPersonalizadosDBSteps.RetornaCampo(campo), "Campo personalizado não foi apagado no banco.");
         }
 
     }

@@ -46,14 +46,13 @@ namespace CSharpSeleniumTemplate.Tests
             string categoria = "categoria-"+ GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string resumo = "teste automatizado resumo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string descricao = "teste automatizado descrição-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string colunaResumo = "Resumo";
             #endregion
             CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.CriarTarefaApenasCamposObrigatorios(categoria, resumo, descricao);
             Assert.AreEqual(mensagemEsperadaCadastroRealizadoComSucesso, criarTarefaPage.RetornaMensagemDeSucesso());
             tarefasFlows.RealizarPesquisa(resumo);
-            Assert.IsTrue(criarTarefaPage.RetornoPesquisa(resumo, colunaResumo), "Tarefa não foi cadastrada.");
+            Assert.AreEqual(1,TarefasDBSteps.RetornaTarefas(descricao, resumo), "Tarefa não foi gravada no banco.");
             TarefasDBSteps.DeletaTarefa(descricao, resumo);
             CategoriasDBSteps.DeletaCategoria(categoria);                        
         }
@@ -70,14 +69,13 @@ namespace CSharpSeleniumTemplate.Tests
             string frequencia = testData[3].ToString();
             string gravidade = testData[4].ToString();
             string prioridade = testData[5].ToString();
-            string colunaResumo = "Resumo";
             #endregion
             CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.CriarTarefaTodosCampos(categoria, resumo, descricao, frequencia, gravidade, prioridade);
             Assert.AreEqual(mensagemEsperadaCadastroRealizadoComSucesso, criarTarefaPage.RetornaMensagemDeSucesso());
             tarefasFlows.RealizarPesquisa(resumo);
-            Assert.IsTrue(criarTarefaPage.RetornoPesquisa(resumo, colunaResumo), "Tarefa não foi cadastrada.");
+            Assert.AreEqual(1, TarefasDBSteps.RetornaTarefas(descricao, resumo), "Tarefa não foi gravada no banco.");
             TarefasDBSteps.DeletaTarefa(descricao, resumo);
             CategoriasDBSteps.DeletaCategoria(categoria);
         }
@@ -97,6 +95,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.ContinuarCriandoTarefas(categoria,resumo,descricao);
             Assert.AreEqual(mensagemEsperada, criarTarefaPage.RetornaTituloTelaCadastro());
+            Assert.AreEqual(1, TarefasDBSteps.RetornaTarefas(descricao, resumo), "Tarefa não foi gravada no banco.");
             TarefasDBSteps.DeletaTarefa(descricao, resumo);
             CategoriasDBSteps.DeletaCategoria(categoria);
         }

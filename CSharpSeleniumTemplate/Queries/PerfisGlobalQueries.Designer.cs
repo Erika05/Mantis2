@@ -70,7 +70,7 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a DELETE  FROM mantis_user_profile_table WHERE platform = &apos;$nomeplatafornma&apos;AND os=&apos;$nomeso&apos; AND os_build=&apos;$nomeversaoso&apos;;.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a DELETE  FROM mantis_user_profile_table WHERE platform = &apos;$nomeplataforma&apos;AND os=&apos;$nomeso&apos; AND os_build=&apos;$nomeversaoso&apos;;.
         /// </summary>
         internal static string DeletaPerfilGlobal {
             get {
@@ -79,7 +79,7 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a INSERT INTO mantis_user_profile_table (platform,os,os_build,description) VALUES(&apos;$nomeplatafornma&apos;,&apos;$nomeso&apos;,&apos;$nomeversaoso&apos;,&apos;perfil de usuário&apos;);.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a INSERT INTO mantis_user_profile_table (platform,os,os_build,description) VALUES(&apos;$nomeplataforma&apos;,&apos;$nomeso&apos;,&apos;$nomeversaoso&apos;,&apos;perfil de usuário&apos;);.
         /// </summary>
         internal static string InserePerfilGlobal {
             get {
@@ -88,7 +88,8 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT platform FROM mantis_user_profile_table;.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT  COUNT(*) FROM  mantis_user_profile_table WHERE platform=&apos;$nomeplataforma&apos;
+        ///AND os=&apos;$nomeso&apos; AND os_build=&apos;$nomeversaoso&apos;;.
         /// </summary>
         internal static string RetornaPerfilGlobal {
             get {

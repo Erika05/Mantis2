@@ -128,6 +128,6 @@
  VALUES ('$nomeProjeto',10,1,10,10,'projeto geral',1,1);</value>
   </data>
   <data name="RetornaProjeto" xml:space="preserve">
-    <value>SELECT * FROM mantis_project_table WHERE NAME='$nomeProjeto';</value>
+    <value>SELECT count( *) FROM mantis_project_table WHERE NAME='$nomeProjeto';</value>
   </data>
 </root>

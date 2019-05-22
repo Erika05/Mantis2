@@ -20,5 +20,10 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
             string query = CategoriasQueries.DeletaCategoria.Replace("$nomecategoria", nomecategoria);
             DataBaseHelpers.ExecuteQuery(query);
         }
+        public static int RetornaCategoria(string nomecategoria)
+        {
+            string query = CategoriasQueries.RetornaCategoria.Replace("$nomecategoria", nomecategoria);
+            return Int32.Parse(DataBaseHelpers.RetornaDadosQuery(query)[0]);
+        }
     }
 }

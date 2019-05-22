@@ -21,5 +21,10 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
             string query = UsuariosQueries.DelataUsuario.Replace("$username", username);
             DataBaseHelpers.ExecuteQuery(query);
         }
+        public static int RetornaUsuarios(string username)
+        {
+            string query = UsuariosQueries.RetornaUsuario.Replace("$username", username);
+            return Int32.Parse(DataBaseHelpers.RetornaDadosQuery(query)[0]);
+        }
     }
 }

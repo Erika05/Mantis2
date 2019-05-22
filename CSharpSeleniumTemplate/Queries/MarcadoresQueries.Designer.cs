@@ -88,7 +88,7 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT * FROM mantis_tag_table WHERE NAME = &apos;$nomemarcador&apos;;.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT count(*) FROM mantis_tag_table WHERE NAME = &apos;$nomemarcador&apos;;.
         /// </summary>
         internal static string RetornaMarcador {
             get {

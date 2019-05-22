@@ -20,11 +20,10 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
             string query = CamposPersonalizadosQueries.DeletaCampoPersonalizado.Replace("$nomecampo", nomeCampo);
             DataBaseHelpers.ExecuteQuery(query);
         }
-        public static string RetornaCampo(string nomeCampo)
+        public static int RetornaCampo(string nomeCampo)
         {
             string query = CamposPersonalizadosQueries.RetornaCampoPersonalizado.Replace("$nomecampo", nomeCampo);
-
-            return DataBaseHelpers.RetornaDadosQuery(query)[0];
+            return Int32.Parse(DataBaseHelpers.RetornaDadosQuery(query)[0]);
         }
         public static void DeletaTodosCampos()
         {

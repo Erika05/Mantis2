@@ -16,10 +16,10 @@ namespace CSharpSeleniumTemplate.Pages
         By pesquisaButton = By.XPath("//*[@id='filter']/div[3]/div[1]/div/input[2]");
         By tableRetornoPesquisa = By.Id("buglist");
         By opcaoSeleciona = By.XPath("//form[@id='bug_action']/div/div[2]/div[2]/div[2]/div/label/span");
-        By editarTarefaButton = By.XPath("//*[@id='buglist']/tbody/tr[1]/td[2]/a/i");
+        By editarTarefaButton = By.XPath("//*[@id='buglist']/tbody/tr[1]/td[2]");
         By tituloEditarTarefa = By.XPath("//*[@id='update_bug_form']/div/div[1]/h4");
         By tituloDetalheTarefa = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div[1]/div/div[1]/h4");
-        By opcaoVoltarButton = By.XPath("//*[@id='update_bug_form']/div/div[1]/div/div/a");
+        By opcaoVoltarButton = By.LinkText("Voltar à Tarefa");
         By atualizarInformacaoButton = By.XPath("//input[@value='Atualizar Informação']");
         By adicionarAnotacaoButton = By.XPath("//input[@value='Adicionar Anotação']");
         By MsgErro = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/p[2]");

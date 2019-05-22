@@ -90,5 +90,16 @@ namespace CSharpSeleniumTemplate.Queries {
                 return ResourceManager.GetString("RetornaSenhaUsuario", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a SELECT count(*)
+        ///from mantis_user_table 
+        ///WHERE mantis_user_table.username = &apos;$username&apos;;.
+        /// </summary>
+        internal static string RetornaUsuario {
+            get {
+                return ResourceManager.GetString("RetornaUsuario", resourceCulture);
+            }
+        }
     }
 }

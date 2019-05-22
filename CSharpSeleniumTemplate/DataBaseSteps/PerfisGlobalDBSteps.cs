@@ -10,14 +10,14 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
 {
     public class PerfisGlobalDBSteps
     {
-        public static void InserirPerfilGlobal(string nomeplatafornma, string nomeso, string nomeversaoso)
+        public static void InserirPerfilGlobal(string nomeplataforma, string nomeso, string nomeversaoso)
         {
-            string query = PerfisGlobalQueries.InserePerfilGlobal.Replace("$nomeplatafornma", nomeplatafornma).Replace("$nomeso", nomeso).Replace("$nomeversaoso", nomeversaoso);
+            string query = PerfisGlobalQueries.InserePerfilGlobal.Replace("$nomeplataforma", nomeplataforma).Replace("$nomeso", nomeso).Replace("$nomeversaoso", nomeversaoso);
             DataBaseHelpers.ExecuteQuery(query);
         }
-        public static void DeletaPerfilGlobal(string nomeplatafornma, string nomeso, string nomeversaoso)
+        public static void DeletaPerfilGlobal(string nomeplataforma, string nomeso, string nomeversaoso)
         {
-            string query = PerfisGlobalQueries.DeletaPerfilGlobal.Replace("$nomeplatafornma", nomeplatafornma).Replace("$nomeso", nomeso).Replace("$nomeversaoso", nomeversaoso);
+            string query = PerfisGlobalQueries.DeletaPerfilGlobal.Replace("$nomeplataforma", nomeplataforma).Replace("$nomeso", nomeso).Replace("$nomeversaoso", nomeversaoso);
             DataBaseHelpers.ExecuteQuery(query);
         }
         public static void DeletaTosdosPerfisGlobal()
@@ -25,10 +25,10 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
             string query = PerfisGlobalQueries.ApagaTodosPerfisGlobal;
             DataBaseHelpers.ExecuteQuery(query);
         }
-        public static string  RetornaPerfilGlobal(string nomeplatafornma, string nomeso, string nomeversaoso)
+        public static int  RetornaPerfilGlobal(string nomeplataforma, string nomeso, string nomeversaoso)
         {
-            string query = PerfisGlobalQueries.RetornaPerfilGlobal.Replace("$nomeplatafornma", nomeplatafornma).Replace("$nomeso", nomeso).Replace("$nomeversaoso", nomeversaoso);
-            return  DataBaseHelpers.RetornaDadosQuery(query)[0];
+            string query = PerfisGlobalQueries.RetornaPerfilGlobal.Replace("$nomeplataforma", nomeplataforma).Replace("$nomeso", nomeso).Replace("$nomeversaoso", nomeversaoso);
+            return Int32.Parse(DataBaseHelpers.RetornaDadosQuery(query)[0]);
         }
     }
 }

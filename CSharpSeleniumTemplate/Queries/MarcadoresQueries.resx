@@ -127,6 +127,6 @@
     <value>INSERT INTO mantis_tag_table(NAME,description) VALUES('$nomemarcador','descricao');</value>
   </data>
   <data name="RetornaMarcador" xml:space="preserve">
-    <value>SELECT * FROM mantis_tag_table WHERE NAME = '$nomemarcador';</value>
+    <value>SELECT count(*) FROM mantis_tag_table WHERE NAME = '$nomemarcador';</value>
   </data>
 </root>

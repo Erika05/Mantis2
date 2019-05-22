@@ -11,7 +11,7 @@ namespace CSharpSeleniumTemplate.Pages
     public class GerenciarUsuariosPage : PageBase
     {
         #region Mapping
-        By gerenciarUsuariosTabindex = By.LinkText("Gerenciar Usuários");
+        By gerenciarUsuariosTabindex = By.XPath("//a[contains(text(),'Gerenciar Usuários')]");
         By cadastrarUsuarioButton = By.XPath("//*[@id='manage-user-div']/div[1]/form/fieldset/button");
         By nomeTextarea = By.Id("user-username");
         By nomeVerdadeiroTextarea = By.Id("user-realname");
@@ -62,10 +62,6 @@ namespace CSharpSeleniumTemplate.Pages
         {
             return GetText(MsgSucesso);
         }
-        public string ValidarCadastroUsuario(string nomeUsuario)
-        {
-            return GetValue(nomeSalvo);
-        }
         public void AcessarTelaEditarUsuario(string nomeUsuario, string colunaUsuario)
         {
             ClicarSobreLinha(tableUsuarios, colunaUsuario, nomeUsuario);
@@ -105,10 +101,6 @@ namespace CSharpSeleniumTemplate.Pages
         public void ClicarConfirmarExclusaorUsuario()
         {
             Click(confirmarExclusaoUsuarioButton);
-        }
-        public bool ValidarExclusaoUsuario(string nomeUsuario, string colunaUsuario)
-        {
-            return ValidarExclusao(tableUsuarios, nomeUsuario, colunaUsuario);
         }
         public void ClicarRedefinirSenha()
         {

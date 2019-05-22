@@ -11,7 +11,7 @@ namespace CSharpSeleniumTemplate.Pages
     public class GerenciarCamposPersonalizadosPage : PageBase
     {
         #region Mapping
-        By menuGerenciarCampos = By.LinkText("Gerenciar Campos Personalizados");
+        By menuGerenciarCampos = By.LinkText("Campos Personalizados");
         By campoTextarea = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/form/fieldset/input[2]");
         By criarCampoButton = By.XPath("//input[@value='Novo Campo Personalizado']");
         By MsgSucesso = By.XPath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");
@@ -42,10 +42,6 @@ namespace CSharpSeleniumTemplate.Pages
         {
             return GetText(MsgErro);
         }
-        public string VerificarValorSalvo()
-        {
-            return GetValue(campoSalvoTextarea);
-        }
         public void AcessarTelaEdicaoCampo(string nome, string colunaNome)
         {
             ClicarSobreLinha(tableCampos, colunaNome, nome);
@@ -62,10 +58,6 @@ namespace CSharpSeleniumTemplate.Pages
         {
             Click(atualizarCampoButton);
         }
-        public bool ValidarEdicaoCampo(string nome, string nomeColuna)
-        {
-            return ValidarCadastro(tableCampos, nome, nomeColuna);
-        }
         public void ClicarApagarCampo()
         {
             Click(apagarCampoButton);
@@ -73,10 +65,6 @@ namespace CSharpSeleniumTemplate.Pages
         public void CorfirmarApagarCampo()
         {
             Click(confirmarExclusaCampoButton);
-        }
-        public bool ValidarExclusaoCampo(string nome, string nomeColuna)
-        {
-            return ValidarExclusao(tableCampos, nome, nomeColuna);
         }
     }
 }

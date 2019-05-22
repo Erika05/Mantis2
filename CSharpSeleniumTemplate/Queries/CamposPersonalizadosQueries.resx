@@ -127,6 +127,6 @@
     <value>INSERT INTO mantis_custom_field_table (NAME) VALUES ('$nomecampo');</value>
   </data>
   <data name="RetornaCampoPersonalizado" xml:space="preserve">
-    <value>SELECT * FROM mantis_custom_field_table WHERE NAME = '$nomecampo';</value>
+    <value>SELECT COUNT(*) FROM mantis_custom_field_table WHERE NAME = '$nomecampo';</value>
   </data>
 </root>

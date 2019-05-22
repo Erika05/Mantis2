@@ -118,10 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="RetornaTarefa" xml:space="preserve">
-    <value>select * FROM mantis_bug_table mbt
-INNER JOIN mantis_bug_text_table mbtt
+    <value>SELECT COUNT(*)  FROM mantis_bug_table mbt
+iNNER JOIN mantis_bug_text_table mbtt
 ON mbt.bug_text_id=mbtt.id
-WHERE mbt.summary='resumo tarefa' AND mbtt.description='descricao tarefa';</value>
+WHERE mbt.summary='teste automatizado resumo-79649669' AND 
+mbtt.description='teste automatizado descrição-38314562';</value>
   </data>
   <data name="DeletaTarefa" xml:space="preserve">
     <value>DELETE FROM mantis_bug_history_table WHERE EXISTS (SELECT * FROM  mantis_bug_text_table WHERE mantis_bug_history_table.bug_id=mantis_bug_text_table.id AND  mantis_bug_text_table.description='$descricaoTarefa'); DELETE  FROM  mantis_bug_table WHERE EXISTS (SELECT * FROM  mantis_bug_text_table WHERE mantis_bug_table.bug_text_id=mantis_bug_text_table.id AND  mantis_bug_text_table.description='$descricaoTarefa' AND summary='$resumoTarefa');DELETE  FROM  mantis_bug_text_table WHERE description='$descricaoTarefa' ;</value>

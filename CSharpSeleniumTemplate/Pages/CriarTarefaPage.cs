@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CSharpSeleniumTemplate.Pages
@@ -11,7 +12,7 @@ namespace CSharpSeleniumTemplate.Pages
     public class CriarTarefaPage : PageBase
     {
         #region Mapping
-        By categoriaTabindex = By.Id("category_id");
+        By categoriaTabindex = By.XPath("//select[@id='category_id']");
         By acessoCadastroTarefaButton = By.XPath("//*[@id='sidebar']/ul/li[3]/a/span");
         By resumoTextarea = By.Id("summary");
         By descricaoTextarea = By.Id("description");

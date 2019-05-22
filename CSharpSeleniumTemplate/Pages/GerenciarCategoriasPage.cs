@@ -31,10 +31,6 @@ namespace CSharpSeleniumTemplate.Pages
         {
             Click(adicionarButton);
         }
-        public bool ValidarCadastroCategoria(string nomeCategora, string nomeColuna)
-        {
-            return ValidarCadastro(tableCategoria, nomeCategora, nomeColuna);
-        }
         public string RetornaMensagemDeErro()
         {
             return GetText(MsgErro);
@@ -67,10 +63,6 @@ namespace CSharpSeleniumTemplate.Pages
         public void ClicarConfirmarExclusaoCategoria()
         {
             Click(confirmaExclusaoButton);
-        }
-        public bool ValidaExclusaoCategoria(string nomeCategoria, string colunaCategoria)
-        {
-            return ValidarExclusao(tableCategoria, nomeCategoria, colunaCategoria);
         }
     }
 }

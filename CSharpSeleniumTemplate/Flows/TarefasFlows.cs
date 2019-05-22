@@ -1,8 +1,10 @@
-﻿using CSharpSeleniumTemplate.Pages;
+﻿using CSharpSeleniumTemplate.Bases;
+using CSharpSeleniumTemplate.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CSharpSeleniumTemplate.Flows
@@ -39,7 +41,7 @@ namespace CSharpSeleniumTemplate.Flows
             criarTarefaPage.ClicarCadastrarTarefa();
         }
         public void CriarTarefaApenasCamposObrigatorios(string categoria, string resumo, string descricao)
-        {
+        {            
             criarTarefaPage.AcessarCadastroTarefa();
             this.PreencherCamposObrigatorios(categoria, resumo, descricao);
             criarTarefaPage.ClicarCadastrarTarefa();
@@ -66,6 +68,7 @@ namespace CSharpSeleniumTemplate.Flows
         public void AcessarEditarTarefa()
         {
             gerenciarTarefasPage.AcessarVerTarefas();
+            gerenciarTarefasPage.LimparFiltroProjeto();
             gerenciarTarefasPage.AcessarTelaEditarTarefa();
         }
         public void VoltarDetalheTarefa()

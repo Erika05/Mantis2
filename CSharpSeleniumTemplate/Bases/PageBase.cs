@@ -34,7 +34,6 @@ namespace CSharpSeleniumTemplate.Bases
             wait.Until(ExpectedConditions.ElementToBeClickable(element));
             return element;
         }
-
         protected void Click(By locator)
         {
             Stopwatch timeOut = new Stopwatch();
@@ -382,13 +381,6 @@ namespace CSharpSeleniumTemplate.Bases
             }
             return true;
         }
-        public bool ValidarCadastroPeloCombobox(By locator,string nome)
-            {
-            if (GetText(locator).Contains(nome))
-                return true;
-            return false;
-        }
-
         #endregion
     }
 }

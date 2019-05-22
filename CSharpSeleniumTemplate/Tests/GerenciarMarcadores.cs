@@ -33,11 +33,10 @@ namespace CSharpSeleniumTemplate.Tests
             string usuario = "administrator";
             string senha = "administrator";
             string nomeMarcador = "marcador-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string nomeColuna = "Nome";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);            
             marcadoresFlows.CadastrarMarcador(nomeMarcador);
-            Assert.IsTrue(gerenciarMarcadoresPage.ValidarCadastroMarcado(nomeMarcador, nomeColuna), "Marcador não cadastrada");
+            Assert.AreEqual(1,MarcadoresDBSteps.RetornaMarcado(nomeMarcador), "Marcador não foi gravado no banco.");
             MarcadoresDBSteps.DeletaMarcador(nomeMarcador);
         }
 
@@ -67,7 +66,8 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             marcadoresFlows.CadastrarMarcador(nomeMarcador);
             marcadoresFlows.EditarMarcador(nomeMarcador, nomeColuna, nomeMarcadorEdicao);
-            Assert.AreEqual(nomeMarcadorEdicao, gerenciarMarcadoresPage.ValidarAlteracaoMarcador());
+            Assert.AreEqual(1, MarcadoresDBSteps.RetornaMarcado(nomeMarcadorEdicao), "Marcador não foi atualziado no banco.");
+            Assert.AreEqual(0, MarcadoresDBSteps.RetornaMarcado(nomeMarcador), "Marcador não foi atualizado no banco.");
             MarcadoresDBSteps.DeletaMarcador(nomeMarcadorEdicao);
 
         }
@@ -83,7 +83,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             marcadoresFlows.CadastrarMarcador(nomeMarcador);
             marcadoresFlows.ApagarMarcador(nomeMarcador, nomeColuna);
-            Assert.IsFalse(gerenciarMarcadoresPage.ValidarExclusaoMarcado(nomeMarcador, nomeColuna));
+            Assert.AreEqual(0, MarcadoresDBSteps.RetornaMarcado(nomeMarcador), "Marcador não foi gravado no banco.");
         }
         [Test]
         public void VoltarAoDetalheMarcador()
