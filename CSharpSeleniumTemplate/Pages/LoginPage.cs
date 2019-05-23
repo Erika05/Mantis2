@@ -11,6 +11,7 @@ namespace CSharpSeleniumTemplate.Pages
     public class LoginPage : PageBase
     {
         #region Mapping
+
         By usernameField = By.Id ("username");
         By passwordField = By.Id("password");
         By loginButton = By.XPath("//input[@value='Entrar']");
