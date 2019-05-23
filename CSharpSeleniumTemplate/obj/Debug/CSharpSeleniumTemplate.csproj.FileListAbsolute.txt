@@ -351,6 +351,7 @@ C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Web.Razor.xml
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\WebDriver.xml
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\WebDriver.Support.xml
+C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csprojAssemblyReference.cache
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.Queries.CamposPersonalizadosQueries.resources
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.Queries.PerfisGlobalQueries.resources
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.Queries.MarcadoresQueries.resources
