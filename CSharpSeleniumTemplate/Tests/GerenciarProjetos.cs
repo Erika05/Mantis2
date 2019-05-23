@@ -35,12 +35,11 @@ namespace CSharpSeleniumTemplate.Tests
             string estado = "desenvolvimento";
             string descricao = "descrição-"+GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
-            string nomeColuna = "Nome";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             Assert.AreEqual(mensagemSucessoEsperada, criarProjetoPage.RetornaMensagemDeSucesso());
-            Assert.IsTrue(criarProjetoPage.ValidarCadastroProjeto(nomeProjeto, nomeColuna), "Projeto não foi cadastrado.");
+            Assert.AreEqual(1, ProjetosDBSteps.RetornaProjeto(nomeProjeto), "Projeto não foi gravado no banco de dados.");
             ProjetosDBSteps.DeletaProjeto(nomeProjeto);
         }
 
@@ -91,7 +90,8 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             projetoFlows.EditarProjeto(nomeProjeto, nomeProjetoEdicao, colunaProjeto);
-            Assert.IsTrue(criarProjetoPage.ValidarCadastroProjeto(nomeProjetoEdicao, colunaProjeto), "Projeto não foi atualizado.");
+            Assert.AreEqual(1, ProjetosDBSteps.RetornaProjeto(nomeProjetoEdicao), "Projeto não foi atualizado no banco de dados.");
+            Assert.AreEqual(0, ProjetosDBSteps.RetornaProjeto(nomeProjeto), "Projeto não foi atualizado no banco de dados.");
             ProjetosDBSteps.DeletaProjeto(nomeProjetoEdicao);
         }
 
@@ -109,7 +109,7 @@ namespace CSharpSeleniumTemplate.Tests
             loginFlows.EfetuarLogin(usuario, senha);
             projetoFlows.CadastrarProjeto(nomeProjeto, estado, descricao);
             projetoFlows.ApagarProjeto(nomeProjeto, nomeColuna);
-            Assert.IsFalse(criarProjetoPage.ValidarExclusaoProjeto(nomeProjeto, nomeColuna), "Projeto não foi excluído.");
+            Assert.AreEqual(0, ProjetosDBSteps.RetornaProjeto(nomeProjeto), "Projeto não foi excluído do banco de dados.");
         }
     }
 }

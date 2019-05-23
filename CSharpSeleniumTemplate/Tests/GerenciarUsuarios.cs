@@ -64,6 +64,7 @@ namespace CSharpSeleniumTemplate.Tests
             Assert.AreEqual(mensagemSucessoEsperada, gerenciarUsuariosPage.RetornaMensagemDeSucesso());
             Assert.AreEqual(1, UsuariosDBSteps.RetornaUsuarios(nomeUsuario), "Usuário não foi salvo no banco de dados");
             UsuariosDBSteps.DeletaUsuario(nomeUsuario);
+            UsuariosDBSteps.DeletaEmailUsuario(email);
         }
 
         [Test]
@@ -115,6 +116,7 @@ namespace CSharpSeleniumTemplate.Tests
             usuariosFlows.CadastrarUsuarioTodosCampos(nomeUsuario_2, nomeVerdadeiro, email, nivel);
             Assert.AreEqual(mensagemErroEsperada, gerenciarUsuariosPage.RetornaMensagemDeErro());
             UsuariosDBSteps.DeletaUsuario(nomeUsuario);
+            UsuariosDBSteps.DeletaEmailUsuario(email);
         }
 
         [Test]

@@ -41,22 +41,6 @@ namespace CSharpSeleniumTemplate.Tests
 
             Assert.AreEqual(usuario, mainPage.RetornaUsernameDasInformacoesDeLogin());
         }
-        /*
-        //Exemplo utilizando um retorno de uma query de banco de dados
-        [Test]
-        public void EfetuarLoginComSucesso2()
-        {
-            #region Parameters
-            string usuario = "templateautomacao";
-            string senha = UsuariosDBSteps.RetornaSenhaDoUsuario(usuario);
-            #endregion
-
-            loginPage.PreenhcerUsuario(usuario);
-            loginPage.PreencherSenha(senha);
-            loginPage.ClicarEmEntrar();
-
-            Assert.AreEqual(usuario, mainPage.RetornaUsernameDasInformacoesDeLogin());
-        }*/
 
         [Test, TestCaseSource("EfetuarLoginInformandoUsuarioInvalidoIProvider")]
         public void EfetuarLoginInformandoUsuarioInvalido(ArrayList testData)

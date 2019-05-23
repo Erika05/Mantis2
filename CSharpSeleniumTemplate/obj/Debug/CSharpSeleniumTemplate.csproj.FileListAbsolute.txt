@@ -291,6 +291,7 @@ C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Numerics.Vectors.xml
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.CoreCompileInputs.cache
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\netstandard.dll
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Collections.Concurrent.dll
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Collections.dll
@@ -361,6 +362,5 @@ C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Xml.XmlSerializer.dll
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Xml.XPath.dll
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Xml.XPath.XDocument.dll
-C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csprojAssemblyReference.cache
-C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.CoreCompileInputs.cache
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.CopyComplete
+C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csprojAssemblyReference.cache

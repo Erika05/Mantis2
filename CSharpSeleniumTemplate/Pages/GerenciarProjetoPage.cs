@@ -46,16 +46,6 @@ namespace CSharpSeleniumTemplate.Pages
         {
             return GetText(MsgSucesso);
         }
-
-        public bool ValidarCadastroProjeto(string nomeProjeto, string colunaProjeto)
-        {
-            return ValidarCadastro(tableProjetos, nomeProjeto, colunaProjeto);
-        }
-
-        public bool ValidarExclusaoProjeto(string nomeProjeto, string colunaProjeto)
-        {
-            return ValidarExclusao(tableProjetos, nomeProjeto, colunaProjeto);
-        }
         public string RetornaMensagemDeErro()
         {
             return GetText(MsgErro);

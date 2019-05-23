@@ -71,6 +71,16 @@ namespace CSharpSeleniumTemplate.Queries {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a DELETE FROM mantis_email_table
+        ///WHERE email=&apos;$email&apos;;.
+        /// </summary>
+        internal static string DeletaEmailUsuario {
+            get {
+                return ResourceManager.GetString("DeletaEmailUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a DELETE  FROM mantis_user_table
         ///WHERE username&lt;&gt;&apos;administrator&apos;.
         /// </summary>

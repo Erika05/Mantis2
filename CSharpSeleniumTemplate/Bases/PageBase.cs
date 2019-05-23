@@ -325,49 +325,6 @@ namespace CSharpSeleniumTemplate.Bases
             int idColunaClick = ObterColuna(locator, nomeColunaAcao);
             table.FindElement(By.XPath($".//tr[{idLinha}]/td[{idColunaClick}]/div/div[1]")).Click();
         }
-        public bool ValidarCadastro(By locator, string nomeElemento, string nomeColuna)
-        {
-            IWebElement table = WaitForElement(locator);
-            if (ValidarExistenciaLinhas(locator).Equals(-1))
-            {
-                return false;
-            }
-            else
-            {
-                int colunaID = ObterColuna(locator, nomeColuna);
-                IList<IWebElement> tarefas = table.FindElements(By.XPath($".//tbody/tr/td[{colunaID}]"));
-                for (int i = 0; i < tarefas.Count; i++)
-                {
-                    if (tarefas[i].Text.Equals(nomeElemento))
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
-        }
-
-        public bool ValidarExclusao(By locator, string nomeElemento, string nomeColuna)
-        {
-            IWebElement table = WaitForElement(locator);
-            if (ValidarExistenciaLinhas(locator).Equals(-1))
-            {
-                return false;
-            }
-            else
-            {
-                int colunaID = ObterColuna(locator, nomeColuna);
-                IList<IWebElement> tarefas = table.FindElements(By.XPath($".//tbody/tr/td[{colunaID}]"));
-                for (int i = 0; i < tarefas.Count; i++)
-                {
-                    if (tarefas[i].Text.Equals(nomeElemento))
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
-        }
         public bool ValidarSelecaoTodos(By locator)
         {
             IWebElement table = WaitForElement(locator);

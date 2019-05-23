@@ -135,4 +135,8 @@ WHERE username&lt;&gt;'administrator'</value>
 from mantis_user_table 
 WHERE mantis_user_table.username = '$username';</value>
   </data>
+  <data name="DeletaEmailUsuario" xml:space="preserve">
+    <value>DELETE FROM mantis_email_table
+WHERE email='$email';</value>
+  </data>
 </root>

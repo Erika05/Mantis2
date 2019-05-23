@@ -10,12 +10,6 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
 {
     public class UsuariosDBSteps
     {
-        public static string RetornaSenhaDoUsuario(string username)
-        {
-            string query = UsuariosQueries.RetornaSenhaUsuario.Replace("$username", username);
-
-            return DataBaseHelpers.RetornaDadosQuery(query)[0];
-        }
         public static void DeletaUsuario(string username)
         {
             string query = UsuariosQueries.DelataUsuario.Replace("$username", username);
@@ -25,6 +19,11 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
         {
             string query = UsuariosQueries.RetornaUsuario.Replace("$username", username);
             return Int32.Parse(DataBaseHelpers.RetornaDadosQuery(query)[0]);
+        }
+        public static void DeletaEmailUsuario(string email)
+        {
+            string query = UsuariosQueries.DeletaEmailUsuario.Replace("$$email", email);
+            DataBaseHelpers.ExecuteQuery(query);
         }
     }
 }
