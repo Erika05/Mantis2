@@ -20,11 +20,11 @@ namespace CSharpSeleniumTemplate.DataBaseSteps
             string query = ProjetosQueries.DeletaProjeto.Replace("$nomeProjeto", nomeProjeto);
             DataBaseHelpers.ExecuteQuery(query);
         }
-        public static string RetornaProjeto(string nomeProjeto)
+        public static int RetornaProjeto(string nomeProjeto)
         {
             string query = ProjetosQueries.RetornaProjeto.Replace("$nomeProjeto", nomeProjeto);
 
-            return DataBaseHelpers.RetornaDadosQuery(query)[0];
+            return Int32.Parse(DataBaseHelpers.RetornaDadosQuery(query)[0]);
         }
         public static void DeletaTodosProjetos()
         {
