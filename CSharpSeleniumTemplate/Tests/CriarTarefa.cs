@@ -42,17 +42,15 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string categoria = "categoria-"+ GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string categoria = "General";
             string resumo = "teste automatizado resumo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string descricao = "teste automatizado descrição-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             #endregion
-            CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.CriarTarefaApenasCamposObrigatorios(categoria, resumo, descricao);
             Assert.AreEqual(mensagemEsperadaCadastroRealizadoComSucesso, criarTarefaPage.RetornaMensagemDeSucesso());
-            Assert.AreEqual(1,TarefasDBSteps.RetornaTarefas(descricao, resumo), "Tarefa não foi gravada no banco.");
+            Assert.AreEqual(1, TarefasDBSteps.RetornaTarefas(descricao, resumo), "Tarefa não foi gravada no banco.");
             TarefasDBSteps.DeletaTarefa(descricao, resumo);
-            CategoriasDBSteps.DeletaCategoria(categoria);                        
         }
 
         [Test, TestCaseSource("CriarTarefaSucesso")]
@@ -61,20 +59,18 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string categoria = testData[0].ToString()+"-"+ GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string resumo = testData[1].ToString()+"-"+ GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string descricao = testData[2].ToString()+"-"+ GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string categoria = testData[0].ToString();
+            string resumo = testData[1].ToString() + "-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string descricao = testData[2].ToString() + "-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string frequencia = testData[3].ToString();
             string gravidade = testData[4].ToString();
             string prioridade = testData[5].ToString();
             #endregion
-            CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.CriarTarefaTodosCampos(categoria, resumo, descricao, frequencia, gravidade, prioridade);
             Assert.AreEqual(mensagemEsperadaCadastroRealizadoComSucesso, criarTarefaPage.RetornaMensagemDeSucesso());
             Assert.AreEqual(1, TarefasDBSteps.RetornaTarefas(descricao, resumo), "Tarefa não foi gravada no banco.");
             TarefasDBSteps.DeletaTarefa(descricao, resumo);
-            CategoriasDBSteps.DeletaCategoria(categoria);
         }
 
         [Test]
@@ -83,18 +79,16 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string categoria = "categoria-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string categoria = "General";
             string resumo = "teste automatizado resumo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string descricao = "teste automatizado descrição-"+ GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string descricao = "teste automatizado descrição-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string mensagemEsperada = "Digite os Detalhes do Relatório";
             #endregion
-            CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
-            tarefasFlows.ContinuarCriandoTarefas(categoria,resumo,descricao);
+            tarefasFlows.ContinuarCriandoTarefas(categoria, resumo, descricao);
             Assert.AreEqual(mensagemEsperada, criarTarefaPage.RetornaTituloTelaCadastro());
             Assert.AreEqual(1, TarefasDBSteps.RetornaTarefas(descricao, resumo), "Tarefa não foi gravada no banco.");
             TarefasDBSteps.DeletaTarefa(descricao, resumo);
-            CategoriasDBSteps.DeletaCategoria(categoria);
         }
 
         [Test]
@@ -103,17 +97,15 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string categoria = "categoria-"+ GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string descricao = "teste automatizado descrição-"+GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string categoria = "General";
+            string descricao = "teste automatizado descrição-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             #endregion
-            CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
             criarTarefaPage.AcessarCadastroTarefa();
             criarTarefaPage.PreencherCategoriaTarefa("[Todos os Projetos] " + categoria);
             criarTarefaPage.PreencherDescricaoTarefa(descricao);
             criarTarefaPage.ClicarCadastrarTarefa();
-            CollectionAssert.Contains(new[] { mensagemEsperadaCampoObrigatorioChromeFirefoxLocal, mensagemEsperadaCampoObrigatorioIELocal, mensagemEsperadaCampoObrigatorioChromeRemota }, criarTarefaPage.RetornaMensagemObrigatoriedadeResumo());
-            CategoriasDBSteps.DeletaCategoria(categoria);
+            CollectionAssert.Contains(new[] {mensagemEsperadaCampoObrigatorioChromeFirefoxLocal, mensagemEsperadaCampoObrigatorioIELocal, mensagemEsperadaCampoObrigatorioChromeRemota}, criarTarefaPage.RetornaMensagemObrigatoriedadeResumo());
         }
         [Test]
         public void CampoDescricaoNaoPreenchido()
@@ -121,17 +113,15 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string categoria = "categoria-"+ GeneralHelpers.ReturnStringWithRandomNumbers(8);
+            string categoria = "General";
             string resumo = "teste automatizado resumo";
             #endregion
-            CategoriasDBSteps.InseriCategoria(categoria);
             loginFlows.EfetuarLogin(usuario, senha);
             criarTarefaPage.AcessarCadastroTarefa();
             criarTarefaPage.PreencherCategoriaTarefa("[Todos os Projetos] " + categoria);
             criarTarefaPage.PreencherResumoTarefa(resumo);
             criarTarefaPage.ClicarCadastrarTarefa();
-            CollectionAssert.Contains(new[] { mensagemEsperadaCampoObrigatorioChromeFirefoxLocal, mensagemEsperadaCampoObrigatorioIELocal, mensagemEsperadaCampoObrigatorioChromeRemota }, criarTarefaPage.RetornaMensagemObrigatoriedadeDescricao());
-            CategoriasDBSteps.DeletaCategoria(categoria);
+            CollectionAssert.Contains(new[] {mensagemEsperadaCampoObrigatorioChromeFirefoxLocal, mensagemEsperadaCampoObrigatorioIELocal, mensagemEsperadaCampoObrigatorioChromeRemota}, criarTarefaPage.RetornaMensagemObrigatoriedadeDescricao());
         }
     }
 }
