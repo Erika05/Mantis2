@@ -325,7 +325,6 @@
     <Compile Include="Helpers\DriverFactory.cs" />
     <Compile Include="Helpers\ExtentReportHelpers.cs" />
     <Compile Include="Helpers\GeneralHelpers.cs" />
-    <Compile Include="Pages\BugReportPage.cs" />
     <Compile Include="Pages\GerenciarCamposPersonalizadosPage.cs" />
     <Compile Include="Pages\GerenciarMarcadoresPage.cs" />
     <Compile Include="Pages\GerenciarPage.cs" />
@@ -387,7 +386,6 @@
     <Compile Include="Tests\GerenciarTarefas.cs" />
     <Compile Include="Tests\GerenciarUsuarios.cs" />
     <Compile Include="Tests\LoginTests.cs" />
-    <Compile Include="Tests\ReportIssueTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

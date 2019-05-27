@@ -18,7 +18,6 @@ namespace CSharpSeleniumTemplate.Tests
     public class CriarTarefa : TestBase
     {
         #region Pages and Flows Objects
-        [AutoInstance] MainPage mainPage;
         [AutoInstance] CriarTarefaPage criarTarefaPage;
         [AutoInstance] LoginFlows loginFlows;
         [AutoInstance] TarefasFlows tarefasFlows;

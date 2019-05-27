@@ -18,7 +18,6 @@ namespace CSharpSeleniumTemplate.Tests
     class GerenciarUsuarios : TestBase
     {
         #region Pages and Flows Objects
-        [AutoInstance] MainPage mainPage;
         [AutoInstance] GerenciarUsuariosPage gerenciarUsuariosPage;
         [AutoInstance] LoginFlows loginFlows;
         [AutoInstance] UsuariosFlows usuariosFlows;

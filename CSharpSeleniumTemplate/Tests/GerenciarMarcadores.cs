@@ -16,7 +16,6 @@ namespace CSharpSeleniumTemplate.Tests
     class GerenciarMarcadores : TestBase
     {
         #region
-        [AutoInstance] MainPage mainPage;
         [AutoInstance] LoginFlows loginFlows;
         [AutoInstance] MarcadoresFlows marcadoresFlows;
         [AutoInstance] GerenciarMarcadoresPage gerenciarMarcadoresPage;

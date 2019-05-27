@@ -16,7 +16,6 @@ namespace CSharpSeleniumTemplate.Tests
     class GerenciarCamposPersonalizados : TestBase
     {
         #region Pages and Flows Objects
-        [AutoInstance] MainPage mainPage;
         [AutoInstance] GerenciarCamposPersonalizadosPage gerenciarCamposPersonalizadosPage;
         [AutoInstance] LoginFlows loginFlows;
         [AutoInstance] CamposPersonalizadosFlows camposPersonalizadosFlows;

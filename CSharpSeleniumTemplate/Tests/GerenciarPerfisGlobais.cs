@@ -16,7 +16,6 @@ namespace CSharpSeleniumTemplate.Tests
     class GerenciarPerfisGlobais : TestBase
     {
         #region Pages and Flows Objects
-        [AutoInstance] MainPage mainPage;
         [AutoInstance] GerenciarPerfisGlobaisPage gerenciarPerfisGlobaisPage;
         [AutoInstance] LoginFlows loginFlows;
         [AutoInstance] GerenciarPerfisGlobaisFlows gerenciarPerfisGlobaisFlows;

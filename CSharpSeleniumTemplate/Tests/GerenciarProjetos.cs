@@ -16,7 +16,6 @@ namespace CSharpSeleniumTemplate.Tests
     [TestFixture]
     class GerenciarProjetos : TestBase
     {
-        [AutoInstance] MainPage mainPage;
         [AutoInstance] GerenciarProjetoPage criarProjetoPage;
         [AutoInstance] LoginFlows loginFlows;
         [AutoInstance] ProjetosFlows projetoFlows;

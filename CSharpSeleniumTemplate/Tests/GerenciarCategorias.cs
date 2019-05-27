@@ -15,7 +15,6 @@ namespace CSharpSeleniumTemplate.Tests
     [TestFixture]
     class GerenciarCategorias : TestBase
     {
-        [AutoInstance] MainPage mainPage;
         [AutoInstance] LoginFlows loginFlows;        
         [AutoInstance] GerenciarCategoriaPage gerenciarCategoriasPage;
         [AutoInstance] CategoriasFlows categoriaFlows;
