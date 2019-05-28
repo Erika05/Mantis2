@@ -291,8 +291,6 @@ C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.GenerateResource.Cache
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.dll
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.pdb
-C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csprojAssemblyReference.cache
-C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.CoreCompileInputs.cache
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\netstandard.dll
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Collections.Concurrent.dll
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Collections.dll
@@ -363,4 +361,6 @@ C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Xml.XmlSerializer.dll
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Xml.XPath.dll
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug\System.Xml.XPath.XDocument.dll
+C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csprojAssemblyReference.cache
+C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.CoreCompileInputs.cache
 C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\obj\Debug\CSharpSeleniumTemplate.csproj.CopyComplete
