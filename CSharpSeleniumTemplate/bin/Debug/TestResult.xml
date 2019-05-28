@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-run id="2" testcasecount="56" result="Failed" total="56" passed="0" failed="56" inconclusive="0" skipped="0" asserts="0" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-05-28 10:55:56Z" end-time="2019-05-28 10:56:04Z" duration="8.126727">
+<test-run id="2" testcasecount="56" result="Passed" total="56" passed="56" failed="0" inconclusive="0" skipped="0" asserts="78" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-05-28 11:26:19Z" end-time="2019-05-28 11:39:00Z" duration="760.710905">
   <command-line><![CDATA["C:\Program Files (x86)\NUnit.Console-3.10.0\bin\net35\nunit3-console.exe"  "CSharpSeleniumTemplate.dll" --inprocess --labels=On]]></command-line>
-  <test-suite type="Assembly" id="0-1067" name="CSharpSeleniumTemplate.dll" fullname="CSharpSeleniumTemplate.dll" runstate="Runnable" testcasecount="56" result="Failed" site="Child" start-time="2019-05-28 10:55:56Z" end-time="2019-05-28 10:56:04Z" duration="7.577041" total="56" passed="0" failed="56" warnings="0" inconclusive="0" skipped="0" asserts="0">
+  <test-suite type="Assembly" id="0-1067" name="CSharpSeleniumTemplate.dll" fullname="CSharpSeleniumTemplate.dll" runstate="Runnable" testcasecount="56" result="Passed" start-time="2019-05-28 11:26:20Z" end-time="2019-05-28 11:39:00Z" duration="760.203387" total="56" passed="56" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="78">
     <environment framework-version="3.11.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.17763.0" platform="Win32NT" cwd="C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug" machine-name="PLUTO" user="SISTEMA" user-domain="WORKGROUP" culture="pt-BR" uiculture="pt-BR" os-architecture="x64" />
     <settings>
       <setting name="ProcessModel" value="InProcess" />
@@ -14,745 +14,87 @@
       <setting name="NumberOfTestWorkers" value="4" />
     </settings>
     <properties>
-      <property name="_PID" value="16104" />
+      <property name="_PID" value="11784" />
       <property name="_APPDOMAIN" value="domain-" />
     </properties>
-    <failure>
-      <message><![CDATA[One or more child tests had errors]]></message>
-    </failure>
-    <test-suite type="TestSuite" id="0-1068" name="CSharpSeleniumTemplate" fullname="CSharpSeleniumTemplate" runstate="Runnable" testcasecount="56" result="Failed" site="Child" start-time="2019-05-28 10:55:56Z" end-time="2019-05-28 10:56:04Z" duration="7.556337" total="56" passed="0" failed="56" warnings="0" inconclusive="0" skipped="0" asserts="0">
-      <failure>
-        <message><![CDATA[One or more child tests had errors]]></message>
-      </failure>
-      <test-suite type="TestSuite" id="0-1069" name="Tests" fullname="CSharpSeleniumTemplate.Tests" runstate="Runnable" testcasecount="56" result="Failed" site="Child" start-time="2019-05-28 10:55:56Z" end-time="2019-05-28 10:56:04Z" duration="7.555845" total="56" passed="0" failed="56" warnings="0" inconclusive="0" skipped="0" asserts="0">
-        <failure>
-          <message><![CDATA[One or more child tests had errors]]></message>
-        </failure>
-        <test-suite type="TestFixture" id="0-1027" name="CriarTarefa" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2019-05-28 10:55:56Z" end-time="2019-05-28 10:56:03Z" duration="7.205944" total="9" passed="0" failed="9" warnings="0" inconclusive="0" skipped="0" asserts="0">
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="0-1035" name="CadastrarMaisTarefas" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarMaisTarefas" methodname="CadastrarMaisTarefas" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1748085967" result="Failed" label="Error" start-time="2019-05-28 10:55:57Z" end-time="2019-05-28 10:55:57Z" duration="0.345756" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1028" name="CadastrarTarefaApenasCamposObrigatorios" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaApenasCamposObrigatorios" methodname="CadastrarTarefaApenasCamposObrigatorios" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1380284612" result="Failed" label="Error" start-time="2019-05-28 10:55:57Z" end-time="2019-05-28 10:55:57Z" duration="0.001132" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="0-1034" name="CadastrarTarefaTodosCampos" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-28 10:55:57Z" end-time="2019-05-28 10:55:57Z" duration="0.033747" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
-            <failure>
-              <message><![CDATA[One or more child tests had errors]]></message>
-            </failure>
-            <test-case id="0-1029" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="30327804" result="Failed" label="Error" start-time="2019-05-28 10:55:57Z" end-time="2019-05-28 10:55:57Z" duration="0.001019" asserts="0">
-              <failure>
-                <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-                <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="0-1030" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1876158160" result="Failed" label="Error" start-time="2019-05-28 10:55:57Z" end-time="2019-05-28 10:55:57Z" duration="0.000896" asserts="0">
-              <failure>
-                <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-                <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="0-1031" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="434991407" result="Failed" label="Error" start-time="2019-05-28 10:55:57Z" end-time="2019-05-28 10:55:57Z" duration="0.000902" asserts="0">
-              <failure>
-                <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-                <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="0-1032" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="492892075" result="Failed" label="Error" start-time="2019-05-28 10:55:57Z" end-time="2019-05-28 10:55:57Z" duration="0.001817" asserts="0">
-              <failure>
-                <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-                <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="0-1033" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1579129131" result="Failed" label="Error" start-time="2019-05-28 10:55:57Z" end-time="2019-05-28 10:55:57Z" duration="0.001444" asserts="0">
-              <failure>
-                <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-                <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-              </failure>
-            </test-case>
+    <test-suite type="TestSuite" id="0-1068" name="CSharpSeleniumTemplate" fullname="CSharpSeleniumTemplate" runstate="Runnable" testcasecount="56" result="Passed" start-time="2019-05-28 11:26:20Z" end-time="2019-05-28 11:39:00Z" duration="760.183722" total="56" passed="56" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="78">
+      <test-suite type="TestSuite" id="0-1069" name="Tests" fullname="CSharpSeleniumTemplate.Tests" runstate="Runnable" testcasecount="56" result="Passed" start-time="2019-05-28 11:26:20Z" end-time="2019-05-28 11:39:00Z" duration="760.183210" total="56" passed="56" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="78">
+        <test-suite type="TestFixture" id="0-1027" name="CriarTarefa" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" testcasecount="9" result="Passed" start-time="2019-05-28 11:26:20Z" end-time="2019-05-28 11:28:20Z" duration="120.028785" total="9" passed="9" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="16">
+          <test-case id="0-1035" name="CadastrarMaisTarefas" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarMaisTarefas" methodname="CadastrarMaisTarefas" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1850557566" result="Passed" start-time="2019-05-28 11:26:20Z" end-time="2019-05-28 11:26:37Z" duration="16.617322" asserts="2" />
+          <test-case id="0-1028" name="CadastrarTarefaApenasCamposObrigatorios" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaApenasCamposObrigatorios" methodname="CadastrarTarefaApenasCamposObrigatorios" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="942132039" result="Passed" start-time="2019-05-28 11:26:37Z" end-time="2019-05-28 11:26:53Z" duration="16.652900" asserts="2" />
+          <test-suite type="ParameterizedMethod" id="0-1034" name="CadastrarTarefaTodosCampos" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-28 11:26:53Z" end-time="2019-05-28 11:27:54Z" duration="60.090927" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="10">
+            <test-case id="0-1029" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="420511256" result="Passed" start-time="2019-05-28 11:26:53Z" end-time="2019-05-28 11:27:06Z" duration="12.143218" asserts="2" />
+            <test-case id="0-1030" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1246706671" result="Passed" start-time="2019-05-28 11:27:06Z" end-time="2019-05-28 11:27:17Z" duration="11.486644" asserts="2" />
+            <test-case id="0-1031" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="892512200" result="Passed" start-time="2019-05-28 11:27:17Z" end-time="2019-05-28 11:27:30Z" duration="12.474958" asserts="2" />
+            <test-case id="0-1032" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="300474457" result="Passed" start-time="2019-05-28 11:27:30Z" end-time="2019-05-28 11:27:41Z" duration="11.750574" asserts="2" />
+            <test-case id="0-1033" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1409686866" result="Passed" start-time="2019-05-28 11:27:41Z" end-time="2019-05-28 11:27:54Z" duration="12.232606" asserts="2" />
           </test-suite>
-          <test-case id="0-1037" name="CampoDescricaoNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CampoDescricaoNaoPreenchido" methodname="CampoDescricaoNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1118464989" result="Failed" label="Error" start-time="2019-05-28 10:55:57Z" end-time="2019-05-28 10:55:57Z" duration="0.001255" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1036" name="CampoResumoNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CampoResumoNaoPreenchido" methodname="CampoResumoNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1675081468" result="Failed" label="Error" start-time="2019-05-28 10:55:57Z" end-time="2019-05-28 10:55:57Z" duration="0.002852" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
+          <test-case id="0-1037" name="CampoDescricaoNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CampoDescricaoNaoPreenchido" methodname="CampoDescricaoNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1299864663" result="Passed" start-time="2019-05-28 11:27:54Z" end-time="2019-05-28 11:28:04Z" duration="10.247029" asserts="1" />
+          <test-case id="0-1036" name="CampoResumoNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CampoResumoNaoPreenchido" methodname="CampoResumoNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1293483979" result="Passed" start-time="2019-05-28 11:28:04Z" end-time="2019-05-28 11:28:15Z" duration="10.758915" asserts="1" />
         </test-suite>
-        <test-suite type="TestFixture" id="0-1000" name="GerenciarCamposPersonalizados" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.014451" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="0-1005" name="ApagarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.ApagarCampoPersonalizado" methodname="ApagarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="897295464" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.001130" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1001" name="CadastrarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CadastrarCampoPersonalizado" methodname="CadastrarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="388931720" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.001148" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1002" name="CampoObrigatorioNaoInformado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CampoObrigatorioNaoInformado" methodname="CampoObrigatorioNaoInformado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="1574763430" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.001034" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1003" name="CampoPersonalizadoJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CampoPersonalizadoJaCadastrado" methodname="CampoPersonalizadoJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="522462415" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.000892" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1004" name="EditarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.EditarCampoPersonalizado" methodname="EditarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="1260431220" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.000891" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
+        <test-suite type="TestFixture" id="0-1000" name="GerenciarCamposPersonalizados" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-28 11:28:20Z" end-time="2019-05-28 11:29:27Z" duration="67.176838" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="9">
+          <test-case id="0-1005" name="ApagarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.ApagarCampoPersonalizado" methodname="ApagarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="1869502303" result="Passed" start-time="2019-05-28 11:28:20Z" end-time="2019-05-28 11:28:35Z" duration="15.215392" asserts="2" />
+          <test-case id="0-1001" name="CadastrarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CadastrarCampoPersonalizado" methodname="CadastrarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="1954594085" result="Passed" start-time="2019-05-28 11:28:35Z" end-time="2019-05-28 11:28:47Z" duration="12.132481" asserts="2" />
+          <test-case id="0-1002" name="CampoObrigatorioNaoInformado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CampoObrigatorioNaoInformado" methodname="CampoObrigatorioNaoInformado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="436431573" result="Passed" start-time="2019-05-28 11:28:47Z" end-time="2019-05-28 11:28:58Z" duration="10.689509" asserts="1" />
+          <test-case id="0-1003" name="CampoPersonalizadoJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CampoPersonalizadoJaCadastrado" methodname="CampoPersonalizadoJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="2070860434" result="Passed" start-time="2019-05-28 11:28:58Z" end-time="2019-05-28 11:29:12Z" duration="14.061141" asserts="1" />
+          <test-case id="0-1004" name="EditarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.EditarCampoPersonalizado" methodname="EditarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="1117765043" result="Passed" start-time="2019-05-28 11:29:12Z" end-time="2019-05-28 11:29:27Z" duration="15.064482" asserts="3" />
         </test-suite>
-        <test-suite type="TestFixture" id="0-1038" name="GerenciarCategorias" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.015653" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="0-1043" name="ApagarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.ApagarCategoria" methodname="ApagarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1369869734" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.001283" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1039" name="CadastrarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CadastrarCategoria" methodname="CadastrarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="2089753829" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.000854" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1041" name="CampoObrigatorioNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CampoObrigatorioNaoPreenchido" methodname="CampoObrigatorioNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="437685342" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.000907" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1040" name="CategoriaJaCadastrada" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CategoriaJaCadastrada" methodname="CategoriaJaCadastrada" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1526990963" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.001296" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1042" name="EditarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.EditarCategoria" methodname="EditarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1618517742" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:03Z" duration="0.000915" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
+        <test-suite type="TestFixture" id="0-1038" name="GerenciarCategorias" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-28 11:29:27Z" end-time="2019-05-28 11:30:45Z" duration="77.797755" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="7">
+          <test-case id="0-1043" name="ApagarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.ApagarCategoria" methodname="ApagarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1132824615" result="Passed" start-time="2019-05-28 11:29:27Z" end-time="2019-05-28 11:29:42Z" duration="15.075736" asserts="1" />
+          <test-case id="0-1039" name="CadastrarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CadastrarCategoria" methodname="CadastrarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="705122094" result="Passed" start-time="2019-05-28 11:29:42Z" end-time="2019-05-28 11:30:01Z" duration="19.292390" asserts="1" />
+          <test-case id="0-1041" name="CampoObrigatorioNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CampoObrigatorioNaoPreenchido" methodname="CampoObrigatorioNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1674933625" result="Passed" start-time="2019-05-28 11:30:01Z" end-time="2019-05-28 11:30:16Z" duration="15.185781" asserts="1" />
+          <test-case id="0-1040" name="CategoriaJaCadastrada" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CategoriaJaCadastrada" methodname="CategoriaJaCadastrada" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="670059862" result="Passed" start-time="2019-05-28 11:30:16Z" end-time="2019-05-28 11:30:30Z" duration="13.623042" asserts="1" />
+          <test-case id="0-1042" name="EditarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.EditarCategoria" methodname="EditarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1737814855" result="Passed" start-time="2019-05-28 11:30:30Z" end-time="2019-05-28 11:30:45Z" duration="14.602135" asserts="3" />
         </test-suite>
-        <test-suite type="TestFixture" id="0-1006" name="GerenciarMarcadores" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:04Z" duration="0.208513" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="0-1010" name="ApagarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.ApagarMarcador" methodname="ApagarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1104838785" result="Failed" label="Error" start-time="2019-05-28 10:56:03Z" end-time="2019-05-28 10:56:04Z" duration="0.175506" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1007" name="CadastrarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.CadastrarMarcador" methodname="CadastrarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1502907187" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000911" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1008" name="CampoObrigatorioNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.CampoObrigatorioNaoPreenchido" methodname="CampoObrigatorioNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1274386560" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000855" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1009" name="EditarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.EditarMarcador" methodname="EditarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1942372663" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000894" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1011" name="VoltarAoDetalheMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.VoltarAoDetalheMarcador" methodname="VoltarAoDetalheMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1587629362" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000896" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
+        <test-suite type="TestFixture" id="0-1006" name="GerenciarMarcadores" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-28 11:30:45Z" end-time="2019-05-28 11:31:54Z" duration="69.456376" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="6">
+          <test-case id="0-1010" name="ApagarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.ApagarMarcador" methodname="ApagarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1747776360" result="Passed" start-time="2019-05-28 11:30:45Z" end-time="2019-05-28 11:30:59Z" duration="14.761525" asserts="1" />
+          <test-case id="0-1007" name="CadastrarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.CadastrarMarcador" methodname="CadastrarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="636766512" result="Passed" start-time="2019-05-28 11:30:59Z" end-time="2019-05-28 11:31:11Z" duration="11.537990" asserts="1" />
+          <test-case id="0-1008" name="CampoObrigatorioNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.CampoObrigatorioNaoPreenchido" methodname="CampoObrigatorioNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1712012275" result="Passed" start-time="2019-05-28 11:31:11Z" end-time="2019-05-28 11:31:24Z" duration="13.242032" asserts="1" />
+          <test-case id="0-1009" name="EditarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.EditarMarcador" methodname="EditarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="2138492811" result="Passed" start-time="2019-05-28 11:31:24Z" end-time="2019-05-28 11:31:40Z" duration="15.491777" asserts="2" />
+          <test-case id="0-1011" name="VoltarAoDetalheMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.VoltarAoDetalheMarcador" methodname="VoltarAoDetalheMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1866562236" result="Passed" start-time="2019-05-28 11:31:40Z" end-time="2019-05-28 11:31:54Z" duration="14.405105" asserts="1" />
         </test-suite>
-        <test-suite type="TestFixture" id="0-1012" name="GerenciarPerfisGlobais" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.022037" total="8" passed="0" failed="8" warnings="0" inconclusive="0" skipped="0" asserts="0">
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="0-1020" name="ApagarPerfilScucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.ApagarPerfilScucesso" methodname="ApagarPerfilScucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1484472047" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.001139" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1019" name="ApagarSemSelecionarUmPerfil" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.ApagarSemSelecionarUmPerfil" methodname="ApagarSemSelecionarUmPerfil" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1569647692" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000879" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1013" name="CadastrarPerfilSucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.CadastrarPerfilSucesso" methodname="CadastrarPerfilSucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="151783965" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000848" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1018" name="EditarPerfilSucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EditarPerfilSucesso" methodname="EditarPerfilSucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="223014184" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.001003" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1017" name="EditarSemSelecionarUmPerfil" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EditarSemSelecionarUmPerfil" methodname="EditarSemSelecionarUmPerfil" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="505665367" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000847" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1016" name="EnviarSemSelecionarUmdosParametros" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EnviarSemSelecionarUmdosParametros" methodname="EnviarSemSelecionarUmdosParametros" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1750505563" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.002118" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1014" name="PlataformaNaoPreenchida" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.PlataformaNaoPreenchida" methodname="PlataformaNaoPreenchida" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="951473614" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.001014" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1015" name="VersaoSONaoPreenchida" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.VersaoSONaoPreenchida" methodname="VersaoSONaoPreenchida" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="136578717" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000857" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
+        <test-suite type="TestFixture" id="0-1012" name="GerenciarPerfisGlobais" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" testcasecount="8" result="Passed" start-time="2019-05-28 11:31:54Z" end-time="2019-05-28 11:33:34Z" duration="99.690048" total="8" passed="8" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="9">
+          <test-case id="0-1020" name="ApagarPerfilScucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.ApagarPerfilScucesso" methodname="ApagarPerfilScucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="983627313" result="Passed" start-time="2019-05-28 11:31:54Z" end-time="2019-05-28 11:32:08Z" duration="13.378120" asserts="1" />
+          <test-case id="0-1019" name="ApagarSemSelecionarUmPerfil" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.ApagarSemSelecionarUmPerfil" methodname="ApagarSemSelecionarUmPerfil" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="86801756" result="Passed" start-time="2019-05-28 11:32:08Z" end-time="2019-05-28 11:32:20Z" duration="12.206279" asserts="1" />
+          <test-case id="0-1013" name="CadastrarPerfilSucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.CadastrarPerfilSucesso" methodname="CadastrarPerfilSucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="819909608" result="Passed" start-time="2019-05-28 11:32:20Z" end-time="2019-05-28 11:32:32Z" duration="12.654973" asserts="1" />
+          <test-case id="0-1018" name="EditarPerfilSucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EditarPerfilSucesso" methodname="EditarPerfilSucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1852117447" result="Passed" start-time="2019-05-28 11:32:32Z" end-time="2019-05-28 11:32:48Z" duration="15.735178" asserts="2" />
+          <test-case id="0-1017" name="EditarSemSelecionarUmPerfil" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EditarSemSelecionarUmPerfil" methodname="EditarSemSelecionarUmPerfil" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1539699954" result="Passed" start-time="2019-05-28 11:32:48Z" end-time="2019-05-28 11:33:00Z" duration="11.852939" asserts="1" />
+          <test-case id="0-1016" name="EnviarSemSelecionarUmdosParametros" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EnviarSemSelecionarUmdosParametros" methodname="EnviarSemSelecionarUmdosParametros" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="9577954" result="Passed" start-time="2019-05-28 11:33:00Z" end-time="2019-05-28 11:33:12Z" duration="12.504354" asserts="1" />
+          <test-case id="0-1014" name="PlataformaNaoPreenchida" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.PlataformaNaoPreenchida" methodname="PlataformaNaoPreenchida" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="727793349" result="Passed" start-time="2019-05-28 11:33:12Z" end-time="2019-05-28 11:33:24Z" duration="11.287401" asserts="1" />
+          <test-case id="0-1015" name="VersaoSONaoPreenchida" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.VersaoSONaoPreenchida" methodname="VersaoSONaoPreenchida" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1548327630" result="Passed" start-time="2019-05-28 11:33:24Z" end-time="2019-05-28 11:33:34Z" duration="10.050654" asserts="1" />
         </test-suite>
-        <test-suite type="TestFixture" id="0-1021" name="GerenciarProjetos" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.017475" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="0-1026" name="ApagarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.ApagarProjeto" methodname="ApagarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="2096096916" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.001106" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1022" name="CadastrarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CadastrarProjeto" methodname="CadastrarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="1701716037" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.001600" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1023" name="CadastroJaRealizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CadastroJaRealizado" methodname="CadastroJaRealizado" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="1575045601" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000933" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1024" name="CampoNomeProjetoNaoPreenchidos" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CampoNomeProjetoNaoPreenchidos" methodname="CampoNomeProjetoNaoPreenchidos" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="2130304052" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000871" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1025" name="EditarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.EditarProjeto" methodname="EditarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="963417260" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000883" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
+        <test-suite type="TestFixture" id="0-1021" name="GerenciarProjetos" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-28 11:33:34Z" end-time="2019-05-28 11:34:44Z" duration="69.720584" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="7">
+          <test-case id="0-1026" name="ApagarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.ApagarProjeto" methodname="ApagarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="1654584024" result="Passed" start-time="2019-05-28 11:33:34Z" end-time="2019-05-28 11:33:48Z" duration="13.951579" asserts="1" />
+          <test-case id="0-1022" name="CadastrarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CadastrarProjeto" methodname="CadastrarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="722966557" result="Passed" start-time="2019-05-28 11:33:48Z" end-time="2019-05-28 11:34:00Z" duration="11.910138" asserts="2" />
+          <test-case id="0-1023" name="CadastroJaRealizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CadastroJaRealizado" methodname="CadastroJaRealizado" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="88232780" result="Passed" start-time="2019-05-28 11:34:00Z" end-time="2019-05-28 11:34:17Z" duration="17.108159" asserts="1" />
+          <test-case id="0-1024" name="CampoNomeProjetoNaoPreenchidos" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CampoNomeProjetoNaoPreenchidos" methodname="CampoNomeProjetoNaoPreenchidos" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="947726469" result="Passed" start-time="2019-05-28 11:34:17Z" end-time="2019-05-28 11:34:27Z" duration="10.417768" asserts="1" />
+          <test-case id="0-1025" name="EditarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.EditarProjeto" methodname="EditarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="1386903112" result="Passed" start-time="2019-05-28 11:34:27Z" end-time="2019-05-28 11:34:44Z" duration="16.311021" asserts="2" />
         </test-suite>
-        <test-suite type="TestFixture" id="0-1044" name="GerenciarTarefas" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.017824" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="0-1047" name="AcessarEditarTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.AcessarEditarTarefa" methodname="AcessarEditarTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1400874506" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.002416" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1049" name="AdicionarAnotacaoSemCampoObrigatorio" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.AdicionarAnotacaoSemCampoObrigatorio" methodname="AdicionarAnotacaoSemCampoObrigatorio" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1531932533" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000884" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1045" name="PesquisarTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.PesquisarTarefa" methodname="PesquisarTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1056660889" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000889" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1046" name="SelecionarTodasTarefas" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.SelecionarTodasTarefas" methodname="SelecionarTodasTarefas" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="521683155" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000867" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1048" name="VoltarDetalheTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.VoltarDetalheTarefa" methodname="VoltarDetalheTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1024899244" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000922" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
+        <test-suite type="TestFixture" id="0-1044" name="GerenciarTarefas" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-28 11:34:44Z" end-time="2019-05-28 11:36:01Z" duration="77.859698" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
+          <test-case id="0-1047" name="AcessarEditarTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.AcessarEditarTarefa" methodname="AcessarEditarTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1661133514" result="Passed" start-time="2019-05-28 11:34:44Z" end-time="2019-05-28 11:34:57Z" duration="13.884520" asserts="1" />
+          <test-case id="0-1049" name="AdicionarAnotacaoSemCampoObrigatorio" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.AdicionarAnotacaoSemCampoObrigatorio" methodname="AdicionarAnotacaoSemCampoObrigatorio" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1609953870" result="Passed" start-time="2019-05-28 11:34:57Z" end-time="2019-05-28 11:35:13Z" duration="15.395723" asserts="1" />
+          <test-case id="0-1045" name="PesquisarTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.PesquisarTarefa" methodname="PesquisarTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1475759272" result="Passed" start-time="2019-05-28 11:35:13Z" end-time="2019-05-28 11:35:30Z" duration="16.979602" asserts="1" />
+          <test-case id="0-1046" name="SelecionarTodasTarefas" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.SelecionarTodasTarefas" methodname="SelecionarTodasTarefas" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="888156442" result="Passed" start-time="2019-05-28 11:35:30Z" end-time="2019-05-28 11:35:47Z" duration="16.772301" asserts="1" />
+          <test-case id="0-1048" name="VoltarDetalheTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.VoltarDetalheTarefa" methodname="VoltarDetalheTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1554180184" result="Passed" start-time="2019-05-28 11:35:47Z" end-time="2019-05-28 11:36:01Z" duration="14.804776" asserts="1" />
         </test-suite>
-        <test-suite type="TestFixture" id="0-1050" name="GerenciarUsuarios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.031330" total="10" passed="0" failed="10" warnings="0" inconclusive="0" skipped="0" asserts="0">
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="0-1057" name="ApagarUsuario" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.ApagarUsuario" methodname="ApagarUsuario" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="2078671454" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.001125" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1051" name="CadastrarUsuarioApenasCamposObrigatorios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CadastrarUsuarioApenasCamposObrigatorios" methodname="CadastrarUsuarioApenasCamposObrigatorios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="159054293" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000880" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1052" name="CadastrarUsuarioTodosCampos" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CadastrarUsuarioTodosCampos" methodname="CadastrarUsuarioTodosCampos" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1842400135" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.001057" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1053" name="CampoNomeNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CampoNomeNaoPreenchido" methodname="CampoNomeNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="470068230" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000977" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1056" name="EditarUsuario" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EditarUsuario" methodname="EditarUsuario" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1105849467" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000839" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1059" name="EmailInvalido" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EmailInvalido" methodname="EmailInvalido" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1904849806" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000844" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1055" name="EmailJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EmailJaCadastrado" methodname="EmailJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="155621803" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000946" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1060" name="PesquisarUsuarios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.PesquisarUsuarios" methodname="PesquisarUsuarios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1967302801" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000953" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1058" name="RedefinirSenhaSemPreencherEmail" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.RedefinirSenhaSemPreencherEmail" methodname="RedefinirSenhaSemPreencherEmail" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="910322837" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.001004" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="0-1054" name="UsuarioJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.UsuarioJaCadastrado" methodname="UsuarioJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="281014462" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.001628" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
+        <test-suite type="TestFixture" id="0-1050" name="GerenciarUsuarios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" testcasecount="10" result="Passed" start-time="2019-05-28 11:36:01Z" end-time="2019-05-28 11:38:27Z" duration="145.531476" total="10" passed="10" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="15">
+          <test-case id="0-1057" name="ApagarUsuario" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.ApagarUsuario" methodname="ApagarUsuario" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1639294400" result="Passed" start-time="2019-05-28 11:36:01Z" end-time="2019-05-28 11:36:17Z" duration="15.442405" asserts="2" />
+          <test-case id="0-1051" name="CadastrarUsuarioApenasCamposObrigatorios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CadastrarUsuarioApenasCamposObrigatorios" methodname="CadastrarUsuarioApenasCamposObrigatorios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1571206984" result="Passed" start-time="2019-05-28 11:36:17Z" end-time="2019-05-28 11:36:29Z" duration="12.152776" asserts="2" />
+          <test-case id="0-1052" name="CadastrarUsuarioTodosCampos" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CadastrarUsuarioTodosCampos" methodname="CadastrarUsuarioTodosCampos" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1431982729" result="Passed" start-time="2019-05-28 11:36:29Z" end-time="2019-05-28 11:36:43Z" duration="14.123955" asserts="2" />
+          <test-case id="0-1053" name="CampoNomeNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CampoNomeNaoPreenchido" methodname="CampoNomeNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1273577237" result="Passed" start-time="2019-05-28 11:36:43Z" end-time="2019-05-28 11:36:55Z" duration="12.001526" asserts="1" />
+          <test-case id="0-1056" name="EditarUsuario" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EditarUsuario" methodname="EditarUsuario" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="711858123" result="Passed" start-time="2019-05-28 11:36:55Z" end-time="2019-05-28 11:37:10Z" duration="14.768695" asserts="3" />
+          <test-case id="0-1059" name="EmailInvalido" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EmailInvalido" methodname="EmailInvalido" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="320781400" result="Passed" start-time="2019-05-28 11:37:10Z" end-time="2019-05-28 11:37:22Z" duration="12.547028" asserts="1" />
+          <test-case id="0-1055" name="EmailJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EmailJaCadastrado" methodname="EmailJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1022000798" result="Passed" start-time="2019-05-28 11:37:22Z" end-time="2019-05-28 11:37:42Z" duration="19.260681" asserts="1" />
+          <test-case id="0-1060" name="PesquisarUsuarios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.PesquisarUsuarios" methodname="PesquisarUsuarios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1250164890" result="Passed" start-time="2019-05-28 11:37:42Z" end-time="2019-05-28 11:37:57Z" duration="14.876568" asserts="1" />
+          <test-case id="0-1058" name="RedefinirSenhaSemPreencherEmail" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.RedefinirSenhaSemPreencherEmail" methodname="RedefinirSenhaSemPreencherEmail" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1338458612" result="Passed" start-time="2019-05-28 11:37:57Z" end-time="2019-05-28 11:38:11Z" duration="14.677177" asserts="1" />
+          <test-case id="0-1054" name="UsuarioJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.UsuarioJaCadastrado" methodname="UsuarioJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1987664730" result="Passed" start-time="2019-05-28 11:38:11Z" end-time="2019-05-28 11:38:27Z" duration="15.653594" asserts="1" />
         </test-suite>
-        <test-suite type="TestFixture" id="0-1061" name="LoginTests" fullname="CSharpSeleniumTemplate.Tests.LoginTests" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.016662" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="0">
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="0-1062" name="EfetuarLoginComSucesso" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginComSucesso" methodname="EfetuarLoginComSucesso" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="838145101" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.001167" asserts="0">
-            <failure>
-              <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-              <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="0-1066" name="EfetuarLoginInformandoUsuarioInvalido" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.002893" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="0">
-            <failure>
-              <message><![CDATA[One or more child tests had errors]]></message>
-            </failure>
-            <test-case id="0-1063" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="388034110" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000925" asserts="0">
-              <failure>
-                <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-                <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="0-1064" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="1827360775" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000919" asserts="0">
-              <failure>
-                <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-                <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="0-1065" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="321054135" result="Failed" label="Error" start-time="2019-05-28 10:56:04Z" end-time="2019-05-28 10:56:04Z" duration="0.000937" asserts="0">
-              <failure>
-                <message><![CDATA[System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.
-TearDown : System.NullReferenceException : Referência de objeto não definida para uma instância de um objeto.]]></message>
-                <stack-trace><![CDATA[   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
---TearDown
-   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
-   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
-   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
-              </failure>
-            </test-case>
+        <test-suite type="TestFixture" id="0-1061" name="LoginTests" fullname="CSharpSeleniumTemplate.Tests.LoginTests" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2019-05-28 11:38:27Z" end-time="2019-05-28 11:39:00Z" duration="32.915105" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+          <test-case id="0-1062" name="EfetuarLoginComSucesso" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginComSucesso" methodname="EfetuarLoginComSucesso" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="844920877" result="Passed" start-time="2019-05-28 11:38:27Z" end-time="2019-05-28 11:38:37Z" duration="10.018035" asserts="1" />
+          <test-suite type="ParameterizedMethod" id="0-1066" name="EfetuarLoginInformandoUsuarioInvalido" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2019-05-28 11:38:37Z" end-time="2019-05-28 11:39:00Z" duration="22.870800" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+            <test-case id="0-1063" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="1446882725" result="Passed" start-time="2019-05-28 11:38:37Z" end-time="2019-05-28 11:38:44Z" duration="7.496985" asserts="1" />
+            <test-case id="0-1064" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="357986751" result="Passed" start-time="2019-05-28 11:38:44Z" end-time="2019-05-28 11:38:53Z" duration="8.074413" asserts="1" />
+            <test-case id="0-1065" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="1950883017" result="Passed" start-time="2019-05-28 11:38:53Z" end-time="2019-05-28 11:39:00Z" duration="7.299252" asserts="1" />
           </test-suite>
         </test-suite>
       </test-suite>

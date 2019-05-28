@@ -105,7 +105,7 @@ namespace CSharpSeleniumTemplate.Tests
             criarTarefaPage.PreencherCategoriaTarefa("[Todos os Projetos] " + categoria);
             criarTarefaPage.PreencherDescricaoTarefa(descricao);
             criarTarefaPage.ClicarCadastrarTarefa();
-            CollectionAssert.Contains(new[] {mensagemEsperadaCampoObrigatorioChromeFirefoxLocal, mensagemEsperadaCampoObrigatorioIELocal, mensagemEsperadaCampoObrigatorioChromeRemota}, criarTarefaPage.RetornaMensagemObrigatoriedadeResumo());
+            CollectionAssert.Contains(new[] { mensagemEsperadaCampoObrigatorioChromeFirefoxLocal, mensagemEsperadaCampoObrigatorioIELocal, mensagemEsperadaCampoObrigatorioChromeRemota }, criarTarefaPage.RetornaMensagemObrigatoriedadeResumo());
         }
         [Test]
         public void CampoDescricaoNaoPreenchido()
@@ -121,7 +121,7 @@ namespace CSharpSeleniumTemplate.Tests
             criarTarefaPage.PreencherCategoriaTarefa("[Todos os Projetos] " + categoria);
             criarTarefaPage.PreencherResumoTarefa(resumo);
             criarTarefaPage.ClicarCadastrarTarefa();
-            CollectionAssert.Contains(new[] {mensagemEsperadaCampoObrigatorioChromeFirefoxLocal, mensagemEsperadaCampoObrigatorioIELocal, mensagemEsperadaCampoObrigatorioChromeRemota}, criarTarefaPage.RetornaMensagemObrigatoriedadeDescricao());
+            CollectionAssert.Contains(new[] { mensagemEsperadaCampoObrigatorioChromeFirefoxLocal, mensagemEsperadaCampoObrigatorioIELocal, mensagemEsperadaCampoObrigatorioChromeRemota }, criarTarefaPage.RetornaMensagemObrigatoriedadeDescricao());
         }
     }
 }
