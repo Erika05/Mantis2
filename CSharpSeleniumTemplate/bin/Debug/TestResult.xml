@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-run id="2" testcasecount="56" result="Passed" total="56" passed="56" failed="0" inconclusive="0" skipped="0" asserts="78" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-05-29 14:44:49Z" end-time="2019-05-29 15:00:59Z" duration="970.177822">
+<test-run id="2" testcasecount="56" result="Failed" total="56" passed="0" failed="56" inconclusive="0" skipped="0" asserts="0" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-05-29 17:02:51Z" end-time="2019-05-29 17:04:07Z" duration="76.305222">
   <command-line><![CDATA["C:\Program Files (x86)\NUnit.Console-3.10.0\bin\net35\nunit3-console.exe"  "CSharpSeleniumTemplate.dll" --inprocess --labels=On]]></command-line>
-  <test-suite type="Assembly" id="0-1067" name="CSharpSeleniumTemplate.dll" fullname="CSharpSeleniumTemplate.dll" runstate="Runnable" testcasecount="56" result="Passed" start-time="2019-05-29 14:44:50Z" end-time="2019-05-29 15:00:59Z" duration="969.674453" total="56" passed="56" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="78">
+  <test-suite type="Assembly" id="0-1067" name="CSharpSeleniumTemplate.dll" fullname="CSharpSeleniumTemplate.dll" runstate="Runnable" testcasecount="56" result="Failed" site="Child" start-time="2019-05-29 17:02:51Z" end-time="2019-05-29 17:04:07Z" duration="75.685705" total="56" passed="0" failed="56" warnings="0" inconclusive="0" skipped="0" asserts="0">
     <environment framework-version="3.11.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.17763.0" platform="Win32NT" cwd="C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\bin\Debug" machine-name="PLUTO" user="SISTEMA" user-domain="WORKGROUP" culture="pt-BR" uiculture="pt-BR" os-architecture="x64" />
     <settings>
       <setting name="ProcessModel" value="InProcess" />
@@ -14,87 +14,1085 @@
       <setting name="NumberOfTestWorkers" value="4" />
     </settings>
     <properties>
-      <property name="_PID" value="6700" />
+      <property name="_PID" value="2332" />
       <property name="_APPDOMAIN" value="domain-" />
     </properties>
-    <test-suite type="TestSuite" id="0-1068" name="CSharpSeleniumTemplate" fullname="CSharpSeleniumTemplate" runstate="Runnable" testcasecount="56" result="Passed" start-time="2019-05-29 14:44:50Z" end-time="2019-05-29 15:00:59Z" duration="969.652418" total="56" passed="56" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="78">
-      <test-suite type="TestSuite" id="0-1069" name="Tests" fullname="CSharpSeleniumTemplate.Tests" runstate="Runnable" testcasecount="56" result="Passed" start-time="2019-05-29 14:44:50Z" end-time="2019-05-29 15:00:59Z" duration="969.651942" total="56" passed="56" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="78">
-        <test-suite type="TestFixture" id="0-1027" name="CriarTarefa" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" testcasecount="9" result="Passed" start-time="2019-05-29 14:44:50Z" end-time="2019-05-29 14:47:20Z" duration="150.731951" total="9" passed="9" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="16">
-          <test-case id="0-1035" name="CadastrarMaisTarefas" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarMaisTarefas" methodname="CadastrarMaisTarefas" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="2116066248" result="Passed" start-time="2019-05-29 14:44:50Z" end-time="2019-05-29 14:45:10Z" duration="20.149501" asserts="2" />
-          <test-case id="0-1028" name="CadastrarTarefaApenasCamposObrigatorios" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaApenasCamposObrigatorios" methodname="CadastrarTarefaApenasCamposObrigatorios" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1506271802" result="Passed" start-time="2019-05-29 14:45:10Z" end-time="2019-05-29 14:45:25Z" duration="14.858012" asserts="2" />
-          <test-suite type="ParameterizedMethod" id="0-1034" name="CadastrarTarefaTodosCampos" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-29 14:45:25Z" end-time="2019-05-29 14:46:50Z" duration="85.175431" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="10">
-            <test-case id="0-1029" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="552402044" result="Passed" start-time="2019-05-29 14:45:25Z" end-time="2019-05-29 14:45:40Z" duration="15.252441" asserts="2" />
-            <test-case id="0-1030" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="531438373" result="Passed" start-time="2019-05-29 14:45:40Z" end-time="2019-05-29 14:45:56Z" duration="15.517306" asserts="2" />
-            <test-case id="0-1031" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1872465883" result="Passed" start-time="2019-05-29 14:45:56Z" end-time="2019-05-29 14:46:12Z" duration="16.305564" asserts="2" />
-            <test-case id="0-1032" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1223779684" result="Passed" start-time="2019-05-29 14:46:12Z" end-time="2019-05-29 14:46:35Z" duration="22.527187" asserts="2" />
-            <test-case id="0-1033" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1418208017" result="Passed" start-time="2019-05-29 14:46:35Z" end-time="2019-05-29 14:46:50Z" duration="15.569983" asserts="2" />
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1068" name="CSharpSeleniumTemplate" fullname="CSharpSeleniumTemplate" runstate="Runnable" testcasecount="56" result="Failed" site="Child" start-time="2019-05-29 17:02:51Z" end-time="2019-05-29 17:04:07Z" duration="75.662705" total="56" passed="0" failed="56" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1069" name="Tests" fullname="CSharpSeleniumTemplate.Tests" runstate="Runnable" testcasecount="56" result="Failed" site="Child" start-time="2019-05-29 17:02:51Z" end-time="2019-05-29 17:04:07Z" duration="75.662204" total="56" passed="0" failed="56" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="0-1027" name="CriarTarefa" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2019-05-29 17:02:51Z" end-time="2019-05-29 17:04:03Z" duration="71.297982" total="9" passed="0" failed="9" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1035" name="CadastrarMaisTarefas" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarMaisTarefas" methodname="CadastrarMaisTarefas" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1454717917" result="Failed" label="Error" start-time="2019-05-29 17:02:52Z" end-time="2019-05-29 17:03:53Z" duration="60.701282" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Tried to run command without establishing a connection
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   em OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   em CSharpSeleniumTemplate.Bases.PageBase.SendKeysJavaScript(By locator, String value) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\PageBase.cs:linha 165
+   em CSharpSeleniumTemplate.Pages.LoginPage.PreenhcerUsuario(String usuario) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Pages\LoginPage.cs:linha 24
+   em CSharpSeleniumTemplate.Flows.LoginFlows.EfetuarLogin(String username, String password) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Flows\LoginFlows.cs:linha 22
+   em CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarMaisTarefas() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Tests\CriarTarefa.cs:linha 87
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1028" name="CadastrarTarefaApenasCamposObrigatorios" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaApenasCamposObrigatorios" methodname="CadastrarTarefaApenasCamposObrigatorios" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="226516615" result="Failed" label="Error" start-time="2019-05-29 17:03:53Z" end-time="2019-05-29 17:03:53Z" duration="0.033934" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="0-1034" name="CadastrarTarefaTodosCampos" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-29 17:03:53Z" end-time="2019-05-29 17:03:53Z" duration="0.401272" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1029" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="2106412368" result="Failed" label="Error" start-time="2019-05-29 17:03:53Z" end-time="2019-05-29 17:03:53Z" duration="0.083174" asserts="0">
+              <failure>
+                <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+                <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1030" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1372436623" result="Failed" label="Error" start-time="2019-05-29 17:03:53Z" end-time="2019-05-29 17:03:53Z" duration="0.080132" asserts="0">
+              <failure>
+                <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+                <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1031" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1279127019" result="Failed" label="Error" start-time="2019-05-29 17:03:53Z" end-time="2019-05-29 17:03:53Z" duration="0.079808" asserts="0">
+              <failure>
+                <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+                <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1032" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="6392090" result="Failed" label="Error" start-time="2019-05-29 17:03:53Z" end-time="2019-05-29 17:03:53Z" duration="0.086713" asserts="0">
+              <failure>
+                <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+                <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1033" name="CadastrarTarefaTodosCampos(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CadastrarTarefaTodosCampos(System.Collections.ArrayList)" methodname="CadastrarTarefaTodosCampos" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1751535063" result="Failed" label="Error" start-time="2019-05-29 17:03:53Z" end-time="2019-05-29 17:03:53Z" duration="0.068709" asserts="0">
+              <failure>
+                <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+                <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+              </failure>
+            </test-case>
           </test-suite>
-          <test-case id="0-1037" name="CampoDescricaoNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CampoDescricaoNaoPreenchido" methodname="CampoDescricaoNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1263256963" result="Passed" start-time="2019-05-29 14:46:50Z" end-time="2019-05-29 14:47:03Z" duration="12.685851" asserts="1" />
-          <test-case id="0-1036" name="CampoResumoNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CampoResumoNaoPreenchido" methodname="CampoResumoNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="277443828" result="Passed" start-time="2019-05-29 14:47:03Z" end-time="2019-05-29 14:47:15Z" duration="11.986319" asserts="1" />
+          <test-case id="0-1037" name="CampoDescricaoNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CampoDescricaoNaoPreenchido" methodname="CampoDescricaoNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1050732279" result="Failed" label="Error" start-time="2019-05-29 17:03:53Z" end-time="2019-05-29 17:03:53Z" duration="0.067294" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1036" name="CampoResumoNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.CriarTarefa.CampoResumoNaoPreenchido" methodname="CampoResumoNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.CriarTarefa" runstate="Runnable" seed="1396918500" result="Failed" label="Error" start-time="2019-05-29 17:03:53Z" end-time="2019-05-29 17:03:53Z" duration="0.075016" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="0-1000" name="GerenciarCamposPersonalizados" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-29 14:47:20Z" end-time="2019-05-29 14:48:46Z" duration="85.811355" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="9">
-          <test-case id="0-1005" name="ApagarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.ApagarCampoPersonalizado" methodname="ApagarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="19633355" result="Passed" start-time="2019-05-29 14:47:20Z" end-time="2019-05-29 14:47:42Z" duration="22.216008" asserts="2" />
-          <test-case id="0-1001" name="CadastrarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CadastrarCampoPersonalizado" methodname="CadastrarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="1979901627" result="Passed" start-time="2019-05-29 14:47:42Z" end-time="2019-05-29 14:47:55Z" duration="12.167283" asserts="2" />
-          <test-case id="0-1002" name="CampoObrigatorioNaoInformado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CampoObrigatorioNaoInformado" methodname="CampoObrigatorioNaoInformado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="998031480" result="Passed" start-time="2019-05-29 14:47:55Z" end-time="2019-05-29 14:48:09Z" duration="14.760935" asserts="1" />
-          <test-case id="0-1003" name="CampoPersonalizadoJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CampoPersonalizadoJaCadastrado" methodname="CampoPersonalizadoJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="914471916" result="Passed" start-time="2019-05-29 14:48:09Z" end-time="2019-05-29 14:48:26Z" duration="16.363190" asserts="1" />
-          <test-case id="0-1004" name="EditarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.EditarCampoPersonalizado" methodname="EditarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="934923768" result="Passed" start-time="2019-05-29 14:48:26Z" end-time="2019-05-29 14:48:46Z" duration="20.288881" asserts="3" />
+        <test-suite type="TestFixture" id="0-1000" name="GerenciarCamposPersonalizados" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-29 17:04:03Z" end-time="2019-05-29 17:04:04Z" duration="1.266694" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1005" name="ApagarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.ApagarCampoPersonalizado" methodname="ApagarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="292128504" result="Failed" label="Error" start-time="2019-05-29 17:04:03Z" end-time="2019-05-29 17:04:03Z" duration="0.080352" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1001" name="CadastrarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CadastrarCampoPersonalizado" methodname="CadastrarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="2097958446" result="Failed" label="Error" start-time="2019-05-29 17:04:03Z" end-time="2019-05-29 17:04:03Z" duration="0.074370" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1002" name="CampoObrigatorioNaoInformado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CampoObrigatorioNaoInformado" methodname="CampoObrigatorioNaoInformado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="167672062" result="Failed" label="Error" start-time="2019-05-29 17:04:03Z" end-time="2019-05-29 17:04:03Z" duration="0.065089" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1003" name="CampoPersonalizadoJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.CampoPersonalizadoJaCadastrado" methodname="CampoPersonalizadoJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="555745332" result="Failed" label="Error" start-time="2019-05-29 17:04:03Z" end-time="2019-05-29 17:04:03Z" duration="0.071510" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1004" name="EditarCampoPersonalizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados.EditarCampoPersonalizado" methodname="EditarCampoPersonalizado" classname="CSharpSeleniumTemplate.Tests.GerenciarCamposPersonalizados" runstate="Runnable" seed="1955608757" result="Failed" label="Error" start-time="2019-05-29 17:04:03Z" end-time="2019-05-29 17:04:03Z" duration="0.064615" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="0-1038" name="GerenciarCategorias" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-29 14:48:46Z" end-time="2019-05-29 14:50:09Z" duration="83.042392" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="7">
-          <test-case id="0-1043" name="ApagarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.ApagarCategoria" methodname="ApagarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1944424640" result="Passed" start-time="2019-05-29 14:48:46Z" end-time="2019-05-29 14:49:05Z" duration="19.316502" asserts="1" />
-          <test-case id="0-1039" name="CadastrarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CadastrarCategoria" methodname="CadastrarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="2101433726" result="Passed" start-time="2019-05-29 14:49:05Z" end-time="2019-05-29 14:49:19Z" duration="14.082509" asserts="1" />
-          <test-case id="0-1041" name="CampoObrigatorioNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CampoObrigatorioNaoPreenchido" methodname="CampoObrigatorioNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1718523193" result="Passed" start-time="2019-05-29 14:49:19Z" end-time="2019-05-29 14:49:31Z" duration="11.560869" asserts="1" />
-          <test-case id="0-1040" name="CategoriaJaCadastrada" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CategoriaJaCadastrada" methodname="CategoriaJaCadastrada" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1494039920" result="Passed" start-time="2019-05-29 14:49:31Z" end-time="2019-05-29 14:49:50Z" duration="18.797117" asserts="1" />
-          <test-case id="0-1042" name="EditarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.EditarCategoria" methodname="EditarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="998341162" result="Passed" start-time="2019-05-29 14:49:50Z" end-time="2019-05-29 14:50:09Z" duration="19.267527" asserts="3" />
+        <test-suite type="TestFixture" id="0-1038" name="GerenciarCategorias" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-29 17:04:04Z" end-time="2019-05-29 17:04:04Z" duration="0.383648" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1043" name="ApagarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.ApagarCategoria" methodname="ApagarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1861173971" result="Failed" label="Error" start-time="2019-05-29 17:04:04Z" end-time="2019-05-29 17:04:04Z" duration="0.062626" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1039" name="CadastrarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CadastrarCategoria" methodname="CadastrarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="1831207089" result="Failed" label="Error" start-time="2019-05-29 17:04:04Z" end-time="2019-05-29 17:04:04Z" duration="0.067305" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1041" name="CampoObrigatorioNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CampoObrigatorioNaoPreenchido" methodname="CampoObrigatorioNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="444783266" result="Failed" label="Error" start-time="2019-05-29 17:04:04Z" end-time="2019-05-29 17:04:04Z" duration="0.068382" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1040" name="CategoriaJaCadastrada" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.CategoriaJaCadastrada" methodname="CategoriaJaCadastrada" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="668143209" result="Failed" label="Error" start-time="2019-05-29 17:04:04Z" end-time="2019-05-29 17:04:04Z" duration="0.067792" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1042" name="EditarCategoria" fullname="CSharpSeleniumTemplate.Tests.GerenciarCategorias.EditarCategoria" methodname="EditarCategoria" classname="CSharpSeleniumTemplate.Tests.GerenciarCategorias" runstate="Runnable" seed="2084555133" result="Failed" label="Error" start-time="2019-05-29 17:04:04Z" end-time="2019-05-29 17:04:04Z" duration="0.078938" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="0-1006" name="GerenciarMarcadores" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-29 14:50:09Z" end-time="2019-05-29 14:51:39Z" duration="89.832131" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="6">
-          <test-case id="0-1010" name="ApagarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.ApagarMarcador" methodname="ApagarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="2093737864" result="Passed" start-time="2019-05-29 14:50:09Z" end-time="2019-05-29 14:50:29Z" duration="19.419292" asserts="1" />
-          <test-case id="0-1007" name="CadastrarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.CadastrarMarcador" methodname="CadastrarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="574408957" result="Passed" start-time="2019-05-29 14:50:29Z" end-time="2019-05-29 14:50:42Z" duration="13.654844" asserts="1" />
-          <test-case id="0-1008" name="CampoObrigatorioNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.CampoObrigatorioNaoPreenchido" methodname="CampoObrigatorioNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1912806653" result="Passed" start-time="2019-05-29 14:50:42Z" end-time="2019-05-29 14:50:56Z" duration="13.476728" asserts="1" />
-          <test-case id="0-1009" name="EditarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.EditarMarcador" methodname="EditarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="50114428" result="Passed" start-time="2019-05-29 14:50:56Z" end-time="2019-05-29 14:51:18Z" duration="22.463226" asserts="2" />
-          <test-case id="0-1011" name="VoltarAoDetalheMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.VoltarAoDetalheMarcador" methodname="VoltarAoDetalheMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="791714838" result="Passed" start-time="2019-05-29 14:51:18Z" end-time="2019-05-29 14:51:39Z" duration="20.797248" asserts="1" />
+        <test-suite type="TestFixture" id="0-1006" name="GerenciarMarcadores" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-29 17:04:04Z" end-time="2019-05-29 17:04:05Z" duration="0.367604" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1010" name="ApagarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.ApagarMarcador" methodname="ApagarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="537540098" result="Failed" label="Error" start-time="2019-05-29 17:04:04Z" end-time="2019-05-29 17:04:04Z" duration="0.070607" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1007" name="CadastrarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.CadastrarMarcador" methodname="CadastrarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="2121320523" result="Failed" label="Error" start-time="2019-05-29 17:04:04Z" end-time="2019-05-29 17:04:04Z" duration="0.065072" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1008" name="CampoObrigatorioNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.CampoObrigatorioNaoPreenchido" methodname="CampoObrigatorioNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1909410285" result="Failed" label="Error" start-time="2019-05-29 17:04:04Z" end-time="2019-05-29 17:04:05Z" duration="0.070999" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1009" name="EditarMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.EditarMarcador" methodname="EditarMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="1041879871" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.064352" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1011" name="VoltarAoDetalheMarcador" fullname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores.VoltarAoDetalheMarcador" methodname="VoltarAoDetalheMarcador" classname="CSharpSeleniumTemplate.Tests.GerenciarMarcadores" runstate="Runnable" seed="375947460" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.079964" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="0-1012" name="GerenciarPerfisGlobais" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" testcasecount="8" result="Passed" start-time="2019-05-29 14:51:39Z" end-time="2019-05-29 14:53:42Z" duration="122.914852" total="8" passed="8" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="9">
-          <test-case id="0-1020" name="ApagarPerfilScucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.ApagarPerfilScucesso" methodname="ApagarPerfilScucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1087659236" result="Passed" start-time="2019-05-29 14:51:39Z" end-time="2019-05-29 14:51:57Z" duration="17.809615" asserts="1" />
-          <test-case id="0-1019" name="ApagarSemSelecionarUmPerfil" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.ApagarSemSelecionarUmPerfil" methodname="ApagarSemSelecionarUmPerfil" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="169113453" result="Passed" start-time="2019-05-29 14:51:57Z" end-time="2019-05-29 14:52:12Z" duration="15.366133" asserts="1" />
-          <test-case id="0-1013" name="CadastrarPerfilSucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.CadastrarPerfilSucesso" methodname="CadastrarPerfilSucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1573060247" result="Passed" start-time="2019-05-29 14:52:12Z" end-time="2019-05-29 14:52:26Z" duration="14.066311" asserts="1" />
-          <test-case id="0-1018" name="EditarPerfilSucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EditarPerfilSucesso" methodname="EditarPerfilSucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1457645359" result="Passed" start-time="2019-05-29 14:52:26Z" end-time="2019-05-29 14:52:46Z" duration="19.770311" asserts="2" />
-          <test-case id="0-1017" name="EditarSemSelecionarUmPerfil" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EditarSemSelecionarUmPerfil" methodname="EditarSemSelecionarUmPerfil" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="312853682" result="Passed" start-time="2019-05-29 14:52:46Z" end-time="2019-05-29 14:53:03Z" duration="16.908804" asserts="1" />
-          <test-case id="0-1016" name="EnviarSemSelecionarUmdosParametros" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EnviarSemSelecionarUmdosParametros" methodname="EnviarSemSelecionarUmdosParametros" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1520456819" result="Passed" start-time="2019-05-29 14:53:03Z" end-time="2019-05-29 14:53:18Z" duration="14.819144" asserts="1" />
-          <test-case id="0-1014" name="PlataformaNaoPreenchida" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.PlataformaNaoPreenchida" methodname="PlataformaNaoPreenchida" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="230877315" result="Passed" start-time="2019-05-29 14:53:18Z" end-time="2019-05-29 14:53:29Z" duration="11.697486" asserts="1" />
-          <test-case id="0-1015" name="VersaoSONaoPreenchida" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.VersaoSONaoPreenchida" methodname="VersaoSONaoPreenchida" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="814227832" result="Passed" start-time="2019-05-29 14:53:29Z" end-time="2019-05-29 14:53:42Z" duration="12.452202" asserts="1" />
+        <test-suite type="TestFixture" id="0-1012" name="GerenciarPerfisGlobais" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.562903" total="8" passed="0" failed="8" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1020" name="ApagarPerfilScucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.ApagarPerfilScucesso" methodname="ApagarPerfilScucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="485089036" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.063180" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1019" name="ApagarSemSelecionarUmPerfil" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.ApagarSemSelecionarUmPerfil" methodname="ApagarSemSelecionarUmPerfil" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1634612547" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.068062" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1013" name="CadastrarPerfilSucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.CadastrarPerfilSucesso" methodname="CadastrarPerfilSucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1121836373" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.067426" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1018" name="EditarPerfilSucesso" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EditarPerfilSucesso" methodname="EditarPerfilSucesso" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="544610986" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.077657" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1017" name="EditarSemSelecionarUmPerfil" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EditarSemSelecionarUmPerfil" methodname="EditarSemSelecionarUmPerfil" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="555373589" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.069024" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1016" name="EnviarSemSelecionarUmdosParametros" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.EnviarSemSelecionarUmdosParametros" methodname="EnviarSemSelecionarUmdosParametros" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="943060592" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.065950" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1014" name="PlataformaNaoPreenchida" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.PlataformaNaoPreenchida" methodname="PlataformaNaoPreenchida" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="21981209" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.068820" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1015" name="VersaoSONaoPreenchida" fullname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais.VersaoSONaoPreenchida" methodname="VersaoSONaoPreenchida" classname="CSharpSeleniumTemplate.Tests.GerenciarPerfisGlobais" runstate="Runnable" seed="1469503632" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.065803" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="0-1021" name="GerenciarProjetos" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-29 14:53:42Z" end-time="2019-05-29 14:55:21Z" duration="98.984419" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="7">
-          <test-case id="0-1026" name="ApagarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.ApagarProjeto" methodname="ApagarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="438307559" result="Passed" start-time="2019-05-29 14:53:42Z" end-time="2019-05-29 14:54:08Z" duration="25.728300" asserts="1" />
-          <test-case id="0-1022" name="CadastrarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CadastrarProjeto" methodname="CadastrarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="1017007100" result="Passed" start-time="2019-05-29 14:54:08Z" end-time="2019-05-29 14:54:23Z" duration="15.772356" asserts="2" />
-          <test-case id="0-1023" name="CadastroJaRealizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CadastroJaRealizado" methodname="CadastroJaRealizado" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="1681045265" result="Passed" start-time="2019-05-29 14:54:23Z" end-time="2019-05-29 14:54:45Z" duration="21.138314" asserts="1" />
-          <test-case id="0-1024" name="CampoNomeProjetoNaoPreenchidos" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CampoNomeProjetoNaoPreenchidos" methodname="CampoNomeProjetoNaoPreenchidos" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="1820372344" result="Passed" start-time="2019-05-29 14:54:45Z" end-time="2019-05-29 14:54:57Z" duration="12.713873" asserts="1" />
-          <test-case id="0-1025" name="EditarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.EditarProjeto" methodname="EditarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="916341437" result="Passed" start-time="2019-05-29 14:54:57Z" end-time="2019-05-29 14:55:21Z" duration="23.606053" asserts="2" />
+        <test-suite type="TestFixture" id="0-1021" name="GerenciarProjetos" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:06Z" duration="0.387593" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1026" name="ApagarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.ApagarProjeto" methodname="ApagarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="35542515" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.085840" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1022" name="CadastrarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CadastrarProjeto" methodname="CadastrarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="938193699" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.079210" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1023" name="CadastroJaRealizado" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CadastroJaRealizado" methodname="CadastroJaRealizado" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="1677537262" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:05Z" duration="0.069247" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1024" name="CampoNomeProjetoNaoPreenchidos" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.CampoNomeProjetoNaoPreenchidos" methodname="CampoNomeProjetoNaoPreenchidos" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="391714899" result="Failed" label="Error" start-time="2019-05-29 17:04:05Z" end-time="2019-05-29 17:04:06Z" duration="0.069504" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1025" name="EditarProjeto" fullname="CSharpSeleniumTemplate.Tests.GerenciarProjetos.EditarProjeto" methodname="EditarProjeto" classname="CSharpSeleniumTemplate.Tests.GerenciarProjetos" runstate="Runnable" seed="1786651435" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.068675" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="0-1044" name="GerenciarTarefas" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" testcasecount="5" result="Passed" start-time="2019-05-29 14:55:21Z" end-time="2019-05-29 14:57:10Z" duration="108.694105" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="5">
-          <test-case id="0-1047" name="AcessarEditarTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.AcessarEditarTarefa" methodname="AcessarEditarTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1776643359" result="Passed" start-time="2019-05-29 14:55:21Z" end-time="2019-05-29 14:55:38Z" duration="17.282401" asserts="1" />
-          <test-case id="0-1049" name="AdicionarAnotacaoSemCampoObrigatorio" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.AdicionarAnotacaoSemCampoObrigatorio" methodname="AdicionarAnotacaoSemCampoObrigatorio" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1951931249" result="Passed" start-time="2019-05-29 14:55:38Z" end-time="2019-05-29 14:56:00Z" duration="21.599949" asserts="1" />
-          <test-case id="0-1045" name="PesquisarTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.PesquisarTarefa" methodname="PesquisarTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="2125713418" result="Passed" start-time="2019-05-29 14:56:00Z" end-time="2019-05-29 14:56:25Z" duration="25.682255" asserts="1" />
-          <test-case id="0-1046" name="SelecionarTodasTarefas" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.SelecionarTodasTarefas" methodname="SelecionarTodasTarefas" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="534295384" result="Passed" start-time="2019-05-29 14:56:25Z" end-time="2019-05-29 14:56:52Z" duration="26.569560" asserts="1" />
-          <test-case id="0-1048" name="VoltarDetalheTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.VoltarDetalheTarefa" methodname="VoltarDetalheTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1811745238" result="Passed" start-time="2019-05-29 14:56:52Z" end-time="2019-05-29 14:57:10Z" duration="17.537655" asserts="1" />
+        <test-suite type="TestFixture" id="0-1044" name="GerenciarTarefas" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.336729" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1047" name="AcessarEditarTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.AcessarEditarTarefa" methodname="AcessarEditarTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="1624635046" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.064570" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1049" name="AdicionarAnotacaoSemCampoObrigatorio" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.AdicionarAnotacaoSemCampoObrigatorio" methodname="AdicionarAnotacaoSemCampoObrigatorio" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="2089028530" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.063300" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1045" name="PesquisarTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.PesquisarTarefa" methodname="PesquisarTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="632668971" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.067846" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1046" name="SelecionarTodasTarefas" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.SelecionarTodasTarefas" methodname="SelecionarTodasTarefas" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="560960644" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.061990" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1048" name="VoltarDetalheTarefa" fullname="CSharpSeleniumTemplate.Tests.GerenciarTarefas.VoltarDetalheTarefa" methodname="VoltarDetalheTarefa" classname="CSharpSeleniumTemplate.Tests.GerenciarTarefas" runstate="Runnable" seed="2093135180" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.066862" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="0-1050" name="GerenciarUsuarios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" testcasecount="10" result="Passed" start-time="2019-05-29 14:57:10Z" end-time="2019-05-29 15:00:28Z" duration="198.925233" total="10" passed="10" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="15">
-          <test-case id="0-1057" name="ApagarUsuario" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.ApagarUsuario" methodname="ApagarUsuario" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1191975544" result="Passed" start-time="2019-05-29 14:57:10Z" end-time="2019-05-29 14:57:31Z" duration="21.530849" asserts="2" />
-          <test-case id="0-1051" name="CadastrarUsuarioApenasCamposObrigatorios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CadastrarUsuarioApenasCamposObrigatorios" methodname="CadastrarUsuarioApenasCamposObrigatorios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1127679256" result="Passed" start-time="2019-05-29 14:57:31Z" end-time="2019-05-29 14:57:47Z" duration="15.538794" asserts="2" />
-          <test-case id="0-1052" name="CadastrarUsuarioTodosCampos" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CadastrarUsuarioTodosCampos" methodname="CadastrarUsuarioTodosCampos" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1209990728" result="Passed" start-time="2019-05-29 14:57:47Z" end-time="2019-05-29 14:58:05Z" duration="17.956023" asserts="2" />
-          <test-case id="0-1053" name="CampoNomeNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CampoNomeNaoPreenchido" methodname="CampoNomeNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1617643728" result="Passed" start-time="2019-05-29 14:58:05Z" end-time="2019-05-29 14:58:19Z" duration="14.626954" asserts="1" />
-          <test-case id="0-1056" name="EditarUsuario" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EditarUsuario" methodname="EditarUsuario" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="2138669743" result="Passed" start-time="2019-05-29 14:58:19Z" end-time="2019-05-29 14:58:41Z" duration="22.058122" asserts="3" />
-          <test-case id="0-1059" name="EmailInvalido" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EmailInvalido" methodname="EmailInvalido" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1596917628" result="Passed" start-time="2019-05-29 14:58:41Z" end-time="2019-05-29 14:58:56Z" duration="14.729049" asserts="1" />
-          <test-case id="0-1055" name="EmailJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EmailJaCadastrado" methodname="EmailJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="733023234" result="Passed" start-time="2019-05-29 14:58:56Z" end-time="2019-05-29 14:59:21Z" duration="24.595134" asserts="1" />
-          <test-case id="0-1060" name="PesquisarUsuarios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.PesquisarUsuarios" methodname="PesquisarUsuarios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="2038297948" result="Passed" start-time="2019-05-29 14:59:21Z" end-time="2019-05-29 14:59:41Z" duration="20.640503" asserts="1" />
-          <test-case id="0-1058" name="RedefinirSenhaSemPreencherEmail" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.RedefinirSenhaSemPreencherEmail" methodname="RedefinirSenhaSemPreencherEmail" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1365560282" result="Passed" start-time="2019-05-29 14:59:41Z" end-time="2019-05-29 15:00:07Z" duration="26.255956" asserts="1" />
-          <test-case id="0-1054" name="UsuarioJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.UsuarioJaCadastrado" methodname="UsuarioJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="183790561" result="Passed" start-time="2019-05-29 15:00:07Z" end-time="2019-05-29 15:00:28Z" duration="20.961973" asserts="1" />
+        <test-suite type="TestFixture" id="0-1050" name="GerenciarUsuarios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:07Z" duration="0.771866" total="10" passed="0" failed="10" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1057" name="ApagarUsuario" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.ApagarUsuario" methodname="ApagarUsuario" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="2138280568" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.062567" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1051" name="CadastrarUsuarioApenasCamposObrigatorios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CadastrarUsuarioApenasCamposObrigatorios" methodname="CadastrarUsuarioApenasCamposObrigatorios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1497984688" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.068781" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1052" name="CadastrarUsuarioTodosCampos" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CadastrarUsuarioTodosCampos" methodname="CadastrarUsuarioTodosCampos" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="498112135" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.062243" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1053" name="CampoNomeNaoPreenchido" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.CampoNomeNaoPreenchido" methodname="CampoNomeNaoPreenchido" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1388115887" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.095220" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1056" name="EditarUsuario" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EditarUsuario" methodname="EditarUsuario" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="175202234" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.083547" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1059" name="EmailInvalido" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EmailInvalido" methodname="EmailInvalido" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1328175718" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.096265" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1055" name="EmailJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.EmailJaCadastrado" methodname="EmailJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="646759636" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:06Z" duration="0.068963" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1060" name="PesquisarUsuarios" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.PesquisarUsuarios" methodname="PesquisarUsuarios" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1107922468" result="Failed" label="Error" start-time="2019-05-29 17:04:06Z" end-time="2019-05-29 17:04:07Z" duration="0.065347" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1058" name="RedefinirSenhaSemPreencherEmail" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.RedefinirSenhaSemPreencherEmail" methodname="RedefinirSenhaSemPreencherEmail" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1045479670" result="Failed" label="Error" start-time="2019-05-29 17:04:07Z" end-time="2019-05-29 17:04:07Z" duration="0.071531" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1054" name="UsuarioJaCadastrado" fullname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios.UsuarioJaCadastrado" methodname="UsuarioJaCadastrado" classname="CSharpSeleniumTemplate.Tests.GerenciarUsuarios" runstate="Runnable" seed="1230263830" result="Failed" label="Error" start-time="2019-05-29 17:04:07Z" end-time="2019-05-29 17:04:07Z" duration="0.069540" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="0-1061" name="LoginTests" fullname="CSharpSeleniumTemplate.Tests.LoginTests" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2019-05-29 15:00:28Z" end-time="2019-05-29 15:00:59Z" duration="30.707425" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
-          <test-case id="0-1062" name="EfetuarLoginComSucesso" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginComSucesso" methodname="EfetuarLoginComSucesso" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="2044938278" result="Passed" start-time="2019-05-29 15:00:28Z" end-time="2019-05-29 15:00:38Z" duration="9.385041" asserts="1" />
-          <test-suite type="ParameterizedMethod" id="0-1066" name="EfetuarLoginInformandoUsuarioInvalido" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2019-05-29 15:00:38Z" end-time="2019-05-29 15:00:59Z" duration="21.292900" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
-            <test-case id="0-1063" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="1584132906" result="Passed" start-time="2019-05-29 15:00:38Z" end-time="2019-05-29 15:00:45Z" duration="6.982172" asserts="1" />
-            <test-case id="0-1064" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="1881114480" result="Passed" start-time="2019-05-29 15:00:45Z" end-time="2019-05-29 15:00:52Z" duration="6.770168" asserts="1" />
-            <test-case id="0-1065" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="312798909" result="Passed" start-time="2019-05-29 15:00:52Z" end-time="2019-05-29 15:00:59Z" duration="7.540390" asserts="1" />
+        <test-suite type="TestFixture" id="0-1061" name="LoginTests" fullname="CSharpSeleniumTemplate.Tests.LoginTests" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2019-05-29 17:04:07Z" end-time="2019-05-29 17:04:07Z" duration="0.279212" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1062" name="EfetuarLoginComSucesso" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginComSucesso" methodname="EfetuarLoginComSucesso" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="764346369" result="Failed" label="Error" start-time="2019-05-29 17:04:07Z" end-time="2019-05-29 17:04:07Z" duration="0.068533" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+              <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="0-1066" name="EfetuarLoginInformandoUsuarioInvalido" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2019-05-29 17:04:07Z" end-time="2019-05-29 17:04:07Z" duration="0.196178" total="3" passed="0" failed="3" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1063" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="1201174305" result="Failed" label="Error" start-time="2019-05-29 17:04:07Z" end-time="2019-05-29 17:04:07Z" duration="0.063344" asserts="0">
+              <failure>
+                <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+                <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1064" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="595971469" result="Failed" label="Error" start-time="2019-05-29 17:04:07Z" end-time="2019-05-29 17:04:07Z" duration="0.068767" asserts="0">
+              <failure>
+                <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+                <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1065" name="EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" fullname="CSharpSeleniumTemplate.Tests.LoginTests.EfetuarLoginInformandoUsuarioInvalido(System.Collections.ArrayList)" methodname="EfetuarLoginInformandoUsuarioInvalido" classname="CSharpSeleniumTemplate.Tests.LoginTests" runstate="Runnable" seed="628232167" result="Failed" label="Error" start-time="2019-05-29 17:04:07Z" end-time="2019-05-29 17:04:07Z" duration="0.063946" asserts="0">
+              <failure>
+                <message><![CDATA[OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT
+TearDown : OpenQA.Selenium.WebDriverException : Session [0a78a164-d9c8-42b0-9901-efc9dd25ea5e] was terminated due to TIMEOUT]]></message>
+                <stack-trace><![CDATA[   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWindow.Maximize()
+   em CSharpSeleniumTemplate.Bases.TestBase.SetUp() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 27
+--TearDown
+   em OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   em OpenQA.Selenium.Remote.RemoteWebDriver.GetScreenshot()
+   em CSharpSeleniumTemplate.Helpers.GeneralHelpers.GetScreenshot(String path) na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\GeneralHelpers.cs:linha 65
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.GetScreenShotMedia() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 46
+   em CSharpSeleniumTemplate.Helpers.ExtentReportHelpers.AddTestResult() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Helpers\ExtentReportHelpers.cs:linha 60
+   em CSharpSeleniumTemplate.Bases.TestBase.TearDown() na C:\Mantis2\csharpseleniumextentreporttemplate-master\CSharpSeleniumTemplate\Bases\TestBase.cs:linha 42]]></stack-trace>
+              </failure>
+            </test-case>
           </test-suite>
         </test-suite>
       </test-suite>
