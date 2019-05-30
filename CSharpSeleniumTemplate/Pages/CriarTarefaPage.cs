@@ -13,7 +13,7 @@ namespace CSharpSeleniumTemplate.Pages
     {
         #region Mapping
         By categoriaTabindex = By.XPath("//select[@id='category_id']");
-        By acessoCadastroTarefaButton = By.XPath("//*[@id='sidebar']/ul/li[3]/a");
+        By acessoCadastroTarefaButton = By.XPath("//*[@id='sidebar']/ul/li[3]");
         By resumoTextarea = By.Id("summary");
         By descricaoTextarea = By.Id("description");
         By criarTarefaButton = By.XPath("//input[@value='Criar Nova Tarefa']");

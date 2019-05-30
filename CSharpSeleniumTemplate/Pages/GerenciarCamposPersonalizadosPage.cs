@@ -12,12 +12,12 @@ namespace CSharpSeleniumTemplate.Pages
     {
         #region Mapping
         By menuGerenciarCampos = By.LinkText("Gerenciar Campos Personalizados");
-        By campoTextarea = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/form/fieldset/input[2]");
+        By campoTextarea = By.Name("name");
         By criarCampoButton = By.XPath("//input[@value='Novo Campo Personalizado']");
-        By MsgSucesso = By.XPath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");
-        By MsgErro = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/p[2]");
+        By MsgSucesso = By.XPath("//div[@id='main-container']//p");
+        By MsgErro = By.XPath("//*[@id='main-container']//p[2]");
         By campoSalvoTextarea = By.Id("custom-field-name");
-        By tableCampos = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/table");
+        By tableCampos = By.XPath("//*[@id='main-container']//table");
         By atualizarCampoButton = By.XPath("//input[@value='Atualizar Campo Personalizado']");
         By apagarCampoButton = By.XPath("//input[@value='Apagar Campo Personalizado']");
         By confirmarExclusaCampoButton = By.XPath("//input[@value='Apagar Campo']");

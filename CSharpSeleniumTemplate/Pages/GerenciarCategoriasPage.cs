@@ -11,15 +11,15 @@ namespace CSharpSeleniumTemplate.Pages
     public class GerenciarCategoriaPage : PageBase
     {
         #region Mapping
-        By categoriaTextarea = By.XPath("//*[@id='categories']/div/div[2]/form/div/input[3]");
-        By adicionarButton = By.XPath("//*[@id='categories']/div/div[2]/form/div/input[4]");
-        By tableCategoria = By.XPath("//*[@id='categories']/div/div[2]/div/div");
-        By MsgErro = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/p[2]");
-        By atualizarButton = By.XPath("//*[@id='manage-proj-category-update-form']/div/div[3]/input");
-        By MsgSucesso = By.XPath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");
+        By categoriaTextarea = By.Name("name");
+        By adicionarButton = By.XPath("//input[@value='Adicionar Categoria']");
+        By tableCategoria = By.XPath("//*[@id='categories']//table");
+        By MsgErro = By.XPath("//*[@id='main-container']//p[2]");
+        By atualizarButton = By.XPath("//input[@value='Atualizar Categoria']");
+        By MsgSucesso = By.XPath("//div[@id='main-container']//p");
         By nomeCategoriaEditar = By.Id("proj-category-name");
-        By apagarButton = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div[2]/form/fieldset/input[4]");
-        By confirmaExclusaoButton = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/form/input[5]");
+        By apagarButton = By.XPath("//*[@id='main-container']//input[4]");
+        By confirmaExclusaoButton = By.XPath("//input[@value='Apagar Categoria']");
         #endregion
 
         public void PreencherCategoria(string categoria)
