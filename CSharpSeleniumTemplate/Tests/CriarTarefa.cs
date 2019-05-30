@@ -82,11 +82,11 @@ namespace CSharpSeleniumTemplate.Tests
             string categoria = "General";
             string resumo = "teste automatizado resumo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
             string descricao = "teste automatizado descrição-" + GeneralHelpers.ReturnStringWithRandomNumbers(8);
-            string mensagemEsperada = "Digite os Detalhes do Relatório";
+            string tituloDaTelaEsperado = "Digite os Detalhes do Relatório";
             #endregion
             loginFlows.EfetuarLogin(usuario, senha);
             tarefasFlows.ContinuarCriandoTarefas(categoria, resumo, descricao);
-            Assert.AreEqual(mensagemEsperada, criarTarefaPage.RetornaTituloTelaCadastro());
+            Assert.AreEqual(tituloDaTelaEsperado, criarTarefaPage.RetornaTituloTelaCadastro());
             Assert.AreEqual(1, TarefasDBSteps.RetornaTarefas(descricao, resumo), "Tarefa não foi gravada no banco.");
             TarefasDBSteps.DeletaTarefa(descricao, resumo);
         }

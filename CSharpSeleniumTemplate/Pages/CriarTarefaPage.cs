@@ -13,16 +13,16 @@ namespace CSharpSeleniumTemplate.Pages
     {
         #region Mapping
         By categoriaTabindex = By.XPath("//select[@id='category_id']");
-        By acessoCadastroTarefaButton = By.XPath("//*[@id='sidebar']/ul/li[3]/a/span");
+        By acessoCadastroTarefaButton = By.XPath("//*[@id='sidebar']/ul/li[3]/a");
         By resumoTextarea = By.Id("summary");
         By descricaoTextarea = By.Id("description");
         By criarTarefaButton = By.ClassName("btn-white");
-        By MsgSucesso = By.XPath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");
+        By MsgSucesso = By.XPath("//div[@id='main-container']//p");
         By frequenciaTabindex = By.Id("reproducibility");
         By gravidadeTabindex = By.Id("severity");
         By prioridadeTabindex = By.Id("priority");
-        By criarMaisTarefa = By.XPath("//tr[14]/td/label/span");
-        By tituloTelaCadastro = By.XPath("//form[@id='report_bug_form']/div/div/h4");
+        By criarMaisTarefa = By.XPath("//tr[14]/td/label/input");
+        By tituloTelaCadastro = By.XPath("//*[@id='report_bug_form']//h4");
         By tableTarefas = By.Id("buglist");        
         #endregion
 
