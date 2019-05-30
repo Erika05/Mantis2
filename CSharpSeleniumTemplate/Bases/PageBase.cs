@@ -315,7 +315,7 @@ namespace CSharpSeleniumTemplate.Bases
             IWebElement table = WaitForElement(locator);
             int idColuna = ObterColuna(locator, nomecoluna);
             int idLinha = ObterIndiceLinhas(locator, idColuna, nomeElemento);
-            table.FindElement(By.XPath($".//tr[{idLinha}]/td[{idColuna}]")).Click();
+            table.FindElement(By.XPath($".//tr[{idLinha}]/td[{idColuna}]/a")).Click();
         }
         public void ClicarBotaoLinha(By locator, string nomecolunaPesq, string nomeElemento, string nomeColunaAcao)
         {

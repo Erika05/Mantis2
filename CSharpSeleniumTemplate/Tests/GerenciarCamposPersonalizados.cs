@@ -90,7 +90,7 @@ namespace CSharpSeleniumTemplate.Tests
             #region Parameters
             string usuario = "administrator";
             string senha = "administrator";
-            string campo = "campo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8); ;
+            string campo = "campo-" + GeneralHelpers.ReturnStringWithRandomNumbers(8); 
             string nomeColuna = "Nome";
             string mensagemSucessoEsperada = "Operação realizada com sucesso.";
             #endregion
