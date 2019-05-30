@@ -315,7 +315,7 @@ namespace CSharpSeleniumTemplate.Bases
             IWebElement table = WaitForElement(locator);
             int idColuna = ObterColuna(locator, nomecoluna);
             int idLinha = ObterIndiceLinhas(locator, idColuna, nomeElemento);
-            table.FindElement(By.XPath($".//tr[{idLinha}]/td[{idColuna}]/a")).Click();
+            table.FindElement(By.XPath($".//tr[{idLinha}]/td[{idColuna}]")).Click();
         }
         public void ClicarBotaoLinha(By locator, string nomecolunaPesq, string nomeElemento, string nomeColunaAcao)
         {
@@ -323,12 +323,12 @@ namespace CSharpSeleniumTemplate.Bases
             int idColunaPesquisa = ObterColuna(locator, nomecolunaPesq);
             int idLinha = ObterIndiceLinhas(locator, idColunaPesquisa, nomeElemento);
             int idColunaClick = ObterColuna(locator, nomeColunaAcao);
-            table.FindElement(By.XPath($".//tr[{idLinha}]/td[{idColunaClick}]/div/div[1]")).Click();
+            table.FindElement(By.XPath($".//tr[{idLinha}]/td[{idColunaClick}]//button")).Click();
         }
         public bool ValidarSelecaoTodos(By locator)
         {
             IWebElement table = WaitForElement(locator);
-            IList<IWebElement> tarefas = table.FindElements(By.XPath($".//tbody/tr/td[1]/div/label/span"));
+            IList<IWebElement> tarefas = table.FindElements(By.XPath($".//tbody/tr/td[1]//span"));
             for (int i = 0; i < tarefas.Count; i++)
             {
                 if (tarefas[i].Selected)
