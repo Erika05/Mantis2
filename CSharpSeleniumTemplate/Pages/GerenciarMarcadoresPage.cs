@@ -13,13 +13,12 @@ namespace CSharpSeleniumTemplate.Pages
         #region Mapping
         By menuMarcadores = By.XPath("//a[contains(text(),'Gerenciar Marcadores')]");      
         By nomeTextarea = By.Id("tag-name");
-        By criarButton = By.XPath("//*[@id='manage-tags-create-form']/div/div[2]/div[2]/input");
-        By tableMarcadores = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table");
+        By criarButton = By.Name("config_set");
+        By tableMarcadores = By.XPath("//*[@id='main-container']//table");
         By atualizarMarcadorButton = By.XPath("//input[@value='Atualizar Marcador']");
-        By textValidarAlteracao = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]/table/tbody/tr[2]/td[2]");
         By apagarMarcadoButton = By.XPath("//input[@value='Apagar Marcador']");
-        By telaDetalheMarcadores = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[1]/h4");
-        By voltarMarcadoButton = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/form/div/div[2]/div/div[1]/a");
+        By telaDetalheMarcadores = By.XPath("//*[@id='main-container']//h4");
+        By voltarMarcadoButton = By.XPath("//*[@id='main-container']//a");
         #endregion
 
         public void ClicarMenuMarcador()
