@@ -16,13 +16,14 @@ namespace CSharpSeleniumTemplate.Pages
         By acessoCadastroTarefaButton = By.XPath("//*[@id='sidebar']/ul/li[3]/a");
         By resumoTextarea = By.Id("summary");
         By descricaoTextarea = By.Id("description");
-        By criarTarefaButton = By.ClassName("btn-white");
-        By MsgSucesso = By.XPath("//div[@id='main-container']//p");
+        By criarTarefaButton = By.XPath("//input[@value='Criar Nova Tarefa']");
+        By MsgSucesso = By.XPath("//*[@id='main-container']//p");
         By frequenciaTabindex = By.Id("reproducibility");
         By gravidadeTabindex = By.Id("severity");
         By prioridadeTabindex = By.Id("priority");
-        By criarMaisTarefa = By.XPath("//tr[14]/td/label/input");
-        By tituloTelaCadastro = By.XPath("//*[@id='report_bug_form']//h4");
+        By criarMaisTarefaVerificarSelecao = By.XPath("//input[@id='report_stay']");
+        By criarMaisTarefaButton = By.XPath("//input[@id='report_stay']/..");
+        By tituloTelaCadastro = By.XPath("//*[@id='report_bug_form']//h4"); 
         By tableTarefas = By.Id("buglist");        
         #endregion
 
@@ -57,9 +58,9 @@ namespace CSharpSeleniumTemplate.Pages
 
         public void ContinuaCadastrandoTarefas(string resumo, string descricao)
         {
-            if (!ReturnIfElementIsSelected(criarMaisTarefa))
+            if (!ReturnIfElementIsSelected(criarMaisTarefaVerificarSelecao))
             {
-                Click(criarMaisTarefa);
+                Click(criarMaisTarefaButton);
             }
         }
 
