@@ -12,17 +12,17 @@ namespace CSharpSeleniumTemplate.Pages
     {
         #region Mapping
         By gerenciarUsuariosTabindex = By.XPath("//a[contains(text(),'Gerenciar Usuários')]");
-        By cadastrarUsuarioButton = By.XPath("//*[@id='manage-user-div']/div[1]/form/fieldset/button");
+        By cadastrarUsuarioButton = By.XPath("//button[@type='submit']");
         By nomeTextarea = By.Id("user-username");
         By nomeVerdadeiroTextarea = By.Id("user-realname");
         By nivelCombobox = By.Id("user-access-level");
         By emailTextArea = By.Id("email-field");
         By confirmaCadastroButton = By.XPath("//input[@value='Criar Usuário']");
-        By MsgSucesso = By.XPath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");
+        By MsgSucesso = By.XPath("//div[@id='main-container']//p");
         By nomeSalvo = By.Id("edit-username");
-        By tableUsuarios = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div/table");
+        By tableUsuarios = By.XPath("//*[@id='main-container']//table");
         By atualizarUsuarioButton = By.XPath("//input[@value='Atualizar Usuário']");
-        By MsgErro = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/p[2]");
+        By MsgErro = By.XPath("//*[@id='main-container']//p[2]");
         By filtroTextarea = By.Id("search");
         By aplicarFiltroButton = By.XPath("//input[@value='Aplicar Filtro']");
         By apagarUsuarioButtor = By.XPath("//input[@value='Apagar Usuário']");

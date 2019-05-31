@@ -16,10 +16,10 @@ namespace CSharpSeleniumTemplate.Pages
         By nomeTextarea = By.Id("project-name");
         By estadoSelect = By.Id("project-status");
         By descricaoTextarea = By.Id("project-description");
-        By MsgSucesso = By.XPath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");
+        By MsgSucesso = By.XPath("//div[@id='main-container']//p");
         By adicionarTarefaButton = By.ClassName("btn-white");
-        By MsgErro = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/p[2]");
-        By tableProjetos = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/div[2]/div/div[2]");
+        By MsgErro = By.XPath("//*[@id='main-container']//p[2]");
+        By tableProjetos = By.XPath("//*[@id='main-container']//table");
         By apagarProjetoButton = By.XPath("//input[@value='Apagar Projeto']");
         #endregion
 

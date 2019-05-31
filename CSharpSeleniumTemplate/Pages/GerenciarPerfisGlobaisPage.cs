@@ -17,12 +17,12 @@ namespace CSharpSeleniumTemplate.Pages
         By versaoSoTextArea = By.Id("os-version");
         By adicionarPerfilButton = By.XPath("//input[@value='Adicionar Perfil']");
         By enviarButton = By.XPath("//input[@value='Enviar']");
-        By MsgErro = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/div[2]/p[2]");
+        By MsgErro = By.XPath("//*[@id='main-container']//p[2]");
         By perfil = By.Id("select-profile");
-        By editarButton = By.XPath("//*[@id='account-profile-update-form']/div/div[2]/div[1]/div/table/tbody/tr[1]/td[2]/label/span");
-        By apagarButton = By.XPath("//*[@id='account-profile-update-form']/div/div[2]/div[1]/div/table/tbody/tr[2]/td[2]/label/span");
+        By editarButton = By.XPath("//input[@id='action-edit']/..");
+        By apagarButton = By.XPath("//input[@id='action-delete']/..");
         By atualizarPerfilButton = By.XPath("//input[@value='Atualizar Perfil']");
-        By plataformaEdicaoTexarea = By.XPath("//*[@id='main-container']/div[2]/div[2]/div/div/form/div/div[2]/div[1]/div/table/tbody/tr[1]/td/input");
+        By plataformaEdicaoTexarea = By.Name("platform");
         #endregion
 
         public void ClicarMenuGerenciarPerfis()

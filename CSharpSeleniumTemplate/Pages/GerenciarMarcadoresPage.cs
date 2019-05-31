@@ -18,7 +18,7 @@ namespace CSharpSeleniumTemplate.Pages
         By atualizarMarcadorButton = By.XPath("//input[@value='Atualizar Marcador']");
         By apagarMarcadoButton = By.XPath("//input[@value='Apagar Marcador']");
         By telaDetalheMarcadores = By.XPath("//*[@id='main-container']//h4");
-        By voltarMarcadoButton = By.XPath("//*[@id='main-container']//a");
+        By voltarMarcadoButton = By.LinkText ("Voltar ao Marcador");
         #endregion
 
         public void ClicarMenuMarcador()
