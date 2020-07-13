@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CSharpSeleniumTemplate.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Desafio_Mantis.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="BROWSER" Type="System.String" Scope="User">
@@ -36,7 +36,7 @@
       <Value Profile="(Default)">C:\Users\jose.mario\Desktop\Reports\Outros\</Value>
     </Setting>
     <Setting Name="REPORT_NAME" Type="System.String" Scope="User">
-      <Value Profile="(Default)">CSharpSeleniumTemplateReport</Value>
+      <Value Profile="(Default)">Desafio_MantisReport</Value>
     </Setting>
     <Setting Name="DEFAUL_APPLICATION_URL" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://mantis-prova.base2.com.br</Value>

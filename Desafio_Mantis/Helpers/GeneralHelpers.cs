@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 using System.Diagnostics;
 using System.Collections.Specialized;
 
-namespace CSharpSeleniumTemplate.Helpers
+namespace Desafio_Mantis.Helpers
 {
     public class GeneralHelpers
     {

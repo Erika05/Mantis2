@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CSharpSeleniumTemplate.Properties {
+namespace Desafio_Mantis.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -157,7 +157,7 @@ namespace CSharpSeleniumTemplate.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("CSharpSeleniumTemplateReport")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Desafio_MantisReport")]
         public string REPORT_NAME {
             get {
                 return ((string)(this["REPORT_NAME"]));

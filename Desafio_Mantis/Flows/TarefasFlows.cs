@@ -1,5 +1,5 @@
-﻿using CSharpSeleniumTemplate.Bases;
-using CSharpSeleniumTemplate.Pages;
+﻿using Desafio_Mantis.Bases;
+using Desafio_Mantis.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CSharpSeleniumTemplate.Flows
+namespace Desafio_Mantis.Flows
 {
     public class TarefasFlows
     {

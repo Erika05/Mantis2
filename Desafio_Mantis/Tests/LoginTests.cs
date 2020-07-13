@@ -1,7 +1,7 @@
-﻿using CSharpSeleniumTemplate.Bases;
-using CSharpSeleniumTemplate.DataBaseSteps;
-using CSharpSeleniumTemplate.Helpers;
-using CSharpSeleniumTemplate.Pages;
+﻿using Desafio_Mantis.Bases;
+using Desafio_Mantis.DataBaseSteps;
+using Desafio_Mantis.Helpers;
+using Desafio_Mantis.Pages;
 using NUnit.Framework;
 using System;
 using System.Collections;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CSharpSeleniumTemplate.Tests
+namespace Desafio_Mantis.Tests
 {
     [TestFixture]
     public class LoginTests : TestBase

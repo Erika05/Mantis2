@@ -9,7 +9,7 @@ using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Remote;
 
-namespace CSharpSeleniumTemplate.Helpers
+namespace Desafio_Mantis.Helpers
 {
     public class DriverFactory
     {

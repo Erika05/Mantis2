@@ -1,8 +1,8 @@
-﻿using CSharpSeleniumTemplate.Bases;
-using CSharpSeleniumTemplate.DataBaseSteps;
-using CSharpSeleniumTemplate.Flows;
-using CSharpSeleniumTemplate.Helpers;
-using CSharpSeleniumTemplate.Pages;
+﻿using Desafio_Mantis.Bases;
+using Desafio_Mantis.DataBaseSteps;
+using Desafio_Mantis.Flows;
+using Desafio_Mantis.Helpers;
+using Desafio_Mantis.Pages;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpSeleniumTemplate.Tests
+namespace Desafio_Mantis.Tests
 {
     [TestFixture]
     class GerenciarCamposPersonalizados : TestBase

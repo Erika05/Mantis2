@@ -9,8 +9,8 @@
     <ProjectGuid>{4C047882-C3B5-4455-8DD6-C7FAECBF7F47}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharpSeleniumTemplate</RootNamespace>
-    <AssemblyName>CSharpSeleniumTemplate</AssemblyName>
+    <RootNamespace>Desafio_Mantis</RootNamespace>
+    <AssemblyName>Desafio_Mantis</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

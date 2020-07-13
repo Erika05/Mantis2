@@ -4,12 +4,12 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CSharpSeleniumTemplate.Helpers;
+using Desafio_Mantis.Helpers;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using SeleniumExtras.WaitHelpers;
 
-namespace CSharpSeleniumTemplate.Bases
+namespace Desafio_Mantis.Bases
 {
     public class PageBase
     {

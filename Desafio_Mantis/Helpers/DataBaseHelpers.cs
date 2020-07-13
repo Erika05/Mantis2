@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpSeleniumTemplate.Helpers
+namespace Desafio_Mantis.Helpers
 {
     public class DataBaseHelpers
     {

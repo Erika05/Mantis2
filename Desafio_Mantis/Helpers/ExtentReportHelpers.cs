@@ -8,7 +8,7 @@ using AventStack.ExtentReports.Reporter;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 
-namespace CSharpSeleniumTemplate.Helpers
+namespace Desafio_Mantis.Helpers
 {
     public class ExtentReportHelpers
     {

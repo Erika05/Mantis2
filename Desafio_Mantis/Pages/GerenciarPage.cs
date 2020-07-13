@@ -1,4 +1,4 @@
-﻿using CSharpSeleniumTemplate.Bases;
+﻿using Desafio_Mantis.Bases;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpSeleniumTemplate.Pages
+namespace Desafio_Mantis.Pages
 {
     class GerenciarPage : PageBase
     {

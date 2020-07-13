@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CSharpSeleniumTemplate.Queries {
+namespace Desafio_Mantis.Queries {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CSharpSeleniumTemplate.Queries {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CSharpSeleniumTemplate.Queries.CategoriasQueries", typeof(CategoriasQueries).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Desafio_Mantis.Queries.CategoriasQueries", typeof(CategoriasQueries).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

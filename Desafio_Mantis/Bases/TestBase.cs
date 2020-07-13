@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Castle.DynamicProxy;
 using NUnit.Framework;
 using System.Reflection;
-using CSharpSeleniumTemplate.Helpers;
-using CSharpSeleniumTemplate.DataBaseSteps;
+using Desafio_Mantis.Helpers;
+using Desafio_Mantis.DataBaseSteps;
 
-namespace CSharpSeleniumTemplate.Bases
+namespace Desafio_Mantis.Bases
 {
     public class TestBase
     {
